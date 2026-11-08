@@ -1,0 +1,54 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	orchestrator(orchestrator)
+	accommodation_agent(accommodation_agent)
+	accom_tools(accom_tools)
+	accom_save(accom_save)
+	logistics_agent(logistics_agent)
+	logistics_tools(logistics_tools)
+	logistics_save(logistics_save)
+	event_agent(event_agent)
+	event_tools(event_tools)
+	event_save(event_save)
+	flight_agent(flight_agent)
+	flight_tools(flight_tools)
+	flight_save(flight_save)
+	trip_planner_agent(trip_planner_agent)
+	trip_planner_tools(trip_planner_tools)
+	trip_planner_save(trip_planner_save)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> orchestrator;
+	accom_save --> orchestrator;
+	accom_tools --> accommodation_agent;
+	accommodation_agent -.-> accom_save;
+	accommodation_agent -.-> accom_tools;
+	event_agent -.-> event_save;
+	event_agent -.-> event_tools;
+	event_save --> orchestrator;
+	event_tools --> event_agent;
+	flight_agent -.-> flight_save;
+	flight_agent -.-> flight_tools;
+	flight_save --> orchestrator;
+	flight_tools --> flight_agent;
+	logistics_agent -.-> logistics_save;
+	logistics_agent -.-> logistics_tools;
+	logistics_save --> orchestrator;
+	logistics_tools --> logistics_agent;
+	orchestrator -. &nbsp;END&nbsp; .-> __end__;
+	orchestrator -.-> accommodation_agent;
+	orchestrator -.-> event_agent;
+	orchestrator -.-> flight_agent;
+	orchestrator -.-> logistics_agent;
+	orchestrator -.-> trip_planner_agent;
+	trip_planner_agent -.-> trip_planner_save;
+	trip_planner_agent -.-> trip_planner_tools;
+	trip_planner_save --> orchestrator;
+	trip_planner_tools --> trip_planner_agent;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

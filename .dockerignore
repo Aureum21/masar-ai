@@ -1,0 +1,36 @@
+# Never send developer secrets, user evidence, generated artifacts or VCS history to Docker.
+.git
+.github
+.env
+.env.*
+**/.env
+**/.env.*
+.aws
+**/.aws
+*.pem
+*.key
+*.p12
+*.log
+__pycache__
+**/__pycache__
+*.pyc
+.myenv
+venv
+.venv
+node_modules
+frontend
+tests
+test_*.py
+dev
+sandbox
+docs
+data/passport-evidence
+deploy/*.env
+deploy/*credentials*
+
+# Vision development environments and downloaded model weights
+.visionenv
+.cache
+
+data/receipt-private
+uploads/receipts

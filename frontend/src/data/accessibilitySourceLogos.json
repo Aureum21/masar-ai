@@ -1,0 +1,65 @@
+{
+  "www.visitdubai.com": {
+    "name": "Visit Dubai",
+    "logo": "/source-logos/visitdubai-com.png",
+    "asset_source": "https://www.visitdubai.com/favicon.ico"
+  },
+  "ticket.atthetop.ae": {
+    "name": "At the Top, Burj Khalifa",
+    "logo": "/source-logos/at-the-top.svg",
+    "wordmark": true,
+    "asset_source": "https://ticket.atthetop.ae/wp-content/uploads/sites/2/2023/09/att-logo-vector-1.svg"
+  },
+  "visitabudhabi.ae": {
+    "name": "Experience Abu Dhabi",
+    "logo": "/source-logos/visitabudhabi-ae.png",
+    "asset_source": "https://visitabudhabi.ae/dist/vad/favicon.ico"
+  },
+  "www.louvreabudhabi.ae": {
+    "name": "Louvre Abu Dhabi",
+    "logo": null
+  },
+  "szgmc.gov.ae": {
+    "name": "Sheikh Zayed Grand Mosque Centre",
+    "logo": "/source-logos/szgmc-gov-ae.png",
+    "asset_source": "https://szgmc.gov.ae/images/favicon.ico"
+  },
+  "www.qasralwatan.ae": {
+    "name": "Qasr Al Watan",
+    "logo": "/source-logos/qasralwatan-ae.png",
+    "asset_source": "https://www.qasralwatan.ae/dist/YasConnect_ppad/favicon.ico"
+  },
+  "www.etihad.com": {
+    "name": "Etihad Airways",
+    "logo": "/source-logos/etihad-com.png",
+    "asset_source": "https://www.etihad.com/favicon.ico"
+  },
+  "www.sharjahmuseums.ae": {
+    "name": "Sharjah Museums Authority",
+    "logo": "/source-logos/sharjahmuseums-ae.png",
+    "asset_source": "https://www.sharjahmuseums.ae/favicon.ico"
+  },
+  "cm.sharjah24.ae": {
+    "name": "Sharjah24 / Sharjah Museums Authority",
+    "logo": "/source-logos/cm-sharjah24-ae.png",
+    "asset_source": "https://sharjah24.ae/assets/images/logo.gif"
+  },
+  "visitrasalkhaimah.com": {
+    "name": "Visit Ras Al Khaimah",
+    "logo": null
+  },
+  "www.palmjumeirahmall.ae": {
+    "name": "Palm Jumeirah Mall",
+    "logo": null
+  },
+  "www.dubaifestivalcitymall.com": {
+    "name": "Dubai Festival City Mall",
+    "logo": "/source-logos/dubaifestivalcitymall-com.png",
+    "asset_source": "https://www.dubaifestivalcitymall.com/wps/contenthandler/dfcmall/!ut/p/digest!xhdwORl4AyDK_O3OfhdRwg/dav/fs-type1/themes/AFGMallDLSTheme/images/favicon.ico"
+  },
+  "www.dmt.gov.ae": {
+    "name": "Abu Dhabi City Municipality",
+    "logo": "/source-logos/www-dmt-gov-ae.svg",
+    "asset_source": "https://www.dmt.gov.ae/-/media/Project/DMT/DMT/Header/DMT-Logo.svg"
+  }
+}

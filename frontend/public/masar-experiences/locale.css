@@ -1,0 +1,7 @@
+@font-face{font-family:'Noto Sans Arabic';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/masar-languages/noto-sans-arabic-arabic-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Noto Sans Arabic';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/masar-languages/noto-sans-arabic-arabic-700-normal.woff2') format('woff2')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/masar-languages/noto-sans-devanagari-devanagari-400-normal.woff2') format('woff2')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/masar-languages/noto-sans-devanagari-devanagari-700-normal.woff2') format('woff2')}
+[lang='ar']{font-family:'Noto Sans Arabic',Arial,sans-serif!important;letter-spacing:normal!important}
+[lang='hi']{font-family:'Noto Sans Devanagari','Nirmala UI',sans-serif!important;letter-spacing:normal!important}
+[lang='ar'] :is(button,label,select,p,span),[lang='hi'] :is(button,label,select,p,span){font-family:inherit!important;letter-spacing:normal!important}

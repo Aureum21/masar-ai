@@ -1,0 +1,107 @@
+.mas-game{--gold:#efbd60;--muted:#8f959f;--line:#2b2d33;color:#f6f3ec;font:14px/1.5 'Segoe UI',Arial,sans-serif;display:grid;grid-template-columns:minmax(0,1fr) 304px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#11141a;box-shadow:0 25px 70px #0003}.mas-game *{box-sizing:border-box}.mas-game [hidden]{display:none!important}.mas-game button,.mas-game input,.mas-game a{-webkit-tap-highlight-color:transparent}.mas-game button{font:inherit;cursor:pointer}.mas-game button:focus-visible,.mas-game a:focus-visible,.mas-canvas:focus-visible{outline:2px solid var(--gold);outline-offset:-3px}.mas-game svg{width:20px;height:20px;flex-shrink:0}.mas-game button:disabled{cursor:default;opacity:.45}.mas-world{height:100%;min-height:0;min-width:0;position:relative;overflow:hidden;background:#101319}.mas-canvas{display:block;width:100%;height:100%;touch-action:none;cursor:crosshair;outline:none}.mas-world-top{position:absolute;left:24px;right:20px;top:22px;display:flex;align-items:center;justify-content:space-between;pointer-events:none}.mas-location{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:650;letter-spacing:1.8px;text-shadow:0 1px 8px #000}.mas-location i{width:6px;height:6px;background:var(--gold);border-radius:50%;box-shadow:0 0 13px #efbd6070}.mas-location small{color:#92989f;font-size:8px;letter-spacing:1px;border-left:1px solid #6d66534d;padding-left:10px}.mas-view-actions{display:flex;gap:7px;pointer-events:auto}.mas-icon{border:1px solid #54504b65;background:#14171dc9;color:#d2c8b1;border-radius:9px;width:33px;height:33px;display:grid;place-items:center;backdrop-filter:blur(8px)}.mas-icon:hover{color:var(--gold);border-color:#987748}.mas-icon svg{width:16px;height:16px}.mas-hud{position:absolute;left:24px;top:78px;display:flex;gap:22px;pointer-events:none;border:1px solid #78706230;border-radius:11px;background:#101319bd;padding:9px 14px;backdrop-filter:blur(8px)}.mas-hud>span{display:grid;gap:1px}.mas-hud small{font-size:7px;letter-spacing:1.6px;color:#a49c8b}.mas-hud b{font-size:13px;font-variant-numeric:tabular-nums;font-weight:600;color:#ede5d6;letter-spacing:.7px}.mas-hud b em{font-style:normal;font-size:10px;color:#777d82}.mas-hud>span:last-child b{color:#d5b679;letter-spacing:4px}.mas-world-foot{position:absolute;bottom:19px;left:24px;right:20px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:9px;color:#a09c93;pointer-events:none;text-shadow:0 2px 8px #000}.mas-world-foot>span:last-child{letter-spacing:1.5px;font-size:7px;color:#948d7e}.mas-world-foot i{font-style:normal;margin:0 6px}.mas-world-foot kbd{display:inline-grid;place-items:center;width:18px;height:20px;border:1px solid #6f6a5e60;border-radius:4px;margin-right:2px;background:#14171ddd;font:9px 'Segoe UI',Arial}.mas-ready{position:absolute;left:28px;bottom:72px;pointer-events:none;max-width:290px;padding:24px 28px 20px 0;text-shadow:0 3px 20px #080a0f}.mas-ready:before{content:'';position:absolute;z-index:-1;inset:-45px -80px -25px -25px;background:radial-gradient(ellipse at left,#0b0e14d9,transparent 72%)}.mas-eyebrow{font-size:8px;font-weight:650;letter-spacing:1.7px;color:var(--gold)}.mas-ready h3{font-size:32px;line-height:1.1;letter-spacing:-1.4px;margin:14px 0;color:#fcf6e8}.mas-ready h3 em{font-weight:400;font-family:Georgia,serif;color:#d6bb88}.mas-ready p{font-size:11px;line-height:1.7;color:#b8b4aa;margin:0}.mas-minimap{position:absolute;right:20px;bottom:66px;width:148px;overflow:hidden;border:1px solid #766c5945;border-radius:11px;background:#12171dd9;box-shadow:0 5px 25px #0003;pointer-events:none}.mas-minimap>canvas{display:block;width:148px;height:108px;opacity:.9}.mas-minimap>div{padding:6px 8px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #766c5925}.mas-minimap span{font-size:8px;color:#e8c784}.mas-minimap b{font-size:6px;font-weight:500;letter-spacing:.8px;color:#929a9e}.mas-mission{border-left:1px solid var(--line);padding:26px 25px 20px;display:flex;flex-direction:column;overflow-y:auto;max-height:100%;background:linear-gradient(160deg,#15171d,#101218)}.mas-mission-label{display:flex;align-items:center;justify-content:space-between;font-size:8px;font-weight:600;letter-spacing:2px;color:#a2a6ae}.mas-mission-label>span:last-child{font-size:22px;color:var(--gold);line-height:1}.mas-mission-title{padding-top:28px}.mas-mission-title>.mas-eyebrow{font-size:6.5px;letter-spacing:1.2px;color:#9c9482}.mas-mission h2{font-size:36px;line-height:1.04;letter-spacing:-1.8px;margin:9px 0 13px;font-weight:600}.mas-mission h2 span{color:var(--gold)}.mas-mission-title>p{font-size:11px;line-height:1.7;color:#9399a3;margin:0;min-height:38px}.mas-checkpoints{list-style:none;margin:22px 0 18px;padding:0}.mas-checkpoints li{display:flex;align-items:center;gap:11px;padding:12px 0;border-top:1px solid #26292f;position:relative}.mas-checkpoints li:last-child{border-bottom:1px solid #26292f}.mas-stamp{border:1px solid #49453c;color:#8d8576;width:31px;height:35px;display:grid;place-items:center;border-radius:8px;font-size:9px;transform:rotate(-5deg);flex-shrink:0;background:#1c1e22}.mas-checkpoints b{font-size:11px;font-weight:600;color:#b1b2b5}.mas-checkpoints small{display:block;font-size:8px;color:#676f7c;margin-top:3px}.mas-checkpoints i{font-style:normal;color:#66645c;margin-left:auto;font-size:15px}.mas-checkpoints .mas-current .mas-stamp{border-color:#b28b45;color:var(--gold);box-shadow:0 0 15px #d7991912}.mas-checkpoints .mas-current b{color:#eee7d6}.mas-checkpoints .mas-current small{color:#b19969}.mas-checkpoints .mas-current i{color:var(--gold)}.mas-checkpoints .mas-done .mas-stamp{color:#8fc3ae;border-color:#54816e;background:#19302970}.mas-checkpoints .mas-done small{color:#76a88f}.mas-checkpoints .mas-done i{color:#81b69e}.mas-reward{border:1px solid #6d532b70;border-radius:11px;padding:12px 14px;background:linear-gradient(125deg,#49351428,#1c1b18)}.mas-reward>span{display:flex;align-items:center;gap:6px;color:#d1ac6a;font-size:7px;letter-spacing:1.4px}.mas-reward>span svg{width:13px;height:13px}.mas-reward>strong{display:block;font-size:18px;letter-spacing:-.6px;font-weight:500;margin-top:6px;color:#f1d397}.mas-reward>strong b{font-weight:650}.mas-reward>p{font-size:9px;color:#9e9481;line-height:1.65;margin:5px 0 0}.mas-game-actions{margin-top:auto;padding-top:18px}.mas-primary{border:1px solid #efb642;background:linear-gradient(120deg,#f0c66c,#dea039);color:#241b0d;display:flex;align-items:center;justify-content:center;gap:15px;width:100%;padding:12px 14px;border-radius:9px;font-weight:650!important;font-size:11px!important;box-shadow:0 5px 23px #e5ac2410;transition:filter .2s,transform .2s}.mas-primary:hover{filter:brightness(1.08);transform:translateY(-1px)}.mas-primary svg{width:16px;height:16px}.mas-secondary{display:block;border:0;background:transparent;color:#8f949f;font-size:9px!important;margin:10px auto 0;padding:5px}.mas-secondary:hover{color:#efbd60}.mas-relaxed{display:flex;align-items:center;gap:5px;color:#a3a6ae;font-size:9px;margin-bottom:12px;cursor:pointer}.mas-relaxed input{accent-color:var(--gold);width:12px;height:12px;margin:0 3px 0 0}.mas-relaxed small{font-size:8px;margin-left:auto;color:#606a76}.mas-tip{font-size:8px;color:#747c88;line-height:1.65;text-align:center;margin:10px 0 0}.mas-best{font-size:6.5px;letter-spacing:1.3px;text-align:center;margin-top:14px;color:#6c737c}.mas-attribution{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 18px;border-top:1px solid var(--line);font-size:7px;color:#676e79;background:#0f1116}.mas-attribution a{color:#929591;text-decoration:none}.mas-attribution a:hover{color:var(--gold)}.mas-toast{position:absolute;left:22px;right:22px;top:142px;max-width:430px;margin:auto;border:1px solid #ad8a4e77;background:#15191fef;border-radius:10px;color:#e5d3ac;padding:12px 16px;font-size:11px;text-align:center;box-shadow:0 8px 30px #0003;pointer-events:none}.mas-overlay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(360px,90%);border:1px solid #89704799;background:linear-gradient(145deg,#1d2026f5,#11141af5);box-shadow:0 25px 80px #0009,0 0 80px #ce9b2210;backdrop-filter:blur(14px);border-radius:18px;padding:28px;text-align:center;z-index:4}.mas-medallion{width:57px;height:57px;border:1px solid #a78845;border-radius:50%;display:grid;place-items:center;margin:0 auto 20px;color:var(--gold);background:#55411c22;box-shadow:0 0 24px #d6ad2313}.mas-medallion svg{width:30px;height:30px}.mas-overlay h3{font-size:27px;line-height:1.1;letter-spacing:-1px;margin:13px 0}.mas-overlay p{font-size:11px;color:#a3a5a9;margin:0 0 23px;line-height:1.8}.mas-next{margin-top:15px;padding-top:14px;border-top:1px solid var(--line)}.mas-next h3{font-size:25px;letter-spacing:-1px;margin:5px 0}.mas-next h3 span{color:var(--gold);font-weight:400}.mas-next p{font-size:10px;line-height:1.7;color:#a0a4a9;margin:6px 0 12px}.mas-next>a{display:block;text-align:center;color:#bbab8a;font-size:9px;margin-top:9px;text-decoration:none}.mas-won .mas-tip,.mas-won .mas-game-actions,.mas-won .mas-mission-title{display:none}.mas-won .mas-checkpoints{margin-top:20px}.mas-won .mas-reward{margin-top:4px}.mas-won .mas-best{margin-top:auto;padding-top:16px}.mas-dpad{display:none;position:absolute;bottom:65px;left:18px;grid-template-columns:34px 34px 34px;grid-template-rows:34px 34px 34px;gap:3px;touch-action:none;user-select:none}.mas-dpad button{border:1px solid #c4ad7855;color:#f4d391;background:#171c24ce;backdrop-filter:blur(8px);border-radius:8px;font-size:18px;touch-action:none}.mas-dpad button:active{background:#6b5325}.mas-dpad button[data-dir=up]{grid-area:1/2}.mas-dpad button[data-dir=left]{grid-area:2/1}.mas-dpad button[data-dir=right]{grid-area:2/3}.mas-dpad button[data-dir=down]{grid-area:3/2}.mas-dpad span{grid-area:2/2;display:grid;place-items:center;color:#cba967;font-size:17px}.mas-game button,.mas-game a{transition:color .2s,background .2s,filter .2s}
+@media(pointer:coarse){.mas-has-started .mas-dpad{display:grid}.mas-world-foot>span:first-child{font-size:0}.mas-world-foot>span:first-child kbd{display:none}.mas-world-foot>span:first-child:after{content:'Use the pad or tap a lane';font-size:9px}}
+@media(min-width:1500px){.mas-world{height:710px}.mas-mission{padding:30px}.mas-game{grid-template-columns:minmax(0,1fr) 330px}.mas-mission h2{font-size:42px}.mas-checkpoints{margin-top:28px}.mas-checkpoints li{padding:15px 0}.mas-ready h3{font-size:40px}}
+@media(max-width:1050px){.mas-game{grid-template-columns:minmax(0,1fr) 266px}.mas-mission{padding:22px 19px 18px}.mas-world{height:630px}.mas-mission h2{font-size:32px}.mas-mission-title{padding-top:23px}.mas-checkpoints{margin-top:16px}.mas-checkpoints b{font-size:10px}.mas-ready h3{font-size:28px}.mas-ready{left:22px;bottom:65px;max-width:240px}.mas-world-top{left:18px;right:15px}.mas-hud{left:18px;gap:16px}.mas-minimap{right:15px;width:122px}.mas-minimap>canvas{width:122px;height:90px}.mas-minimap b{font-size:5.5px}.mas-world-foot>span:last-child{display:none}.mas-game-actions{padding-top:12px}}
+@media(max-width:760px){.mas-game{display:flex;flex-direction:column;border-radius:15px}.mas-world{height:520px;flex-shrink:0}.mas-mission{border-left:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;padding:20px}.mas-mission-label{grid-column:1/-1}.mas-mission-title{padding:0}.mas-mission h2{font-size:31px}.mas-mission-title>p{max-width:220px}.mas-checkpoints{margin:0}.mas-checkpoints li{padding:10px 0}.mas-game-actions{padding-top:0}.mas-reward{align-self:start}.mas-attribution{padding:12px;display:block;font-size:6px}.mas-attribution>span{display:block}.mas-attribution>span:last-child{margin-top:4px}.mas-ready{bottom:61px}.mas-minimap{bottom:62px}.mas-has-started .mas-dpad{display:grid}.mas-world-foot>span:first-child{font-size:0}.mas-world-foot>span:first-child kbd{display:none}.mas-world-foot>span:first-child:after{content:'Use the pad or tap a lane';font-size:9px}.mas-best{grid-column:1/-1;margin-top:2px}.mas-next{margin-top:0;padding-top:0;border-top:0}.mas-won .mas-checkpoints{margin:0}.mas-won .mas-best{padding-top:0}.mas-won .mas-reward{margin:0}}
+@media(max-width:430px){.mas-world{height:480px}.mas-location{font-size:9px}.mas-location small{display:none}.mas-world-top{left:15px;top:16px}.mas-hud{top:65px;left:15px;padding:7px 10px;gap:15px}.mas-hud small{font-size:6px}.mas-hud b{font-size:11px}.mas-ready{left:18px;bottom:60px;max-width:220px}.mas-ready h3{font-size:29px}.mas-ready>.mas-eyebrow{font-size:6px}.mas-ready p{font-size:10px}.mas-minimap{width:99px;bottom:62px;right:12px}.mas-minimap>canvas{width:99px;height:73px}.mas-minimap>div{padding:5px}.mas-minimap b{font-size:4.5px;letter-spacing:.3px}.mas-mission{gap:14px;padding:18px;grid-template-columns:1fr}.mas-checkpoints{margin:0}.mas-mission-title>p{max-width:none}.mas-mission-title h2 br{display:none}.mas-mission-title h2{font-size:29px;margin:8px 0}.mas-game-actions{padding-top:0}.mas-best{grid-column:1}.mas-reward{display:none}.mas-won .mas-reward{display:block}.mas-world-foot{left:16px}.mas-overlay{padding:23px;width:90%}}
+@media(prefers-reduced-motion:reduce){.mas-game *{transition:none!important;scroll-behavior:auto!important}}
+
+
+/* ==========================================================================
+   MASAR AI Brand Theme Overrides for Tourist Arcade
+   ========================================================================== */
+.mas-game {
+  --gold: #F59E0B !important;
+  --line: rgba(255, 255, 255, 0.08) !important;
+  background: #0B0E15 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.mas-mission {
+  border-left: 1px solid rgba(245, 158, 11, 0.25) !important;
+  background: linear-gradient(180deg, #11141D 0%, #080A0E 100%) !important;
+  padding: 24px 22px !important;
+  box-shadow: inset 1px 0 0 rgba(245, 158, 11, 0.06) !important;
+}
+.mas-mission-label {
+  color: #F59E0B !important;
+  font-weight: 700 !important;
+  font-size: 11px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+}
+.mas-mission-label > span:last-child {
+  color: #F59E0B !important;
+  font-weight: 800 !important;
+}
+.mas-mission h2 {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  font-size: 28px !important;
+}
+.mas-mission h2 span {
+  color: #F59E0B !important;
+}
+.mas-mission-title > p {
+  color: #94A3B8 !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+}
+.mas-checkpoints li {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+.mas-checkpoints .mas-current .mas-stamp {
+  border-color: #F59E0B !important;
+  color: #F59E0B !important;
+  background: rgba(245, 158, 11, 0.15) !important;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.25) !important;
+}
+.mas-checkpoints .mas-current b {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+}
+.mas-checkpoints .mas-current small {
+  color: #FBBF24 !important;
+  font-weight: 600 !important;
+}
+.mas-checkpoints .mas-current i {
+  color: #F59E0B !important;
+}
+.mas-checkpoints .mas-done .mas-stamp {
+  border-color: #10B981 !important;
+  color: #34D399 !important;
+  background: rgba(16, 185, 129, 0.15) !important;
+}
+.mas-reward {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(13, 16, 23, 0.8) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  border-radius: 12px !important;
+  padding: 14px 16px !important;
+}
+.mas-reward > span {
+  color: #F59E0B !important;
+  font-weight: 700 !important;
+  font-size: 10px !important;
+  letter-spacing: 0.08em !important;
+}
+.mas-reward > strong {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  font-size: 20px !important;
+}
+.mas-reward > strong b {
+  color: #F59E0B !important;
+}
+.mas-reward > p {
+  color: #94A3B8 !important;
+  font-size: 11px !important;
+}
+.mas-primary {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%) !important;
+  color: #0A0B0E !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35) !important;
+}

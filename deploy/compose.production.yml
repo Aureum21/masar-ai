@@ -1,0 +1,85 @@
+name: masar
+services:
+  api:
+    image: masar-backend:${MASAR_IMAGE_TAG:-local}
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    env_file: ${MASAR_ENV_FILE:-./production.env}
+    environment:
+      MASAR_ENV: production
+      CHECKPOINT_BACKEND: postgres
+      PASSPORT_EVIDENCE_DIR: /var/lib/masar/evidence
+      WORKER_HEARTBEAT_FILE: /tmp/masar-worker-heartbeat
+      LANGGRAPH_STRICT_MSGPACK: 'true'
+    command: [uvicorn, main:app, --host, 0.0.0.0, --port, '8000', --workers, '1', --no-server-header, --proxy-headers, --forwarded-allow-ips, '172.30.0.10']
+    init: true
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ['/tmp:size=64m,mode=1777']
+    volumes: [evidence:/var/lib/masar/evidence]
+    networks:
+      backend:
+        ipv4_address: 172.30.0.11
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=6)"]
+      interval: 30s
+      timeout: 8s
+      start_period: 40s
+      retries: 3
+    stop_grace_period: 30s
+    logging: &logging
+      driver: json-file
+      options: {max-size: 10m, max-file: '3'}
+  worker:
+    image: masar-backend:${MASAR_IMAGE_TAG:-local}
+    env_file: ${MASAR_ENV_FILE:-./production.env}
+    environment:
+      MASAR_ENV: production
+      CHECKPOINT_BACKEND: postgres
+      PASSPORT_EVIDENCE_DIR: /var/lib/masar/evidence
+      WORKER_HEARTBEAT_FILE: /tmp/masar-worker-heartbeat
+      LANGGRAPH_STRICT_MSGPACK: 'true'
+    command: [python, -m, tools.planning_worker]
+    init: true
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ['/tmp:size=64m,mode=1777']
+    volumes: [evidence:/var/lib/masar/evidence]
+    networks: [backend]
+    healthcheck:
+      test: [CMD, python, -m, tools.worker_health]
+      interval: 30s
+      timeout: 5s
+      start_period: 40s
+      retries: 3
+    stop_grace_period: 30s
+    logging: *logging
+  proxy:
+    image: caddy:2-alpine@sha256:eb4d35b7452d1ab6171fbdbe8d9275b2301dad6dad92115d91e19fb9b24d510f
+    environment:
+      API_DOMAIN: ${API_DOMAIN:?Set API_DOMAIN to the API hostname}
+      TLS_EMAIL: ${TLS_EMAIL:?Set TLS_EMAIL for certificate renewal notices}
+    ports: ['80:80', '443:443']
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      backend:
+        ipv4_address: 172.30.0.10
+    restart: unless-stopped
+    security_opt: [no-new-privileges:true]
+    logging: *logging
+networks:
+  backend:
+    ipam:
+      config: [{subnet: 172.30.0.0/24}]
+volumes:
+  evidence:
+  caddy_data:
+  caddy_config:

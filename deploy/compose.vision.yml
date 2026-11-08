@@ -1,0 +1,40 @@
+# Optional overlay. The normal API/planner images never install model runtimes.
+services:
+  evidence-worker:
+    image: masar-vision:${MASAR_IMAGE_TAG:-local}
+    build:
+      context: ..
+      dockerfile: Dockerfile.vision
+      args:
+        BASE_IMAGE: masar-backend:${MASAR_IMAGE_TAG:-local}
+    env_file: ${MASAR_ENV_FILE:-./production.env}
+    environment:
+      MASAR_ENV: production
+      PASSPORT_EVIDENCE_DIR: /var/lib/masar/evidence
+      PASSPORT_VISION_CACHE: /var/lib/masar/vision
+      EVIDENCE_HEARTBEAT_FILE: /tmp/masar-evidence-heartbeat
+    command: [python, -m, tools.evidence_worker]
+    depends_on:
+      api: {condition: service_healthy}
+    init: true
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ['/tmp:size=256m,mode=1777']
+    volumes: [evidence:/var/lib/masar/evidence, vision_cache:/var/lib/masar/vision]
+    networks: [backend]
+    mem_limit: 3g
+    cpus: 1.5
+    healthcheck:
+      test: [CMD, python, -m, tools.evidence_health]
+      interval: 30s
+      timeout: 5s
+      start_period: 90s
+      retries: 3
+    stop_grace_period: 30s
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: '3'}
+volumes:
+  vision_cache:

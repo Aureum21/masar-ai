@@ -1,0 +1,244 @@
+{
+  "kite-beach": {
+    "step_free_entrance": {
+      "value": true,
+      "status": "reported",
+      "source": "Visit Dubai",
+      "source_url": "https://www.visitdubai.com/en/articles/accessible-attractions-in-dubai",
+      "last_checked": "2026-10-30",
+      "note": "Access ramp and level parking approach reported; confirm the route to your viewpoint."
+    },
+    "accessible_toilets": {
+      "value": true,
+      "status": "reported",
+      "source": "Visit Dubai",
+      "source_url": "https://www.visitdubai.com/en/articles/accessible-attractions-in-dubai",
+      "last_checked": "2026-10-30",
+      "note": "Adapted bathroom stalls reported; check availability before visiting."
+    }
+  },
+  "burj-khalifa": {
+    "step_free_entrance": {
+      "value": true,
+      "status": "reported",
+      "source": "At the Top, Burj Khalifa",
+      "source_url": "https://ticket.atthetop.ae/frequently-asked-questions/",
+      "last_checked": "2026-10-30",
+      "note": "The operator reports wheelchair access throughout At the Top. This applies to that visitor experience, not every Burj Khalifa venue; confirm arrival arrangements."
+    }
+  },
+  "museum-of-the-future": {
+    "step_free_entrance": {
+      "value": true,
+      "status": "reported",
+      "source": "Visit Dubai",
+      "source_url": "https://www.visitdubai.com/en/articles/accessible-travel-itineraries",
+      "last_checked": "2026-10-30",
+      "note": "Step-free museum access reported. This is a facilities report, not confirmation that the museum is open; check current operating status."
+    },
+    "lift": {
+      "value": true,
+      "status": "reported",
+      "source": "Visit Dubai",
+      "source_url": "https://www.visitdubai.com/en/articles/accessible-travel-itineraries",
+      "last_checked": "2026-10-30",
+      "note": "Spacious elevators reported; confirm equipment availability and the exhibition route."
+    }
+  },
+  "al-fahidi": {
+    "surface": {
+      "value": "Mostly flat neighbourhood routes",
+      "status": "reported",
+      "source": "Visit Dubai",
+      "source_url": "https://www.visitdubai.com/en/articles/accessible-travel-itineraries",
+      "last_checked": "2026-10-30",
+      "note": "Wheelchair navigation reported for the neighbourhood; individual buildings and thresholds need separate checks."
+    }
+  },
+  "dubai-frame": {
+    "lift": {
+      "value": true,
+      "status": "reported",
+      "source": "Visit Dubai",
+      "source_url": "https://www.visitdubai.com/en/articles/accessible-travel-itineraries",
+      "last_checked": "2026-10-30",
+      "note": "An elevator serves the upper viewing area; confirm the complete route from Zabeel Park Gate 4."
+    }
+  },
+  "sunset-beach-dubai": {
+    "surface": {
+      "value": "Dedicated pathway through sand at Umm Suqeim beach",
+      "status": "reported",
+      "source": "Visit Dubai",
+      "source_url": "https://www.visitdubai.com/en/articles/accessibility-guide-dubai",
+      "last_checked": "2026-10-30",
+      "note": "The report names Umm Suqeim beach. Confirm the exact access point serving Sunset Beach; this does not establish access across all sand or into the water."
+    }
+  },
+  "louvre-abu-dhabi": {
+    "step_free_entrance": {
+      "value": true,
+      "status": "reported",
+      "source": "Experience Abu Dhabi",
+      "source_url": "https://visitabudhabi.ae/en/things-to-do/culture/museums-and-art/louvre-abu-dhabi",
+      "last_checked": "2026-10-30",
+      "note": "Step-free routes reported throughout the museum. Confirm any separately booked activities."
+    },
+    "assistance_contact": {
+      "value": "Museum staff; wheelchair loan desk opposite the Boutique",
+      "status": "reported",
+      "source": "Louvre Abu Dhabi",
+      "source_url": "https://www.louvreabudhabi.ae/en/visit/plan-your-visit/services",
+      "last_checked": "2026-10-30",
+      "note": "Complimentary wheelchair loans and interpretation support reported; equipment is subject to availability."
+    }
+  },
+  "sheikh-zayed-grand-mosque": {
+    "surface": {
+      "value": "Paved wheelchair paths and lanes",
+      "status": "reported",
+      "source": "Sheikh Zayed Grand Mosque Centre",
+      "source_url": "https://szgmc.gov.ae/en/worshippers/en-v-services-%26-facilities",
+      "last_checked": "2026-10-30",
+      "note": "Designated paths reported; confirm the route from your parking or drop-off point."
+    },
+    "assistance_contact": {
+      "value": "Security personnel; +971 2 4191919",
+      "status": "reported",
+      "source": "Sheikh Zayed Grand Mosque Centre",
+      "source_url": "https://szgmc.gov.ae/en/worshippers/en-to-faqs",
+      "last_checked": "2026-10-30",
+      "note": "Wheelchairs can be requested; club cars connect parking with the tour starting point. Confirm transfer suitability."
+    }
+  },
+  "qasr-al-watan": {
+    "assistance_contact": {
+      "value": "Contact Centre: +971 600 544 442",
+      "status": "reported",
+      "source": "Qasr Al Watan",
+      "source_url": "https://www.qasralwatan.ae/en/faq",
+      "last_checked": "2026-10-30",
+      "note": "The FAQ reports wheelchair provision for People of Determination and elderly visitors. Contact the venue about loans and the visitor route; adapted toilets and lifts are not established by this report."
+    }
+  },
+  "qasr-al-hosn": {
+    "assistance_contact": {
+      "value": "Visitor experience specialists at the ticketing point",
+      "status": "reported",
+      "source": "Etihad Airways",
+      "source_url": "https://www.etihad.com/en-ae/abu-dhabi/attractions/qasr-al-hosn",
+      "last_checked": "2026-10-30",
+      "note": "Etihad directs visitors to this team for access advice; individual entrance, toilet and lift details remain unverified."
+    }
+  },
+  "al-ain-oasis": {
+    "rest_seating": {
+      "value": true,
+      "status": "reported",
+      "source": "Experience Abu Dhabi",
+      "source_url": "https://visitabudhabi.ae/en/things-to-do/nature-and-wildlife/natural-wonders/al-ain-oasis",
+      "last_checked": "2026-10-30",
+      "note": "Benches are reported along the paths. Seating intervals and the distance to your chosen area are not specified."
+    }
+  },
+  "jubail-mangrove-park": {
+    "surface": {
+      "value": "Wheelchair-friendly boardwalks",
+      "status": "reported",
+      "source": "Etihad Airways",
+      "source_url": "https://www.etihad.com/en-gb/abu-dhabi/attractions/jubail-mangrove-park",
+      "last_checked": "2026-10-30",
+      "note": "Applies to the boardwalk visit; water activities and transfers require separate confirmation."
+    }
+  },
+  "sharjah-islamic-civilization": {
+    "step_free_entrance": {
+      "value": true,
+      "status": "reported",
+      "source": "Sharjah Museums Authority",
+      "source_url": "https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-Museum-of-Islamic-Civilization",
+      "last_checked": "2026-10-30",
+      "note": "A wheelchair entrance is listed; confirm the route from parking and any temporary restrictions."
+    },
+    "lift": {
+      "value": true,
+      "status": "reported",
+      "source": "Sharjah Museums Authority",
+      "source_url": "https://www.sharjahmuseums.ae/en-US/Museums/Sharjah-Museum-of-Islamic-Civilization",
+      "last_checked": "2026-10-30",
+      "note": "A lift is listed; confirm dimensions and operation for your mobility equipment."
+    },
+    "accessible_toilets": {
+      "value": true,
+      "status": "reported",
+      "source": "Sharjah24 / Sharjah Museums Authority",
+      "source_url": "https://cm.sharjah24.ae/en/Articles/2024/12/02/SMA-Champions-Accessibility-and-Inclusion-on-IDPWD",
+      "last_checked": "2026-10-30",
+      "note": "A December 2024 report of SMA facilities lists separate accessible restrooms; confirm their location and current availability at this museum."
+    }
+  },
+  "dhayah-fort": {
+    "step_free_entrance": {
+      "value": false,
+      "status": "reported",
+      "source": "Visit Ras Al Khaimah",
+      "source_url": "https://visitrasalkhaimah.com/discover/attractions/dhayah-fort/",
+      "last_checked": "2026-10-30",
+      "note": "The hilltop climb has 239 steps and is explicitly unsuitable for wheelchairs and mobility aids. This refers to the fort climb, not the surrounding area."
+    },
+    "surface": {
+      "value": "Uneven, rocky climb with 239 steps",
+      "status": "reported",
+      "source": "Visit Ras Al Khaimah",
+      "source_url": "https://visitrasalkhaimah.com/discover/attractions/dhayah-fort/",
+      "last_checked": "2026-10-30",
+      "note": "No step-free hilltop route is reported."
+    }
+  },
+  "palm-jumeirah-mall": {
+    "step_free_entrance": {
+      "value": true,
+      "status": "reported",
+      "source": "Palm Jumeirah Mall",
+      "source_url": "https://www.palmjumeirahmall.ae/en/about-us/faqs",
+      "last_checked": "2026-10-30",
+      "note": "Mall wheelchair access is reported. Ground Control activity areas, machines and transfers require separate checks."
+    },
+    "accessible_toilets": {
+      "value": true,
+      "status": "reported",
+      "source": "Palm Jumeirah Mall",
+      "source_url": "https://www.palmjumeirahmall.ae/en/about-us/faqs",
+      "last_checked": "2026-10-30",
+      "note": "Adapted mall restrooms are reported; confirm the nearest facility to Ground Control."
+    }
+  },
+  "dubai-festival-city-mall": {
+    "assistance_contact": {
+      "value": "Customer service at the VIP entrance or ground floor IKEA side",
+      "status": "reported",
+      "source": "Dubai Festival City Mall",
+      "source_url": "https://www.dubaifestivalcitymall.com/home/whats-inside/signature-service/customer%20services/%21ut/p/z0/hY3LDoIwFAV_RRYsya2I6BYxIcEQo8aId0MqVqhoq23x8feWxJ1GlyeZmQMIOaCgN15Rw6WgJ7u3GBb9cd_304BkJAsmZDFL5kEcDJeDNIQVVcUUIQX8wa1HXchXWZxVgBdqao-Lg4S84VI3-o9tX77bZauNPDPV00zdeMl0x_Hj9YoRYCmFYQ8D-f5QFky4pLaoS-41Ndr6mu_t0rwS1LSKee-ESz6jlybZeLh73iPHeQFoXv6O/",
+      "last_checked": "2026-10-30",
+      "note": "The mall lists wheelchair stations at basement parking lobbies, the VIP entrance, IKEA side and mezzanine. Confirm availability; Ground Control participation is not established by mall services."
+    }
+  },
+  "corniche-beach": {
+    "surface": {
+      "value": "Accessible walkways and tactile guidance paths near Gate 3",
+      "status": "reported",
+      "source": "Abu Dhabi City Municipality",
+      "source_url": "https://www.dmt.gov.ae/en/adm/Media-Centre/News/18Apr2025",
+      "last_checked": "2026-10-30",
+      "note": "Applies to the designated visually impaired beach area; confirm eligibility, access point and current arrangements rather than assuming the whole Corniche has the same facilities."
+    },
+    "accessible_toilets": {
+      "value": true,
+      "status": "reported",
+      "source": "Abu Dhabi City Municipality",
+      "source_url": "https://www.dmt.gov.ae/en/adm/Media-Centre/News/18Apr2025",
+      "last_checked": "2026-10-30",
+      "note": "Dedicated adapted restrooms are reported for the designated visually impaired beach area near Gate 3, not every Corniche entrance."
+    }
+  }
+}

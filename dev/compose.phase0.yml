@@ -1,0 +1,20 @@
+# Disposable local test DB only. No app service, provider keys or production URL.
+# No image downloads: uses the already installed postgres:17 image.
+services:
+  postgres:
+    image: postgres:17
+    pull_policy: never
+    ports:
+      - "127.0.0.1:55432:5432"
+    environment:
+      POSTGRES_DB: masar_phase0
+      POSTGRES_USER: masar_phase0
+      POSTGRES_PASSWORD: local_test_only
+    tmpfs:
+      - /var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U masar_phase0 -d masar_phase0"]
+      interval: 2s
+      timeout: 3s
+      retries: 15
+    restart: "no"

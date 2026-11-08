@@ -1,0 +1,1820 @@
+[
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\chat\\page.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\explore\\page.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\forgot-password\\page.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 70,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 74,
+        "endColumn": 15
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\layout.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\login\\page.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 71,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 75,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "react/no-unescaped-entities",
+        "severity": 2,
+        "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+        "line": 202,
+        "column": 14,
+        "nodeType": "JSXText",
+        "messageId": "unescapedEntityAlts",
+        "suggestions": [
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&apos;"
+            },
+            "fix": {
+              "range": [
+                7558,
+                7595
+              ],
+              "text": "\n          Don&apos;t have an account yet?"
+            },
+            "desc": "Replace with `&apos;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&lsquo;"
+            },
+            "fix": {
+              "range": [
+                7558,
+                7595
+              ],
+              "text": "\n          Don&lsquo;t have an account yet?"
+            },
+            "desc": "Replace with `&lsquo;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&#39;"
+            },
+            "fix": {
+              "range": [
+                7558,
+                7595
+              ],
+              "text": "\n          Don&#39;t have an account yet?"
+            },
+            "desc": "Replace with `&#39;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&rsquo;"
+            },
+            "fix": {
+              "range": [
+                7558,
+                7595
+              ],
+              "text": "\n          Don&rsquo;t have an account yet?"
+            },
+            "desc": "Replace with `&rsquo;`."
+          }
+        ]
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\onboarding\\page.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 268,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 272,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "react/no-unescaped-entities",
+        "severity": 2,
+        "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+        "line": 359,
+        "column": 23,
+        "nodeType": "JSXText",
+        "messageId": "unescapedEntityAlts",
+        "suggestions": [
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&apos;"
+            },
+            "fix": {
+              "range": [
+                11231,
+                11291
+              ],
+              "text": "\n                  What&apos;s your trip budget?\n                "
+            },
+            "desc": "Replace with `&apos;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&lsquo;"
+            },
+            "fix": {
+              "range": [
+                11231,
+                11291
+              ],
+              "text": "\n                  What&lsquo;s your trip budget?\n                "
+            },
+            "desc": "Replace with `&lsquo;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&#39;"
+            },
+            "fix": {
+              "range": [
+                11231,
+                11291
+              ],
+              "text": "\n                  What&#39;s your trip budget?\n                "
+            },
+            "desc": "Replace with `&#39;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&rsquo;"
+            },
+            "fix": {
+              "range": [
+                11231,
+                11291
+              ],
+              "text": "\n                  What&rsquo;s your trip budget?\n                "
+            },
+            "desc": "Replace with `&rsquo;`."
+          }
+        ]
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\page.js",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 114,
+        "column": 11,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 123,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 650,
+        "column": 15,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 654,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 785,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 794,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 892,
+        "column": 17,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 896,
+        "endColumn": 19
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 4,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\preferences\\page.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 1086,
+        "column": 21,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 1096,
+        "endColumn": 23
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\profile\\page.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\reset-password\\page.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 63,
+        "column": 11,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 67,
+        "endColumn": 13
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\signup\\page.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 72,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 76,
+        "endColumn": 15
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\app\\trips\\page.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\auth\\ProtectedRoute.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 30,
+        "column": 11,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 39,
+        "endColumn": 13
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\BookingSummaryCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\EventCard.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 18,
+        "column": 9,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 23,
+        "endColumn": 11
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\FlightCard.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 13,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 18,
+        "endColumn": 15
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\FlightSearchForm.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\HotelCard.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 17,
+        "column": 9,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 21,
+        "endColumn": 11
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\InteractiveMap.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\ItineraryTimeline.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\MapComponent.jsx",
+    "messages": [
+      {
+        "ruleId": "react-hooks/exhaustive-deps",
+        "severity": 1,
+        "message": "React Hook useEffect has a missing dependency: 'bounds'. Either include it or remove the dependency array.",
+        "line": 72,
+        "column": 6,
+        "nodeType": "ArrayExpression",
+        "endLine": 72,
+        "endColumn": 35,
+        "suggestions": [
+          {
+            "desc": "Update the dependencies array to be: [bounds, map]",
+            "fix": {
+              "range": [
+                2138,
+                2167
+              ],
+              "text": "[bounds, map]"
+            }
+          }
+        ]
+      },
+      {
+        "ruleId": "react-hooks/exhaustive-deps",
+        "severity": 1,
+        "message": "React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked.",
+        "line": 72,
+        "column": 7,
+        "nodeType": "CallExpression",
+        "endLine": 72,
+        "endColumn": 29
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 2,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\OfficialInfoAlert.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\RoomCard.jsx",
+    "messages": [
+      {
+        "ruleId": "react-hooks/set-state-in-effect",
+        "severity": 2,
+        "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  20 |\n  21 |   useEffect(() => {\n> 22 |     setMounted(true);\n     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect\n  23 |   }, []);\n  24 |\n  25 |   const defaultImg = \"https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80\";",
+        "line": 22,
+        "column": 5,
+        "nodeType": null,
+        "endLine": 22,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 97,
+        "column": 11,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 109,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 373,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 387,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 615,
+        "column": 23,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 619,
+        "endColumn": 25
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 3,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\RouteCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\TripDetailModal.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 87,
+        "column": 17,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 94,
+        "endColumn": 19
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\cards\\WeatherBadge.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\chat\\BookingCheckoutCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\chat\\ChatInput.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\chat\\HeroIllustration.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 20,
+        "column": 9,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 32,
+        "endColumn": 11
+      },
+      {
+        "ruleId": "react/no-unescaped-entities",
+        "severity": 2,
+        "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+        "line": 40,
+        "column": 21,
+        "nodeType": "JSXText",
+        "messageId": "unescapedEntityAlts",
+        "suggestions": [
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&apos;"
+            },
+            "fix": {
+              "range": [
+                1423,
+                1546
+              ],
+              "text": "\n        Hey there, I&apos;m here to assist you in planning your experience. \n        Ask me anything UAE travel related.\n      "
+            },
+            "desc": "Replace with `&apos;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&lsquo;"
+            },
+            "fix": {
+              "range": [
+                1423,
+                1546
+              ],
+              "text": "\n        Hey there, I&lsquo;m here to assist you in planning your experience. \n        Ask me anything UAE travel related.\n      "
+            },
+            "desc": "Replace with `&lsquo;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&#39;"
+            },
+            "fix": {
+              "range": [
+                1423,
+                1546
+              ],
+              "text": "\n        Hey there, I&#39;m here to assist you in planning your experience. \n        Ask me anything UAE travel related.\n      "
+            },
+            "desc": "Replace with `&#39;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&rsquo;"
+            },
+            "fix": {
+              "range": [
+                1423,
+                1546
+              ],
+              "text": "\n        Hey there, I&rsquo;m here to assist you in planning your experience. \n        Ask me anything UAE travel related.\n      "
+            },
+            "desc": "Replace with `&rsquo;`."
+          }
+        ]
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\chat\\LuxuryOrchestrationLoader.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 324,
+        "column": 15,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 333,
+        "endColumn": 17
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\chat\\MessageBubble.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 127,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 132,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 196,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 201,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 271,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 276,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "react-hooks/rules-of-hooks",
+        "severity": 2,
+        "message": "React Hook \"useState\" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?",
+        "line": 424,
+        "column": 51,
+        "nodeType": "Identifier",
+        "endLine": 424,
+        "endColumn": 59
+      },
+      {
+        "ruleId": "react-hooks/rules-of-hooks",
+        "severity": 2,
+        "message": "React Hook \"useEffect\" is called conditionally. React Hooks must be called in the exact same order in every component render. Did you accidentally call a React Hook after an early return?",
+        "line": 426,
+        "column": 3,
+        "nodeType": "Identifier",
+        "endLine": 426,
+        "endColumn": 12
+      },
+      {
+        "ruleId": "react-hooks/set-state-in-effect",
+        "severity": 2,
+        "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  426 |   useEffect(() => {\n  427 |     if (!animate) {\n> 428 |       setDisplayedContent(cleanContent);\n      |       ^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  429 |       return;\n  430 |     }\n  431 |",
+        "line": 428,
+        "column": 7,
+        "nodeType": null,
+        "endLine": 428,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 474,
+        "column": 11,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 483,
+        "endColumn": 13
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 3,
+    "fatalErrorCount": 0,
+    "warningCount": 4,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\chat\\StatusIndicator.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\chat\\SuggestionChips.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\explore\\ExploreFilterModal.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\explore\\ExploreMap.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\explore\\ExploreMapInner.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 184,
+        "column": 23,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 188,
+        "endColumn": 25
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\explore\\ExplorePlaceCard.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 113,
+        "column": 9,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 123,
+        "endColumn": 11
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\landing\\HeroInteractiveStage.jsx",
+    "messages": [
+      {
+        "ruleId": "react-hooks/set-state-in-effect",
+        "severity": 2,
+        "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  100 |   // Typewriter effect\n  101 |   useEffect(() => {\n> 102 |     setDisplayedText('');\n      |     ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  103 |     const currentText = currentStage.typingText;\n  104 |     let charIndex = 0;\n  105 |",
+        "line": 102,
+        "column": 5,
+        "nodeType": null,
+        "endLine": 102,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 549,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 558,
+        "endColumn": 15
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\landing\\WorkflowOrchestrationStage.jsx",
+    "messages": [
+      {
+        "ruleId": "react-hooks/set-state-in-effect",
+        "severity": 2,
+        "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  279 |   useEffect(() => {\n  280 |     if (activeStep !== 0) {\n> 281 |       setTypedPrompt(\"\");\n      |       ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  282 |       setChatStage(\"typing\");\n  283 |       setThinkingMilestone(0);\n  284 |       return;",
+        "line": 281,
+        "column": 7,
+        "nodeType": null,
+        "endLine": 281,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 1232,
+        "column": 23,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 1240,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 1373,
+        "column": 23,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 1381,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 1849,
+        "column": 25,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 1860,
+        "endColumn": 27
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 3,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\layout\\ContextPanel.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 487,
+        "column": 29,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 492,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "react/jsx-no-undef",
+        "severity": 2,
+        "message": "'ShieldCheck' is not defined.",
+        "line": 568,
+        "column": 22,
+        "nodeType": "JSXIdentifier",
+        "messageId": "undefined",
+        "endLine": 568,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 605,
+        "column": 17,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 605,
+        "endColumn": 58
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 666,
+        "column": 17,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 666,
+        "endColumn": 60
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 706,
+        "column": 17,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 706,
+        "endColumn": 58
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 4,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\layout\\Header.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 14,
+        "column": 11,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 18,
+        "endColumn": 13
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\layout\\LandingPage.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 12,
+        "column": 11,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 16,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "react/no-unescaped-entities",
+        "severity": 2,
+        "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+        "line": 77,
+        "column": 33,
+        "nodeType": "JSXText",
+        "messageId": "unescapedEntityAlts",
+        "suggestions": [
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&apos;"
+            },
+            "fix": {
+              "range": [
+                4273,
+                4435
+              ],
+              "text": "\n                Tell us what you&apos;re looking for. Whether it's a luxury desert retreat, a culinary tour of Dubai, or cultural immersion in Sharjah.\n              "
+            },
+            "desc": "Replace with `&apos;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&lsquo;"
+            },
+            "fix": {
+              "range": [
+                4273,
+                4435
+              ],
+              "text": "\n                Tell us what you&lsquo;re looking for. Whether it's a luxury desert retreat, a culinary tour of Dubai, or cultural immersion in Sharjah.\n              "
+            },
+            "desc": "Replace with `&lsquo;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&#39;"
+            },
+            "fix": {
+              "range": [
+                4273,
+                4435
+              ],
+              "text": "\n                Tell us what you&#39;re looking for. Whether it's a luxury desert retreat, a culinary tour of Dubai, or cultural immersion in Sharjah.\n              "
+            },
+            "desc": "Replace with `&#39;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&rsquo;"
+            },
+            "fix": {
+              "range": [
+                4273,
+                4435
+              ],
+              "text": "\n                Tell us what you&rsquo;re looking for. Whether it's a luxury desert retreat, a culinary tour of Dubai, or cultural immersion in Sharjah.\n              "
+            },
+            "desc": "Replace with `&rsquo;`."
+          }
+        ]
+      },
+      {
+        "ruleId": "react/no-unescaped-entities",
+        "severity": 2,
+        "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+        "line": 77,
+        "column": 60,
+        "nodeType": "JSXText",
+        "messageId": "unescapedEntityAlts",
+        "suggestions": [
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&apos;"
+            },
+            "fix": {
+              "range": [
+                4273,
+                4435
+              ],
+              "text": "\n                Tell us what you're looking for. Whether it&apos;s a luxury desert retreat, a culinary tour of Dubai, or cultural immersion in Sharjah.\n              "
+            },
+            "desc": "Replace with `&apos;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&lsquo;"
+            },
+            "fix": {
+              "range": [
+                4273,
+                4435
+              ],
+              "text": "\n                Tell us what you're looking for. Whether it&lsquo;s a luxury desert retreat, a culinary tour of Dubai, or cultural immersion in Sharjah.\n              "
+            },
+            "desc": "Replace with `&lsquo;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&#39;"
+            },
+            "fix": {
+              "range": [
+                4273,
+                4435
+              ],
+              "text": "\n                Tell us what you're looking for. Whether it&#39;s a luxury desert retreat, a culinary tour of Dubai, or cultural immersion in Sharjah.\n              "
+            },
+            "desc": "Replace with `&#39;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&rsquo;"
+            },
+            "fix": {
+              "range": [
+                4273,
+                4435
+              ],
+              "text": "\n                Tell us what you're looking for. Whether it&rsquo;s a luxury desert retreat, a culinary tour of Dubai, or cultural immersion in Sharjah.\n              "
+            },
+            "desc": "Replace with `&rsquo;`."
+          }
+        ]
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 2,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\layout\\Sidebar.jsx",
+    "messages": [
+      {
+        "ruleId": "react-hooks/set-state-in-effect",
+        "severity": 2,
+        "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  49 |\n  50 |   useEffect(() => {\n> 51 |     fetchConversations();\n     |     ^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect\n  52 |     \n  53 |     // Listen for custom event from useChat to refresh\n  54 |     window.addEventListener('refresh_conversations', fetchConversations);",
+        "line": 51,
+        "column": 5,
+        "nodeType": null,
+        "endLine": 51,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "react-hooks/exhaustive-deps",
+        "severity": 1,
+        "message": "React Hook useEffect has a missing dependency: 'fetchConversations'. Either include it or remove the dependency array.",
+        "line": 56,
+        "column": 6,
+        "nodeType": "ArrayExpression",
+        "endLine": 56,
+        "endColumn": 13,
+        "suggestions": [
+          {
+            "desc": "Update the dependencies array to be: [fetchConversations, token]",
+            "fix": {
+              "range": [
+                1598,
+                1605
+              ],
+              "text": "[fetchConversations, token]"
+            }
+          }
+        ]
+      },
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 81,
+        "column": 13,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 90,
+        "endColumn": 15
+      },
+      {
+        "ruleId": "@next/next/no-location-assign-relative-destination",
+        "severity": 1,
+        "message": "Do not use `window.location.href` to navigate to internal Next.js pages. Use `redirect()` in the render phase, or `useRouter().push()` in Client Components' event handlers instead. See: https://nextjs.org/docs/messages/no-location-assign-relative-destination",
+        "line": 143,
+        "column": 40,
+        "nodeType": "AssignmentExpression",
+        "messageId": "noLocationAssign",
+        "endLine": 143,
+        "endColumn": 70
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 3,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\layout\\TopFilterBar.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\trips\\BookingVoucherModal.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 90,
+        "column": 11,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 94,
+        "endColumn": 13
+      },
+      {
+        "ruleId": "react/no-unescaped-entities",
+        "severity": 2,
+        "message": "`'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.",
+        "line": 274,
+        "column": 235,
+        "nodeType": "JSXText",
+        "messageId": "unescapedEntityAlts",
+        "suggestions": [
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&apos;"
+            },
+            "fix": {
+              "range": [
+                10310,
+                10508
+              ],
+              "text": " Please present a valid Emirates ID or Passport upon check-in along with this digital confirmation voucher. Your reservation has been pre-confirmed via Masar AI&apos;s hospitality integration.\n          "
+            },
+            "desc": "Replace with `&apos;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&lsquo;"
+            },
+            "fix": {
+              "range": [
+                10310,
+                10508
+              ],
+              "text": " Please present a valid Emirates ID or Passport upon check-in along with this digital confirmation voucher. Your reservation has been pre-confirmed via Masar AI&lsquo;s hospitality integration.\n          "
+            },
+            "desc": "Replace with `&lsquo;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&#39;"
+            },
+            "fix": {
+              "range": [
+                10310,
+                10508
+              ],
+              "text": " Please present a valid Emirates ID or Passport upon check-in along with this digital confirmation voucher. Your reservation has been pre-confirmed via Masar AI&#39;s hospitality integration.\n          "
+            },
+            "desc": "Replace with `&#39;`."
+          },
+          {
+            "messageId": "replaceWithAlt",
+            "data": {
+              "alt": "&rsquo;"
+            },
+            "fix": {
+              "range": [
+                10310,
+                10508
+              ],
+              "text": " Please present a valid Emirates ID or Passport upon check-in along with this digital confirmation voucher. Your reservation has been pre-confirmed via Masar AI&rsquo;s hospitality integration.\n          "
+            },
+            "desc": "Replace with `&rsquo;`."
+          }
+        ]
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\trips\\ConfirmedStayCard.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 69,
+        "column": 9,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 82,
+        "endColumn": 11
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\trips\\DirectCheckoutModal.jsx",
+    "messages": [
+      {
+        "ruleId": "react-hooks/rules-of-hooks",
+        "severity": 2,
+        "message": "React Hook \"useState\" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+        "line": 22,
+        "column": 33,
+        "nodeType": "Identifier",
+        "endLine": 22,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "react-hooks/rules-of-hooks",
+        "severity": 2,
+        "message": "React Hook \"useState\" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+        "line": 23,
+        "column": 33,
+        "nodeType": "Identifier",
+        "endLine": 23,
+        "endColumn": 41
+      },
+      {
+        "ruleId": "react-hooks/rules-of-hooks",
+        "severity": 2,
+        "message": "React Hook \"useState\" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+        "line": 24,
+        "column": 29,
+        "nodeType": "Identifier",
+        "endLine": 24,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "react-hooks/rules-of-hooks",
+        "severity": 2,
+        "message": "React Hook \"useAuth\" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+        "line": 25,
+        "column": 27,
+        "nodeType": "Identifier",
+        "endLine": 25,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "react-hooks/rules-of-hooks",
+        "severity": 2,
+        "message": "React Hook \"useState\" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+        "line": 28,
+        "column": 35,
+        "nodeType": "Identifier",
+        "endLine": 28,
+        "endColumn": 43
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 5,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\trips\\InteractiveTripCalendar.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\trips\\RateHoldCard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\trips\\SavedItineraryCard.jsx",
+    "messages": [
+      {
+        "ruleId": "@next/next/no-img-element",
+        "severity": 1,
+        "message": "Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element",
+        "line": 209,
+        "column": 9,
+        "nodeType": "JSXOpeningElement",
+        "endLine": 222,
+        "endColumn": 11
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\ui\\Badge.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\ui\\DynamicMap.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\ui\\MapClient.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\ui\\Skeleton.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\ui\\StarRating.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\components\\ui\\ThemeToggle.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\context\\AuthContext.jsx",
+    "messages": [
+      {
+        "ruleId": "react-hooks/set-state-in-effect",
+        "severity": 2,
+        "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  38 |       const storedEmail = localStorage.getItem(\"masar_user_email\");\n  39 |       if (storedToken) {\n> 40 |         setToken(storedToken);\n     |         ^^^^^^^^ Avoid calling setState() directly within an effect\n  41 |         setUserEmail(storedEmail);\n  42 |       }\n  43 |     } catch (e) {",
+        "line": 40,
+        "column": 9,
+        "nodeType": null,
+        "endLine": 40,
+        "endColumn": 17
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\context\\ThemeContext.jsx",
+    "messages": [
+      {
+        "ruleId": "react-hooks/set-state-in-effect",
+        "severity": 2,
+        "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  17 |     const savedTheme = localStorage.getItem('masar_theme');\n  18 |     if (savedTheme === 'light') {\n> 19 |       setTheme('light');\n     |       ^^^^^^^^ Avoid calling setState() directly within an effect\n  20 |       document.documentElement.setAttribute('data-theme', 'light');\n  21 |       document.documentElement.classList.add('theme-light');\n  22 |     } else {",
+        "line": 19,
+        "column": 7,
+        "nodeType": null,
+        "endLine": 19,
+        "endColumn": 15
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\data\\exploreData.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\hooks\\useBookings.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\hooks\\useChat.js",
+    "messages": [
+      {
+        "ruleId": "react-hooks/purity",
+        "severity": 2,
+        "message": "Error: Cannot call impure function during render\n\n`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).\n\n  13 |  */\n  14 | export function useChat(initialThreadId) {\n> 15 |   const [threadId, setThreadId] = useState(initialThreadId || `thread_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);\n     |                                                                         ^^^^^^^^^^ Cannot call impure function\n  16 |   const [messages, setMessages] = useState([]);\n  17 |   const [statusUpdates, setStatusUpdates] = useState([]);\n  18 |   const [workerResults, setWorkerResults] = useState([]);",
+        "line": 15,
+        "column": 73,
+        "nodeType": null,
+        "endLine": 15,
+        "endColumn": 83
+      },
+      {
+        "ruleId": "react-hooks/purity",
+        "severity": 2,
+        "message": "Error: Cannot call impure function during render\n\n`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).\n\n  13 |  */\n  14 | export function useChat(initialThreadId) {\n> 15 |   const [threadId, setThreadId] = useState(initialThreadId || `thread_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);\n     |                                                                                       ^^^^^^^^^^^^^ Cannot call impure function\n  16 |   const [messages, setMessages] = useState([]);\n  17 |   const [statusUpdates, setStatusUpdates] = useState([]);\n  18 |   const [workerResults, setWorkerResults] = useState([]);",
+        "line": 15,
+        "column": 87,
+        "nodeType": null,
+        "endLine": 15,
+        "endColumn": 100
+      },
+      {
+        "ruleId": "react-hooks/exhaustive-deps",
+        "severity": 1,
+        "message": "React Hook useCallback has missing dependencies: 'threadId', 'token', and 'userEmail'. Either include them or remove the dependency array.",
+        "line": 378,
+        "column": 6,
+        "nodeType": "ArrayExpression",
+        "endLine": 378,
+        "endColumn": 19,
+        "suggestions": [
+          {
+            "desc": "Update the dependencies array to be: [isStreaming, threadId, token, userEmail]",
+            "fix": {
+              "range": [
+                16439,
+                16452
+              ],
+              "text": "[isStreaming, threadId, token, userEmail]"
+            }
+          }
+        ]
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 2,
+    "fatalErrorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\hooks\\useTrips.js",
+    "messages": [
+      {
+        "ruleId": "react-hooks/set-state-in-effect",
+        "severity": 2,
+        "message": "Error: Calling setState synchronously within an effect can trigger cascading renders\n\nEffects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:\n* Update external systems with the latest state from React.\n* Subscribe for updates from some external system, calling setState in a callback function when external state changes.\n\nCalling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).\n\n  46 |\n  47 |   useEffect(() => {\n> 48 |     fetchTrips();\n     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect\n  49 |   }, [fetchTrips]);\n  50 |\n  51 |   const deleteTrip = useCallback(async (tripId) => {",
+        "line": 48,
+        "column": 5,
+        "nodeType": null,
+        "endLine": 48,
+        "endColumn": 15
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\utils\\destinationImages.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\utils\\hotelParser.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\efake\\Desktop\\MasarAI\\frontend\\src\\utils\\parseWorkerResult.js",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  }
+]

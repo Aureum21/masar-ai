@@ -1,0 +1,948 @@
+.pageContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #050a07;
+  background-image: radial-gradient(circle at 50% 10%, #15291e 0%, #0a130e 70%, #050a07 100%), url('/patterns/emirati-mashrabiya.svg');
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%, 80px 80px;
+  background-attachment: fixed;
+  color: #e5ede2;
+  font-family: inherit;
+}
+
+.contentWrapper {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 24px 64px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.titleArea h1 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #f7eacc;
+  margin: 8px 0 6px;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  color: #9ab09c;
+  font-size: 13.5px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.portalBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(212, 178, 113, 0.12);
+  border: 1px solid rgba(212, 178, 113, 0.35);
+  color: #eed6a8;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+/* ========================================================================= */
+/* STAGE 1: CAMERA HERO CARD (FRONT & CENTER GREETING)                      */
+/* ========================================================================= */
+.cameraHeroCard {
+  background: rgba(13, 26, 19, 0.7);
+  border: 1px solid rgba(212, 178, 113, 0.35);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75), 0 0 30px rgba(212, 178, 113, 0.08);
+  margin-bottom: 24px;
+}
+
+.heroViewfinder {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  min-height: 440px;
+  background: #000;
+  overflow: hidden;
+}
+
+.scannerVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Scanner HUD Overlay */
+.scannerHud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.hudTopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hudStatusTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(13, 26, 19, 0.88);
+  backdrop-filter: blur(10px);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  font-size: 11px;
+  font-weight: 700;
+  color: #eed6a8;
+  letter-spacing: 0.08em;
+}
+
+.hudPulseDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulseDot 1.4s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.hudCoords {
+  font-family: monospace;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* Center Reticle Frame */
+.heroReticle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(440px, 85%);
+  height: 280px;
+  border: 1px dashed rgba(245, 158, 11, 0.35);
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.reticleCornerTL, .reticleCornerTR, .reticleCornerBL, .reticleCornerBR {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-color: #f59e0b;
+}
+
+.reticleCornerTL { top: -2px; left: -2px; border-top: 3px solid #f59e0b; border-inline-start: 3px solid #f59e0b; border-top-left-radius: 12px; }
+.reticleCornerTR { top: -2px; right: -2px; border-top: 3px solid #f59e0b; border-inline-end: 3px solid #f59e0b; border-top-right-radius: 12px; }
+.reticleCornerBL { bottom: -2px; left: -2px; border-bottom: 3px solid #f59e0b; border-inline-start: 3px solid #f59e0b; border-bottom-left-radius: 12px; }
+.reticleCornerBR { bottom: -2px; right: -2px; border-bottom: 3px solid #f59e0b; border-inline-end: 3px solid #f59e0b; border-bottom-right-radius: 12px; }
+
+.laserScanLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #f59e0b;
+  box-shadow: 0 0 16px #f59e0b, 0 0 30px #f59e0b;
+  animation: sweepDown 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes sweepDown {
+  0% { top: 0%; opacity: 0.2; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { top: 100%; opacity: 0.2; }
+}
+
+.reticlePrompt {
+  background: rgba(13, 26, 19, 0.92);
+  border: 1px solid rgba(212, 178, 113, 0.5);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #eed6a8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+.cameraAlertBox {
+  align-self: center;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #fca5a5;
+  padding: 8px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.scanErrorBanner {
+  pointer-events: auto;
+  align-self: center;
+  max-width: 520px;
+  width: 90%;
+  background: rgba(22, 12, 14, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(239, 68, 68, 0.6);
+  border-radius: 14px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(239, 68, 68, 0.25);
+  animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+.errorIcon {
+  color: #ef4444;
+  flex-shrink: 0;
+}
+
+.scanErrorText {
+  flex: 1;
+}
+
+.scanErrorText strong {
+  display: block;
+  font-size: 13px;
+  color: #fca5a5;
+  margin-bottom: 2px;
+}
+
+.scanErrorText p {
+  font-size: 12px;
+  color: #e5e7eb;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.dismissBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e5e7eb;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.dismissBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Scanner Action Deck (Bottom of Camera) */
+.scannerActionDeck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 20px 24px;
+  background: rgba(10, 20, 15, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+}
+
+.heroScanButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 32px;
+  border-radius: 30px;
+  background: linear-gradient(115deg, #f8c74d, #e99c17);
+  color: #211704;
+  font-weight: 800;
+  font-size: 15px;
+  border: 1px solid #e9b64d;
+  cursor: pointer;
+  box-shadow: 0 3px 18px rgba(233, 156, 23, 0.25);
+  transition: all 0.2s ease;
+}
+
+.heroScanButton:hover:not(:disabled) {
+  transform: scale(1.04);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.6);
+}
+
+.heroScanButton:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.secondaryActionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e5ede2;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.secondaryActionBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(212, 178, 113, 0.4);
+}
+
+.sampleTestBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #eed6a8;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.sampleTestBtn:hover {
+  background: rgba(245, 158, 11, 0.28);
+  transform: scale(1.02);
+}
+
+/* ========================================================================= */
+/* STAGE 3: UNLOCKED BEFORE & AFTER HEADER & GRID                            */
+/* ========================================================================= */
+.unlockedHeaderBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: rgba(13, 26, 19, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 178, 113, 0.35);
+  border-radius: 18px;
+  padding: 16px 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.landmarkIdentity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.shieldIconBox {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landmarkTitleLine {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.landmarkTitleLine h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #f7eacc;
+  font-family: Georgia, serif;
+}
+
+.verifiedBadge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.matchScore {
+  font-size: 11px;
+  font-weight: 700;
+  color: #eed6a8;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.landmarkLocationText {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #9ab09c;
+}
+
+.returnCameraBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #eed6a8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.returnCameraBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(212, 178, 113, 0.4);
+}
+
+/* Portal Grid Layout */
+.portalGrid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 20px;
+  align-items: start;
+}
+
+.viewportCard {
+  background: rgba(13, 26, 19, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar Story Card */
+.sidebarCard {
+  background: rgba(13, 26, 19, 0.7);
+  border: 1px solid rgba(212, 178, 113, 0.25);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.storyHeader {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 14px;
+}
+
+.storyHeader p {
+  font-size: 11px;
+  color: #f59e0b;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.storyHeader h3 {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: #f7e6c4;
+  margin: 0 0 4px;
+}
+
+.storySubtitle {
+  font-size: 12px;
+  color: #9ab09c;
+}
+
+.storyBody {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #b5c7b3;
+}
+
+.storyBody p {
+  margin: 0 0 12px;
+}
+
+.highlightBox {
+  background: rgba(245, 158, 11, 0.1);
+  border-inline-start: 3px solid #f59e0b;
+  padding: 12px 14px;
+  border-radius: 0 8px 8px 0;
+  font-size: 12px;
+  color: #dfceab;
+  line-height: 1.6;
+}
+
+.gestureHintBox {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(212, 178, 113, 0.4);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #eed6a8;
+  font-weight: 500;
+}
+
+.stampRewardCard {
+  background: linear-gradient(135deg, #1b3324, #122118);
+  border: 1px solid rgba(212, 178, 113, 0.4);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stampRewardCard strong {
+  display: block;
+  font-size: 13px;
+  color: #f5e8cd;
+}
+
+.stampRewardCard span {
+  font-size: 11px;
+  color: #9cb19e;
+}
+
+.claimBtn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: linear-gradient(115deg, #f8c74d, #e99c17);
+  color: #211704;
+  font-weight: 750;
+  font-size: 13px;
+  border-radius: 10px;
+  border: 1px solid #e9b64d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 18px rgba(233, 156, 23, 0.2);
+}
+
+.claimBtn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+}
+
+.claimBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 960px) {
+  .portalGrid {
+    grid-template-columns: 1fr;
+  }
+  .heroViewfinder {
+    height: 400px;
+    min-height: 340px;
+  }
+}
+
+/* =========================================
+   11 UAE HERITAGE SITES CATALOG SECTION
+   ========================================= */
+
+.catalogSection {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(212, 178, 113, 0.15);
+}
+
+.catalogHeader {
+  margin-bottom: 24px;
+}
+
+.catalogBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #f59e0b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.catalogTitleArea h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f5f5f7;
+  margin: 0 0 6px;
+}
+
+.catalogTitleArea p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.emirateTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.emirateTab {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.emirateTab:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.4);
+  color: #fef3c7;
+}
+
+.emirateTabActive {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  border-color: #f59e0b;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.35);
+}
+
+.landmarkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.landmarkCard {
+  background: rgba(18, 30, 23, 0.85);
+  border: 1px solid rgba(212, 178, 113, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.landmarkCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(245, 158, 11, 0.2);
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #0f1712;
+}
+
+.cardThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.landmarkCard:hover .cardThumb {
+  transform: scale(1.06);
+}
+
+.cardImageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(18, 30, 23, 0.95) 0%, rgba(18, 30, 23, 0.2) 60%, transparent 100%);
+}
+
+.cardBadgesTop {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.emirateBadge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.foundedBadge {
+  background: rgba(13, 26, 19, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 178, 113, 0.4);
+  color: #eed6a8;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cardContent {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardTitles {
+  margin-bottom: 6px;
+}
+
+.cardTitles h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin: 0 0 2px;
+}
+
+.cardArabic {
+  font-size: 12px;
+  color: #f59e0b;
+  font-weight: 600;
+  direction: rtl;
+  display: block;
+}
+
+.cardLocation {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.cardSummary {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin: 0 0 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.cardFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+
+.featureTag {
+  font-size: 11px;
+  color: #a3b899;
+}
+
+.exploreCardBtn {
+  margin-top: auto;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 12px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fbbf24;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.exploreCardBtn:hover {
+  background: #f59e0b;
+  color: #0b1510;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+}
+
+/* Unlocked Header Extensions */
+.unlockedArabicBadge {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #f59e0b;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.unlockedEmirateBadge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.unlockedActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.quickSelectWrapper {
+  position: relative;
+}
+
+.landmarkDropdown {
+  background: rgba(18, 30, 23, 0.9);
+  border: 1px solid rgba(212, 178, 113, 0.4);
+  color: #eed6a8;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.landmarkDropdown:hover {
+  border-color: #f59e0b;
+}
+
+.architecturalFeaturesBox {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 178, 113, 0.25);
+  border-radius: 10px;
+}
+
+.architecturalFeaturesBox strong {
+  font-size: 12px;
+  color: #eed6a8;
+  display: block;
+}
+
+
+/* Shared MASAR palette and responsive app-shell integration. */
+.pageContainer { height: auto; min-height: 0; background: radial-gradient(ellipse at 15% 0%,#221a0d55,transparent 60%),#090a0c; color:#f8fafc; }
+.contentWrapper { box-sizing:border-box; min-width:0; }
+.titleArea h1,.header h1 { font-family:inherit; font-size:clamp(28px,3.2vw,44px); font-weight:800; letter-spacing:-.04em; margin:18px 0 12px; }
+.contentNotice { color:#a8b1bf; font-size:12px; line-height:1.8; border-inline-start:2px solid #ab8038; padding:8px 16px; margin:0 0 24px; }
+.recognitionPanel { display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:center; padding:28px; background:linear-gradient(120deg,#d4b2710d,#101318); border:1px solid #d4b27122; border-radius:24px; }
+.recognitionPanel h2 { font-size:24px; margin:16px 0 12px; }
+.recognitionPanel p { font-size:14px; line-height:1.7; color:#aeb9c9; }
+.cameraControls { min-width:0; }
+.cameraControls small { color:#8b99ac; font-size:11px; }
+.cameraPreview { width:100%; max-height:280px; border-radius:16px; object-fit:contain; background:#050608; }
+.cameraHidden { display:none; }
+.scannerActionDeck { flex-wrap:wrap; justify-content:flex-start; padding:16px 0; gap:12px; }
+.landmarkCard { text-align:start; color:inherit; font:inherit; cursor:pointer; background:#11151b; }
+.landmarkCard:focus-visible { outline:2px solid #e6b84f; outline-offset:4px; }
+.scanningNotice { min-height:300px; display:flex; gap:20px; align-items:center; justify-content:center; color:#e4bd70; }
+.scanningNotice button { padding:10px 16px; border:1px solid #d4b27144; border-radius:20px; }
+.scanSpin { animation:timeScan 4s linear infinite; }
+.unlockedHeaderBanner { flex-wrap:wrap; }
+.landmarkIdentity { min-width:0; }
+.landmarkIdentity h3 span { font-size:14px; font-weight:400; margin-inline-start:8px; }
+.landmarkIdentity small { display:block; color:#b3a075; margin-top:8px; font-size:11px; }
+.claimBtn { display:flex; gap:10px; text-decoration:none; justify-content:center; align-items:center; }
+@keyframes timeScan { to { transform:rotate(360deg); } }
+@media(max-width:800px) { .recognitionPanel { grid-template-columns:1fr; padding:20px; gap:16px; } .portalGrid { grid-template-columns:1fr; } .scanningNotice { flex-direction:column; } }
+@media(prefers-reduced-motion:reduce) { .scanSpin { animation:none; } }
+
+.landmarkGrid { grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr)); }
+
+.embeddedContainer {
+  width: 100%;
+  min-width: 0;
+  color: #e5ede2;
+}
+
+.embeddedContainer .contentWrapper {
+  padding: 0 0 32px;
+}
+
+@container (max-width: 850px) {
+  .embeddedContainer .recognitionPanel, .embeddedContainer .portalGrid { grid-template-columns:minmax(0,1fr); }
+  .embeddedContainer .recognitionPanel { padding:16px; gap:16px; }
+}

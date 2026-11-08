@@ -1,0 +1,49 @@
+# Disposable local deployment acceptance environment. No AWS or travel providers.
+name: masar-deploy-smoke
+x-runtime: &runtime
+  image: masar-backend:deployment-check
+  environment: &environment
+    MASAR_ENV: production
+    DATABASE_URL: postgresql://smoke:local_fixture_only@postgres:5432/masar_smoke
+    SECRET_KEY: isolated_smoke_signing_secret_never_use_in_production_0123456789
+    CORS_ORIGINS: https://app.example.com
+    frontend_url: https://app.example.com
+    API_ALLOWED_HOSTS: api.example.com
+    OPENAI_API_KEY: sk-test-fixture
+    NUTIEE_API_KEY: sand_isolated_no_provider_requests
+    TRAVEL_PROVIDER_ENVIRONMENT: sandbox
+    S3_BUCKET_NAME: isolated-no-aws-calls
+    AWS_EC2_METADATA_DISABLED: 'true'
+    AWS_DEFAULT_REGION: eu-north-1
+    CHECKPOINT_BACKEND: postgres
+    LANGGRAPH_STRICT_MSGPACK: 'true'
+    LANGSMITH_TRACING: 'false'
+    PASSPORT_EVIDENCE_DIR: /var/lib/masar/evidence
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  tmpfs: ['/tmp:size=64m,mode=1777']
+  volumes: [smoke_evidence:/var/lib/masar/evidence]
+services:
+  postgres:
+    image: postgres:17
+    pull_policy: never
+    environment:
+      POSTGRES_DB: masar_smoke
+      POSTGRES_USER: smoke
+      POSTGRES_PASSWORD: local_fixture_only
+    tmpfs: [/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U smoke -d masar_smoke']
+      interval: 2s
+      timeout: 3s
+      retries: 20
+  api:
+    <<: *runtime
+    ports: ['127.0.0.1:18080:8000']
+    command: [uvicorn, main:app, --host, 0.0.0.0, --port, '8000', --workers, '1', --no-server-header]
+  worker:
+    <<: *runtime
+    command: [python, -m, tools.planning_worker]
+volumes:
+  smoke_evidence:

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "status": "approved-scope-not-live-venue-catalogue",
+  "approvedOn": "2026-10-23",
+  "scope": "real-world-challenges-only; game destinations are separate",
+  "rules": {
+    "unknownChallengeTypesAllowed": false,
+    "newLandmarkCaptureDestinationsAllowed": false,
+    "targetMainChallengesPerEligibleDay": 1,
+    "allowSkipWhenNoEligibleDestination": true,
+    "previewCompletionAwardsPoints": false
+  },
+  "supported": [
+    {
+      "id": "heritage-detective",
+      "animation": "heritage",
+      "destinationPolicy": "exact-landmark-allowlist",
+      "landmarks": [
+        {"name": "Burj Khalifa", "animationLandmarkId": "burj"},
+        {"name": "Museum of the Future", "animationLandmarkId": "future"},
+        {"name": "Sheikh Zayed Grand Mosque", "animationLandmarkId": "mosque"}
+      ]
+    },
+    {
+      "id": "boxing",
+      "animation": "boxing",
+      "destinationPolicy": "mall-with-verified-punching-machine",
+      "verifiedVenues": []
+    },
+    {
+      "id": "bowling",
+      "animation": "bowling",
+      "destinationPolicy": "mall-with-verified-bowling-venue",
+      "verifiedVenues": []
+    },
+    {
+      "id": "sunset-seeker",
+      "animation": "sunset",
+      "destinationPolicy": "suitable-beach-with-valid-access-and-sunset-window",
+      "verifiedVenues": []
+    }
+  ],
+  "notes": [
+    "Scope document only; the current AI does not consume this file yet.",
+    "Canonical place IDs and eligibility checks will be implemented in later phases.",
+    "A matching animation is not proof of venue facilities, access or current availability.",
+    "Ticketed attraction products remain distinct from the landmark itself."
+  ]
+}

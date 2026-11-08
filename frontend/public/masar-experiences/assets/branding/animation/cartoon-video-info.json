@@ -1,0 +1,14 @@
+{
+  "source": "loading-logo-original-copy.webm",
+  "sourceSha256": "a2822a0dffcb33ac6ade6457e609069c2bddccbc884011df6060a27369979bb9",
+  "output": "loading-logo-cartoon-v1.webm",
+  "width": 1280,
+  "height": 720,
+  "frames": 115,
+  "fps": 30.0,
+  "durationSeconds": 3.8333333333333335,
+  "codec": "VP9 / WebM",
+  "audio": "None in source or output",
+  "method": "Local OpenCV video stylization: edge-preserving smoothing, warm saturation, cel bands, dark contours",
+  "outputBytes": 4662276
+}

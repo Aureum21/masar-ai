@@ -1,0 +1,212 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10050;
+  display: grid;
+  place-items: center;
+  padding: clamp(12px, 2vw, 24px);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  animation: masarModalFadeIn 0.25s ease-out;
+}
+
+.card {
+  width: min(450px, 100%);
+  padding: 32px 28px;
+  border-radius: 28px;
+  border: 1px solid rgba(212, 178, 113, 0.28);
+  background: radial-gradient(ellipse at 50% 0, rgba(212, 178, 113, 0.12), transparent 65%), #101216;
+  color: #f8fafc;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85), 0 0 50px rgba(240, 185, 95, 0.14);
+  animation: masarModalScaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
+
+.headerIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  color: #f59e0b;
+  margin-bottom: 18px;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.tripPill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 18px;
+}
+
+.tripPillIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(240, 185, 95, 0.15);
+  border: 1px solid rgba(240, 185, 95, 0.3);
+  display: grid;
+  place-items: center;
+  color: #f0b95f;
+  flex-shrink: 0;
+}
+
+.tripPillText {
+  min-width: 0;
+  flex: 1;
+}
+
+.tripPillLabel {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 2px;
+}
+
+.tripPillTitle {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #f8fafc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bulletList {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 24px;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bulletDotWarning {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f59e0b;
+  margin-top: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.4);
+}
+
+.bulletDotSafe {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  margin-top: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);
+}
+
+.bulletTextWarning {
+  color: #cbd5e1;
+}
+
+.bulletTextSafe {
+  color: #94a3b8;
+}
+
+.errorAlert {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.btnKeep {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.btnKeep:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.10);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.btnDelete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 12px;
+  border: 1px solid #e9b64d;
+  background: linear-gradient(115deg, #f8c74d, #e99c17);
+  color: #211704;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+  box-shadow: 0 3px 18px rgba(233, 156, 23, 0.18);
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  font-family: inherit;
+}
+
+.btnDelete:hover:not(:disabled) {
+  background: linear-gradient(115deg, #ffda79, #f2ac2e);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(233, 156, 23, 0.35);
+}
+
+.btnKeep:disabled,
+.btnDelete:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.card button:focus-visible {
+  outline: 2px solid #e9b64d;
+  outline-offset: 3px;
+}

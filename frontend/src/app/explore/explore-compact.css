@@ -1,0 +1,217 @@
+.explore-layout--compact {
+  padding-top: 14px;
+}
+
+.explore-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+  scroll-padding-block: 16px;
+}
+
+/* Opaque badge backgrounds keep their contrast without per-card backdrop blur. */
+.explore-layout--compact :is(.discovery-category, .discovery-add, .explore-challenge-badge, .accessibility-source-tag) {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.explore-layout--compact .explore-map-frame {
+  contain: paint;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .explore-scroll {
+    scroll-behavior: auto;
+  }
+}
+
+.explore-layout--compact .explore-feed {
+  position: relative;
+  isolation: isolate;
+}
+
+.explore-layout--compact .explore-feed::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -14px;
+  right: -20px;
+  left: -24px;
+  height: 340px;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 28% 35%, #d99b2f1b, transparent 70%);
+  mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 15%, transparent 100%);
+}
+
+.explore-selection-heading {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 15px;
+}
+
+.explore-selection-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-accent-gold);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.explore-selection-eyebrow i {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 10px #e4b45480;
+}
+
+.explore-selection-heading h1 {
+  margin: 6px 0 0;
+  color: var(--color-text-primary);
+  font-size: clamp(24px, 2vw, 32px);
+  font-weight: 750;
+  letter-spacing: -.045em;
+  line-height: 1.15;
+}
+
+.explore-selection-heading h1 > span {
+  color: var(--color-accent-gold);
+  text-shadow: 0 2px 22px #d9a74820;
+}
+
+.explore-layout--compact .explore-search {
+  border-color: #d9b5752a;
+  background:
+    linear-gradient(110deg, #d9b57509, transparent 65%),
+    var(--color-surface);
+}
+
+.explore-layout--compact .explore-search-row {
+  align-items: stretch;
+}
+
+.explore-layout--compact .explore-search input {
+  min-height: 42px;
+  padding-block: 9px;
+}
+
+.explore-layout--compact .explore-search-row > button {
+  min-height: 42px;
+  padding-block: 9px;
+}
+
+.explore-layout--compact .explore-toolbar {
+  justify-content: flex-start;
+  gap: 8px 20px;
+  margin: 10px 0 12px;
+}
+
+.explore-layout--compact .explore-toolbar .explore-select-row {
+  flex: 0 1 auto;
+  min-width: 0;
+  margin: 0;
+}
+
+.explore-layout--compact .explore-select-row select {
+  min-height: 36px;
+  padding: 7px 4px;
+}
+
+.explore-access-compact {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  color: var(--color-accent-gold);
+}
+
+.explore-access-compact > svg {
+  flex-shrink: 0;
+}
+
+.explore-access-compact .masar-select-wrapper {
+  width: 215px;
+  max-width: 100%;
+}
+
+.explore-layout--compact .explore-categories {
+  padding-bottom: 0;
+}
+
+.explore-layout--compact .explore-collection {
+  margin-top: 14px;
+}
+
+.explore-layout--compact .explore-map-column {
+  padding-top: 0;
+}
+
+.explore-layout--compact .discovery-card {
+  background:
+    radial-gradient(ellipse 120% 85% at 12% 110%, #d9a94d18, transparent 76%),
+    linear-gradient(155deg, #ffffff04, transparent 60%),
+    var(--color-surface);
+}
+
+.explore-layout--compact .discovery-card-footer {
+  border-top-color: #d7b46b24;
+  padding-top: 9px;
+}
+
+.explore-layout--compact .explore-feed > .explore-collection .discovery-card-image {
+  aspect-ratio: 16 / 9;
+}
+
+.explore-layout--compact .discovery-card-body > p {
+  min-height: 0;
+  margin: 6px 0 9px;
+}
+
+.discovery-card-meta {
+  display: grid;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+  color: var(--color-text-secondary);
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.discovery-photo-credits summary {
+  width: fit-content;
+  color: var(--color-text-muted);
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.discovery-photo-credits[open] > div {
+  display: grid;
+  gap: 4px;
+  padding-top: 6px;
+}
+
+.discovery-photo-credits a {
+  color: var(--color-text-secondary);
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .explore-layout--compact {
+    padding-top: 12px;
+  }
+
+  .explore-layout--compact .explore-toolbar {
+    gap: 6px 12px;
+    margin: 8px 0 10px;
+  }
+
+  .explore-access-compact .masar-select-wrapper {
+    width: 195px;
+  }
+}

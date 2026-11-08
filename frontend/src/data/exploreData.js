@@ -1,0 +1,486 @@
+// Curated UAE Exploration Dataset for Masar AI Discovery Engine
+
+export const UAE_REGIONS = [
+  { id: 'all', label: 'All Emirates', center: [24.8, 54.9], zoom: 9 },
+  { id: 'dubai', label: 'Dubai', center: [25.2048, 55.2708], zoom: 12 },
+  { id: 'abudhabi', label: 'Abu Dhabi', center: [24.4539, 54.3773], zoom: 12 },
+  { id: 'sharjah', label: 'Sharjah', center: [25.3573, 55.4033], zoom: 12 },
+  { id: 'rasalkhaimah', label: 'Ras Al Khaimah', center: [25.6741, 55.9804], zoom: 11 },
+  { id: 'fujairah', label: 'Fujairah', center: [25.1288, 56.3265], zoom: 11 },
+  { id: 'ajman', label: 'Ajman', center: [25.4052, 55.5136], zoom: 11 },
+  { id: 'ummalquwain', label: 'Umm Al Quwain', center: [25.5647, 55.5533], zoom: 11 }
+];
+
+export const EXPLORE_CATEGORIES = [
+  { id: 'for-you', label: 'For you' },
+  { id: 'restaurants', label: 'Restaurants' },
+  { id: 'things-to-do', label: 'Things to do' },
+  { id: 'events', label: 'Events' },
+  { id: 'stays', label: 'Stays' },
+  { id: 'locations', label: 'Locations' },
+  { id: 'guides', label: 'Guides' }
+];
+
+export const EXPLORE_PLACES = [
+  // ── 1. RESTAURANTS & DINING ──
+  {
+    id: 'armani-ristorante',
+    category: 'restaurants',
+    title: 'Armani / Ristorante Dubai',
+    tagline: 'Haute Italian · Michelin 1-Star',
+    cuisine: 'Italian Haute Cuisine',
+    emirate: 'dubai',
+    neighborhood: 'Downtown Dubai',
+    distance: '0.3 km from Burj Khalifa',
+    priceTier: '$$$$',
+    priceLabel: 'Fine Dining · $$$$',
+    rating: 4.9,
+    reviewCount: 1840,
+    lat: 25.1972,
+    lng: 55.2744,
+    images: [
+      'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Impeccable contemporary Italian dining perched inside the Burj Khalifa with spectacular views of the Dubai Fountain.',
+    highlights: ['Burj Khalifa Setting', 'Tasting Degustation Menu', 'Private Fountain Terrace'],
+    tags: ['Michelin Star', 'Romantic', 'Skyline View', 'Valet Parking'],
+    aiPrompt: 'Plan a romantic evening centered around dinner at Armani Ristorante with front-row Dubai Fountain views.'
+  },
+  {
+    id: 'ossiano-underwater',
+    category: 'restaurants',
+    title: 'Ossiano Underwater Restaurant',
+    tagline: 'Progressive Seafood · Michelin 1-Star',
+    cuisine: 'Progressive Fine Dining',
+    emirate: 'dubai',
+    neighborhood: 'Palm Jumeirah',
+    distance: '1.2 km from Palm Monorail',
+    priceTier: '$$$$',
+    priceLabel: 'Ultra Luxury · $$$$',
+    rating: 4.8,
+    reviewCount: 2310,
+    lat: 25.1304,
+    lng: 55.1171,
+    images: [
+      'https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Subterranean luxury dining surrounded by floor-to-ceiling aquarium glass containing over 65,000 marine animals at Atlantis The Palm.',
+    highlights: ['Aquarium Floor-to-Ceiling Views', '10-Course Wave Menu', 'Sommelier Pairings'],
+    tags: ['Michelin Star', 'Aquarium', 'Seafood', 'Unique Experience'],
+    aiPrompt: 'Design a luxury dining itinerary including reservation at Ossiano Underwater Restaurant and Palm Jumeirah sunset.'
+  },
+  {
+    id: 'arabian-tea-house',
+    category: 'restaurants',
+    title: 'Arabian Tea House Cafe',
+    tagline: 'Emirati Heritage Cuisine · Courtyard Oasis',
+    cuisine: 'Authentic Emirati',
+    emirate: 'dubai',
+    neighborhood: 'Al Fahidi Historic District',
+    distance: '0.1 km from Dubai Museum',
+    priceTier: '$$',
+    priceLabel: 'Heritage Dining · $$',
+    rating: 4.7,
+    reviewCount: 4620,
+    lat: 25.2636,
+    lng: 55.2972,
+    images: [
+      'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Set in a traditional wind-tower courtyard with turquoise benches and lace canopies, serving authentic Emirati breakfast and specialty karak.',
+    highlights: ['Machboos & Fresh Regag', 'Traditional Wind-Tower Courtyard', 'Emirati Karak & Gahwa'],
+    tags: ['Heritage', 'Breakfast & Brunch', 'Outdoor Courtyard', 'Cultural'],
+    aiPrompt: 'Create a cultural walking tour through Al Fahidi Historic Quarter with breakfast at Arabian Tea House.'
+  },
+  {
+    id: '1484-by-puro',
+    category: 'restaurants',
+    title: '1484 by Puro Jebel Jais',
+    tagline: 'Highest Restaurant in UAE · 1,484m Peak',
+    cuisine: 'International Highlands',
+    emirate: 'rasalkhaimah',
+    neighborhood: 'Jebel Jais Peak',
+    distance: 'Top of Jebel Jais Mountain',
+    priceTier: '$$$',
+    priceLabel: 'Scenic Mountain · $$$',
+    rating: 4.8,
+    reviewCount: 1280,
+    lat: 25.9525,
+    lng: 56.1415,
+    images: [
+      'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Named after its height above sea level, offering breathtaking views of the rugged Al Hajar mountain range with crisp highland air.',
+    highlights: ['Panoramic Canyon Deck', 'Highland Sunset Cocktails', 'Mountain Air Seating'],
+    tags: ['Scenic View', 'Mountain Peak', 'High Altitude', 'Sunset'],
+    aiPrompt: 'Plan a mountain day trip to Jebel Jais with lunch at 1484 by Puro and scenic canyon viewpoints.'
+  },
+  {
+    id: 'hakkasan-abu-dhabi',
+    category: 'restaurants',
+    title: 'Hakkasan Abu Dhabi',
+    tagline: 'Modern Cantonese · Michelin 1-Star',
+    cuisine: 'Cantonese Fine Dining',
+    emirate: 'abudhabi',
+    neighborhood: 'Emirates Palace',
+    distance: 'Inside Emirates Palace Mandarin Oriental',
+    priceTier: '$$$$',
+    priceLabel: 'Palace Luxury · $$$$',
+    rating: 4.9,
+    reviewCount: 1540,
+    lat: 24.4617,
+    lng: 54.3173,
+    images: [
+      'https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'World-renowned Cantonese cuisine set within the regal Emirates Palace, featuring custom carved wood screens and a terrace overlooking Abu Dhabi skyline.',
+    highlights: ['Peking Duck with Caviar', 'Royal Palace Terrace', 'Signature Dim Sum Platters'],
+    tags: ['Michelin Star', 'Palace', 'Dim Sum', 'Luxury'],
+    aiPrompt: 'Curate a luxury Abu Dhabi itinerary with fine dining at Hakkasan inside Emirates Palace.'
+  },
+
+  // ── 2. THINGS TO DO & ATTRACTIONS ──
+  {
+    id: 'burj-khalifa-sky',
+    category: 'things-to-do',
+    title: 'Burj Khalifa At The Top SKY',
+    tagline: 'World\'s Highest Observation Deck · Level 148',
+    cuisine: 'VIP Skyline Experience',
+    emirate: 'dubai',
+    neighborhood: 'Downtown Dubai',
+    distance: 'Directly in Dubai Mall',
+    priceTier: '$$$',
+    priceLabel: 'VIP Fast-Track · AED 399+',
+    rating: 4.9,
+    reviewCount: 38200,
+    lat: 25.1972,
+    lng: 55.2744,
+    images: [
+      'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Elevate your senses at 555 meters above ground on Level 148 with dedicated guest ambassadors, luxury lounge access, and outdoor terrace vistas.',
+    highlights: ['Level 148 VIP Lounge', 'Fast-Track Elevator', 'Interactive Motion Sensor Exhibits'],
+    tags: ['Iconic Landmark', 'Skyline Views', 'VIP Access', 'Architecture'],
+    aiPrompt: 'Plan a Downtown Dubai day trip featuring Burj Khalifa Level 148 VIP SKY access.'
+  },
+  {
+    id: 'museum-of-the-future',
+    category: 'things-to-do',
+    title: 'Museum of the Future',
+    tagline: 'Living Museum of Innovation · Arabic Calligraphy Ring',
+    cuisine: 'Futuristic Immersion',
+    emirate: 'dubai',
+    neighborhood: 'Trade Centre / SZR',
+    distance: 'Connected to Emirates Towers Metro',
+    priceTier: '$$',
+    priceLabel: 'Entry Ticket · AED 149',
+    rating: 4.8,
+    reviewCount: 22400,
+    lat: 25.2192,
+    lng: 55.2819,
+    images: [
+      'https://images.unsplash.com/photo-1687754715959-41fed2161528?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1686918269961-507270a5a238?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1701848645229-eb27315830da?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'An architectural marvel shaped as a stainless steel torus adorned with poetry quotes of Sheikh Mohammed bin Rashid Al Maktoum in illuminated calligraphy.',
+    highlights: ['Journey to the Year 2071', 'Heal Institute DNA Vault', 'Tomorrow Today Tech Exhibits'],
+    tags: ['Architecture', 'Futuristic', 'Interactive', 'Must Visit'],
+    aiPrompt: 'Curate a futuristic tech and innovation itinerary in Dubai with Museum of the Future.'
+  },
+  {
+    id: 'louvre-abu-dhabi',
+    category: 'things-to-do',
+    title: 'Louvre Abu Dhabi',
+    tagline: 'Universal Museum · Floating Rain of Light Dome',
+    cuisine: 'Fine Art & Architecture',
+    emirate: 'abudhabi',
+    neighborhood: 'Saadiyat Cultural District',
+    distance: 'Saadiyat Island',
+    priceTier: '$$',
+    priceLabel: 'General Admission · AED 63',
+    rating: 4.9,
+    reviewCount: 16700,
+    lat: 24.5337,
+    lng: 54.3983,
+    images: [
+      'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Jean Nouvel’s iconic silver geometric dome filtering sunlight like palm leaves into the water below, housing world masterworks from ancient antiquity to modern art.',
+    highlights: ['Rain of Light Dome Architecture', 'Kayaking Under the Dome', 'Global Masterpiece Galleries'],
+    tags: ['Art Museum', 'World Architecture', 'Saadiyat Island', 'Family Friendly'],
+    aiPrompt: 'Plan a cultural day on Saadiyat Island exploring the Louvre Abu Dhabi and seaside promenade.'
+  },
+  {
+    id: 'sheikh-zayed-mosque',
+    category: 'things-to-do',
+    title: 'Sheikh Zayed Grand Mosque',
+    tagline: 'White Marble Monument · World\'s Largest Carpet',
+    cuisine: 'Sacred Islamic Architecture',
+    emirate: 'abudhabi',
+    neighborhood: 'Al Rawdah',
+    distance: '15 min from Abu Dhabi Airport',
+    priceTier: '$',
+    priceLabel: 'Complimentary Entry',
+    rating: 5.0,
+    reviewCount: 68900,
+    lat: 24.4128,
+    lng: 54.4750,
+    images: [
+      'https://images.unsplash.com/photo-1590075865003-e48277faa558?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'One of the world\'s largest and most breathtaking mosques, featuring 82 white marble domes, 24-carat gold chandeliers, and reflective water pools.',
+    highlights: ['82 Macedonian Marble Domes', 'Reflective Pool Arcades', 'Hand-Knotted Iranian Carpet'],
+    tags: ['Landmark', 'Spiritual', 'World Heritage', 'Free Admission'],
+    aiPrompt: 'Design a full-day Abu Dhabi cultural journey including Sheikh Zayed Grand Mosque at sunset.'
+  },
+
+  // ── 3. LUXURY STAYS & RESORTS ──
+  {
+    id: 'bab-al-shams',
+    category: 'stays',
+    title: 'Bab Al Shams Desert Resort',
+    tagline: 'Desert Oasis Sanctuary · Infinity Dune Pools',
+    cuisine: '5-Star Arabian Luxury Retreat',
+    emirate: 'dubai',
+    neighborhood: 'Al Qudra Desert',
+    distance: '45 mins from Downtown Dubai',
+    priceTier: '$$$$',
+    priceLabel: 'From AED 1,450 / night',
+    rating: 4.8,
+    reviewCount: 3410,
+    lat: 24.8184,
+    lng: 55.2341,
+    images: [
+      'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Nestled among rolling amber dunes, an authentic low-rise Arabian fort sanctuary offering private infinity plunge pools, camel trekking, and stargazing.',
+    highlights: ['Desert Infinity Pools', 'Al Hadheerah Live Heritage Dining', 'Private Falconry & Archery'],
+    tags: ['Desert Resort', 'Spa & Wellness', 'Romantic Escapes', 'Infinity Pool'],
+    aiPrompt: 'Book a 2-day tranquil desert retreat at Bab Al Shams with sunset dune safari and spa treatments.'
+  },
+  {
+    id: 'qasr-al-sarab',
+    category: 'stays',
+    title: 'Qasr Al Sarab Desert Resort by Anantara',
+    tagline: 'Rub al Khali Sovereign Fortress · Liwa Oasis',
+    cuisine: 'Ultra-Luxury Mirage Palace',
+    emirate: 'abudhabi',
+    neighborhood: 'Liwa Desert',
+    distance: 'Liwa Oasis, Empty Quarter',
+    priceTier: '$$$$',
+    priceLabel: 'From AED 2,200 / night',
+    rating: 4.9,
+    reviewCount: 4120,
+    lat: 22.9004,
+    lng: 54.3414,
+    images: [
+      'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'An ethereal fortress rising out of the largest uninterrupted sand desert in the world. Features private pool villas, sunrise yoga on 200m dunes, and Arabian hospitality.',
+    highlights: ['Rub al Khali Mega-Dunes', 'Private Plunge Pool Villas', 'Midnight Astronomy Observatory'],
+    tags: ['Empty Quarter', 'VIP Privacy', 'Ultra Luxury', 'Desert Safari'],
+    aiPrompt: 'Curate a 3-day sovereign retreat in the Empty Quarter at Qasr Al Sarab Desert Resort.'
+  },
+  {
+    id: 'atlantis-the-royal',
+    category: 'stays',
+    title: 'Atlantis The Royal',
+    tagline: 'Ultra-Luxury Architecture · Cloud 22 Sky Pool',
+    cuisine: 'Experiential Luxury Resort',
+    emirate: 'dubai',
+    neighborhood: 'Palm Jumeirah',
+    distance: 'Crescent Road, Palm Jumeirah',
+    priceTier: '$$$$',
+    priceLabel: 'From AED 2,800 / night',
+    rating: 4.9,
+    reviewCount: 5670,
+    lat: 25.1384,
+    lng: 55.1278,
+    images: [
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Deconstructivist skyline masterpiece featuring 17 world-class restaurants by celebrity chefs, fire-breathing fountains, and private sky pools.',
+    highlights: ['Cloud 22 Infinity Skyline Pool', 'Nobu by the Beach', 'Skyblaze Fire & Water Fountain'],
+    tags: ['Waterfront', 'Celebrity Chefs', 'Sky Pool', 'Ultra Luxury'],
+    aiPrompt: 'Plan an ultra-luxury weekend at Atlantis The Royal including Cloud 22 cabana and fine dining.'
+  },
+
+  // ── 4. LIVE EVENTS & EXPERIENCES ──
+  {
+    id: 'la-perle-dragone',
+    category: 'events',
+    title: 'La Perle by Dragone',
+    tagline: 'Permanent Aqua Show · 2.7M Liter Stage',
+    cuisine: 'Immersive Acrobatic Theater',
+    emirate: 'dubai',
+    neighborhood: 'Al Habtoor City',
+    distance: 'Al Habtoor City, Dubai Canal',
+    priceTier: '$$$',
+    priceLabel: 'Tickets from AED 259',
+    rating: 4.8,
+    reviewCount: 8900,
+    lat: 25.1843,
+    lng: 55.2536,
+    images: [
+      'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'Dubai’s number one resident spectacle created by legendary director Franco Dragone, featuring 65 world-class artists diving into a hydraulic aqua stage.',
+    highlights: ['25m High Aqua Diving', 'Custom 270-Degree Theater', 'Motorcycle Globe of Death'],
+    tags: ['Live Show', 'Acrobatics', 'Theater', 'Nightlife'],
+    aiPrompt: 'Plan an entertainment evening in Dubai Canal with VIP tickets to La Perle by Dragone.'
+  },
+  {
+    id: 'dubai-opera-gala',
+    category: 'events',
+    title: 'Dubai Opera Gala Performances',
+    tagline: 'Dhow-Shaped Performing Arts Venue · Downtown',
+    cuisine: 'Classical, Ballet & West End Shows',
+    emirate: 'dubai',
+    neighborhood: 'Downtown Dubai',
+    distance: 'Next to Dubai Fountain',
+    priceTier: '$$$',
+    priceLabel: 'Tickets from AED 320',
+    rating: 4.9,
+    reviewCount: 4200,
+    lat: 25.1952,
+    lng: 55.2719,
+    images: [
+      'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'A 2,000-seat multi-format performing arts center designed like a traditional Arabian dhow, hosting international symphonies, ballet, and Broadway hits.',
+    highlights: ['Acoustic Marvel Auditorium', 'Rooftop Promenade Views', 'Pre-Show Champagne Lounge'],
+    tags: ['Classical Music', 'Ballet', 'Broadway', 'Fine Arts'],
+    aiPrompt: 'Design a sophisticated culture night with tickets to Dubai Opera and post-show dinner.'
+  },
+
+  // ── 5. LOCATIONS & NEIGHBORHOODS ──
+  {
+    id: 'saadiyat-district',
+    category: 'locations',
+    title: 'Saadiyat Island Cultural District',
+    tagline: 'Global Art Capital · Natural Hawksbill Turtle Beaches',
+    cuisine: 'Museum & Coastal Sanctuary',
+    emirate: 'abudhabi',
+    neighborhood: 'Saadiyat Island',
+    distance: '10 mins from Downtown Abu Dhabi',
+    priceTier: '$$$',
+    priceLabel: 'Cultural District',
+    rating: 4.9,
+    reviewCount: 11200,
+    lat: 24.5367,
+    lng: 54.4183,
+    images: [
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'The world\'s most ambitious cultural hub hosting Louvre Abu Dhabi, Guggenheim Abu Dhabi, and pristine protected coastal sand dunes.',
+    highlights: ['Louvre, Zayed & Guggenheim Museums', 'Protected Hawksbill Beach Sanctuary', 'Saadiyat Beach Golf Club'],
+    tags: ['Art Hub', 'Pristine Beach', 'Luxury Resorts', 'Nature Sanctuary'],
+    aiPrompt: 'Plan a 2-day cultural and beach itinerary across Saadiyat Island Abu Dhabi.'
+  },
+  {
+    id: 'downtown-dubai-loc',
+    category: 'locations',
+    title: 'Downtown Dubai',
+    tagline: 'The Centre of Now · Burj Khalifa, Fountains & Fashion Avenue',
+    cuisine: 'Metropolitan Luxury Hub',
+    emirate: 'dubai',
+    neighborhood: 'Downtown Dubai',
+    distance: 'Heart of the City',
+    priceTier: '$$$$',
+    priceLabel: 'Urban Core',
+    rating: 4.9,
+    reviewCount: 82000,
+    lat: 25.1972,
+    lng: 55.2744,
+    images: [
+      'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'The vibrant heart of Dubai featuring iconic skyline skyscrapers, the Dubai Mall Fashion Avenue, dancing fountains, and 5-star lifestyle promenades.',
+    highlights: ['Burj Khalifa & Lake Fountain', 'Fashion Avenue Designer Boutiques', 'Sheikh Mohammed Bin Rashid Boulevard'],
+    tags: ['City Center', 'Shopping', 'Dining', 'Skyline'],
+    aiPrompt: 'Create a 3-day Downtown Dubai itinerary with shopping, dining, and iconic attractions.'
+  },
+
+  // ── 6. CURATED GUIDES & ITINERARIES ──
+  {
+    id: 'guide-abu-dhabi-cultural',
+    category: 'guides',
+    title: 'The Sovereign Abu Dhabi Cultural Escapade',
+    tagline: '48 Hours · Louvre, Grand Mosque & Emirates Palace',
+    cuisine: 'Curated 2-Day Itinerary',
+    emirate: 'abudhabi',
+    neighborhood: 'Abu Dhabi Island',
+    distance: '2 Days Guided Route',
+    priceTier: '$$$',
+    priceLabel: 'Curated VIP Guide',
+    rating: 4.9,
+    reviewCount: 3100,
+    lat: 24.4750,
+    lng: 54.3800,
+    images: [
+      'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1578895101408-1a36b834405b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'An expertly timed 2-day guide exploring the Louvre, Qasr Al Watan, Sheikh Zayed Grand Mosque at dusk, and royal afternoon tea.',
+    highlights: ['Sunset at Sheikh Zayed Mosque', 'Private Guided Louvre Dome Tour', 'Gold-leaf Cappuccino at Emirates Palace'],
+    tags: ['2-Day Plan', 'Culture', 'Architecture', 'Curated Guide'],
+    aiPrompt: 'Generate a detailed 2-day itinerary following The Sovereign Abu Dhabi Cultural Escapade guide.'
+  },
+  {
+    id: 'guide-dubai-skyline',
+    category: 'guides',
+    title: 'Dubai Skyline & Private Yacht Odyssey',
+    tagline: '3 Days · Penthouses, Palm Jumeirah & Gulf Yachting',
+    cuisine: 'Curated 3-Day Itinerary',
+    emirate: 'dubai',
+    neighborhood: 'Dubai Coastline',
+    distance: '3 Days Luxury Route',
+    priceTier: '$$$$',
+    priceLabel: 'Curated VIP Guide',
+    rating: 4.9,
+    reviewCount: 4800,
+    lat: 25.1304,
+    lng: 55.1171,
+    images: [
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80'
+    ],
+    description: 'The definitive 3-day itinerary covering Michelin dining, private Gulf catamaran sunset cruise, and Cloud 22 VIP cabanas.',
+    highlights: ['Private Sunset Yacht Charter', 'Burj Khalifa VIP SKY Experience', 'Fine Dining at Atlantis The Royal'],
+    tags: ['3-Day Plan', 'Yachting', 'Michelin Dining', 'Luxury Stays'],
+    aiPrompt: 'Plan a 3-day luxury trip following the Dubai Skyline & Private Yacht Odyssey guide.'
+  }
+];

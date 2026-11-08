@@ -1,0 +1,6 @@
+# Install CPU PyTorch first; see deploy/VISION.md. These are worker-only extras.
+transformers==4.57.6
+sentencepiece==0.2.2
+paddlepaddle==3.3.1
+paddleocr==3.7.0
+numpy==2.1.3

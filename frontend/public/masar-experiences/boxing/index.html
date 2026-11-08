@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b">
+  <title>Masar AI — Punch challenge</title>
+  <link rel="modulepreload" href="../vendor/three.module.js">
+  <link rel="modulepreload" href="../vendor/GLTFLoader.js">
+  <link rel="modulepreload" href="../components/boxing/makehuman-avatar.js">
+  <link rel="preload" href="../components/boxing/assets/makehuman/human.glb" as="fetch" crossorigin>
+  <link rel="preload" href="../components/boxing/assets/makehuman/rig.json" as="fetch" crossorigin>
+  <link rel="preload" href="../components/boxing/assets/makehuman/skin.webp" as="fetch" crossorigin>
+  <link rel="preload" href="../components/boxing/assets/makehuman/brown-eye.webp" as="fetch" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="theme.css">
+
+  <script type="module" src="/masar-experiences/locale-entry.js"></script>
+<script>if(new URLSearchParams(location.search).get("embedded")==="true")document.documentElement.classList.add("is-embedded");</script>
+<link rel="stylesheet" href="../challenge-shell.css"><link rel="stylesheet" href="/masar-experiences/locale.css">
+</head>
+<body>
+  <main>
+    <header class="topbar"><a class="brand" href="./" aria-label="Masar AI challenge home"><svg class="masar-mark" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="18" cy="18" r="15" stroke="#82909e" stroke-width="1.5"/><path d="M12 29C6 19 27 25 21 11L19 4M16 31C10 23 30 24 25 13" stroke="#e5ab43" stroke-width="2.5" stroke-linecap="round"/></svg><span>Masar <b>AI</b></span></a><div class="top-meta"><span class="live-dot"></span> DISCOVER MORE. MAKE IT MEMORABLE.</div><span class="edition">UAE EXPERIENCES <span>/</span> CHALLENGE 001</span></header>
+    <section class="intro"><div><div class="eyebrow">THE MALL SIDE QUEST</div><h1>Make your<br><em>hit count.</em><span class="title-star">✳</span></h1></div><div class="intro-right"><span class="tag">SKILL CHALLENGE</span><p>Find the punching machine.<br>Beat 600. Show us what you’ve got.</p><div class="target"><span>YOUR TARGET</span><strong>600<span>+</span></strong><span>POINTS TO BEAT</span></div></div></section>
+    <section class="experience" aria-label="Animated challenge walkthrough">
+      <div class="stage-wrap">
+        <div class="stage-top"><span><i class="live-dot"></i> THE CHALLENGE, IN MOTION</span><span class="scene-label">01 / MALL ARCADE</span></div>
+        <div id="scene" aria-label="Interactive 3D punching challenge"></div><div class="scene-tools"><span>↔ Drag to explore <b>·</b> Scroll to zoom</span><button id="reset-view" type="button" aria-label="Reset 3D view">Reset view ↺</button></div>
+        <div class="scene-note"><span class="note-cross">+</span> ONE PUNCH.<br><span>MAKE IT A GOOD ONE.</span></div>
+        <div class="score-pill"><span class="live-dot"></span><span id="score-label">TARGET</span><strong id="live-score">600+</strong></div>
+        <div id="capture-card" class="capture-card" aria-hidden="true"><div class="phone-top"><span></span></div><div class="camera-view"><span class="camera-corner tl"></span><span class="camera-corner tr"></span><span class="camera-corner bl"></span><span class="camera-corner br"></span><img id="captured-photo" class="captured-photo" alt="Captured photo of the punching machine and its final score" decoding="async"></div><div class="phone-bottom"><span>PHOTO</span><i></i><small>SCORE EVIDENCE</small></div><div class="upload-overlay"><div id="upload-icon">↑</div><strong id="upload-title">Uploading proof</strong><span id="upload-caption">Your score, captured.</span><div class="upload-track"><i id="upload-progress"></i></div></div></div>
+        <div id="flash" class="flash"></div>
+        <div class="scene-caption"><span id="phase-number">01</span><div><strong id="phase-title">Find your machine.</strong><p id="phase-copy">Head to the arcade area of your mall.</p></div></div>
+        <div class="scene-loading" id="loading">WARMING UP THE ARCADE<span>Loading the local 3D scene…</span></div>
+      </div>
+      <aside class="instructions journey" aria-label="Challenge route"><div class="instructions-heading"><span>YOUR CHALLENGE ROUTE</span><span>↘</span></div><span id="journey-status" class="sr-only" role="status" aria-live="polite">Finding the machine</span><button class="step active" data-step="0"><span class="journey-node"><svg class="journey-ring" viewBox="0 0 64 64" aria-hidden="true"><circle class="ring-orbit" cx="32" cy="32" r="30"/><circle class="ring-base" cx="32" cy="32" r="26"/><circle class="ring-progress" cx="32" cy="32" r="26"/></svg><svg class="journey-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 10c0 4.5-6 10-6 10S6 14.5 6 10a6 6 0 1 1 12 0Z"/><circle cx="12" cy="10" r="2"/></svg><span class="journey-check" aria-hidden="true">✓</span></span><span><strong>Find it.</strong><small>Confirm the scoring machine<br>with venue staff, then approach.</small></span><span class="journey-step-state">Up next</span></button><button class="step" data-step="1"><span class="journey-node"><svg class="journey-ring" viewBox="0 0 64 64" aria-hidden="true"><circle class="ring-orbit" cx="32" cy="32" r="30"/><circle class="ring-base" cx="32" cy="32" r="26"/><circle class="ring-progress" cx="32" cy="32" r="26"/></svg><svg class="journey-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14 3-8 11h6l-2 7 8-11h-6l2-7Z"/></svg><span class="journey-check" aria-hidden="true">✓</span></span><span><strong>Bring the power.</strong><small>Give it your best punch.<br>Your score must exceed 600.</small></span><span class="journey-step-state">Up next</span></button><button class="step" data-step="2"><span class="journey-node"><svg class="journey-ring" viewBox="0 0 64 64" aria-hidden="true"><circle class="ring-orbit" cx="32" cy="32" r="30"/><circle class="ring-base" cx="32" cy="32" r="26"/><circle class="ring-progress" cx="32" cy="32" r="26"/></svg><svg class="journey-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 6 9.5 3h5L16 6h4v14H4V6h4Z"/><circle cx="12" cy="12.5" r="3.5"/></svg><span class="journey-check" aria-hidden="true">✓</span></span><span><strong>Get the proof.</strong><small>Capture a clear photo<br>of your final score.</small></span><span class="journey-step-state">Up next</span></button><button class="step" data-step="3"><span class="journey-node"><svg class="journey-ring" viewBox="0 0 64 64" aria-hidden="true"><circle class="ring-orbit" cx="32" cy="32" r="30"/><circle class="ring-base" cx="32" cy="32" r="26"/><circle class="ring-progress" cx="32" cy="32" r="26"/></svg><svg class="journey-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M5 13v7h14v-7"/></svg><span class="journey-check" aria-hidden="true">✓</span></span><span><strong>Send it.</strong><small>Upload your score photo<br>to complete the task.</small></span><span class="journey-step-state">Up next</span></button><div class="rule-note"><span>✳</span><p>600 is the starting line.<br><strong>601 or higher is a win.</strong></p></div><div class="journey-actions"><button id="hold-journey" type="button" aria-pressed="false">Hold this moment</button><button id="restart-journey" type="button">Watch again ↻</button></div><div id="journey-progress" class="sr-only" role="progressbar" aria-label="Challenge walkthrough progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0"></div></aside>
+    </section>
+    <footer><span>MASAR AI · A NEW WAY TO EXPERIENCE THE UAE. <a class="avatar-credit" href="../components/boxing/assets/makehuman/CREDITS.txt" target="_blank" rel="noopener">AVATAR CREDITS</a></span><span>FIND. PUNCH. CAPTURE. UPLOAD. <b>↗</b></span></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+# Web API
+fastapi==0.141.1
+uvicorn[standard]==0.52.3
+python-multipart==0.0.32
+email-validator==2.3.0
+python-dotenv==1.2.2
+
+# Auth
+bcrypt==5.0.0
+passlib==1.7.4
+python-jose[cryptography]==3.5.0
+
+# Database
+sqlalchemy[asyncio]==2.0.52
+asyncpg==0.31.0
+alembic==1.19.1
+
+# AI / agents
+langgraph==1.2.11
+langchain-core==1.5.5
+langchain-openai==1.5.1
+langchain-community==0.4.2
+langchain-text-splitters==1.1.2
+faiss-cpu==1.15.0
+
+# External services used by tools
+httpx==0.28.1
+requests==2.34.2
+beautifulsoup4==4.15.0
+googlemaps==4.10.0
+resend==2.36.0
+tavily-python==0.7.27
+
+boto3[crt]==1.43.119
+
+# Durable agent state and validated challenge evidence
+langgraph-checkpoint-postgres==3.2.0
+psycopg[binary,pool]==3.3.6
+Pillow==13.0.0
+
+# Optional Time Travel recognition (also pinned transitively in requirements.lock).
+openai==3.39.0

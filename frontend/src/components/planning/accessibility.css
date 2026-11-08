@@ -1,0 +1,397 @@
+/* ============================================================
+   MASAR AI — ACCESSIBILITY & SUPPORT STYLES
+   Mindtrip-Grade Dark Luxury Theme Integration
+   ============================================================ */
+
+.support-editor {
+  color: var(--color-text-primary, #F8FAFC);
+  padding: 24px;
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-lg, 16px);
+  margin-block: 20px;
+  background: var(--color-surface, #121418);
+  box-shadow: var(--shadow-md, 0 4px 20px rgba(0, 0, 0, 0.55));
+  backdrop-filter: blur(12px);
+}
+
+.support-editor h2,
+.support-editor h3 {
+  font-size: var(--text-lg, 1.125rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary, #F8FAFC);
+  margin-bottom: 8px;
+}
+
+.support-editor p {
+  color: var(--color-text-secondary, #A0AEC0);
+  font-size: var(--text-sm, 0.875rem);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.support-editor fieldset {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-md, 12px);
+  padding: 20px;
+  margin-block: 16px;
+  transition: border-color var(--transition-fast, 140ms ease);
+}
+
+.support-editor fieldset:hover {
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.support-editor legend {
+  font-size: var(--text-xs, 0.75rem);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  color: var(--color-accent-gold, #FBBF24);
+  padding: 3px 12px;
+  background: var(--color-surface-elevated, #20232A);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-full, 9999px);
+}
+
+.support-choices {
+  display: grid;
+  gap: 10px;
+}
+
+.support-choices > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.04));
+  border-radius: var(--radius-sm, 8px);
+  transition: all var(--transition-fast, 140ms ease);
+}
+
+.support-choices > div:hover {
+  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.support-editor label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--color-text-primary, #F8FAFC);
+  cursor: pointer;
+  min-height: 32px;
+}
+
+.support-editor input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-accent, #D97706);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.support-essential {
+  font-size: var(--text-2xs, 0.6875rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted, #64748B);
+  padding: 2px 8px;
+  border-radius: var(--radius-full, 9999px);
+  background: rgba(255, 255, 255, 0.03);
+  transition: all var(--transition-fast, 140ms ease);
+}
+
+.support-essential:has(input:checked) {
+  background: var(--color-accent-soft, rgba(245, 158, 11, 0.15));
+  color: var(--color-accent-gold, #FBBF24);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.support-limits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-block: 18px;
+}
+
+.support-limits label {
+  align-items: stretch;
+  flex-direction: column;
+  gap: 6px;
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-text-secondary, #A0AEC0);
+  font-weight: 500;
+}
+
+.support-editor input:not([type="checkbox"]),
+.support-editor select {
+  background: var(--color-bg, #0A0B0E);
+  color: var(--color-text-primary, #F8FAFC);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+  border-radius: var(--radius-sm, 8px);
+  padding: 10px 12px;
+  font-size: var(--text-sm, 0.875rem);
+  max-width: 100%;
+  min-width: 0;
+  transition: border-color var(--transition-fast, 140ms ease), box-shadow var(--transition-fast, 140ms ease);
+}
+
+.support-editor input:not([type="checkbox"]):focus,
+.support-editor select:focus {
+  outline: none;
+  border-color: var(--color-accent-gold, #FBBF24);
+  box-shadow: 0 0 0 2px var(--color-accent-soft, rgba(245, 158, 11, 0.2));
+}
+
+.support-editor button {
+  min-height: 36px;
+  padding: 8px 16px;
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 600;
+  color: var(--color-text-secondary, #A0AEC0);
+  background: transparent;
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.12));
+  border-radius: var(--radius-sm, 8px);
+  cursor: pointer;
+  transition: all var(--transition-fast, 140ms ease);
+}
+
+.support-editor button:hover {
+  color: var(--color-text-primary, #F8FAFC);
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.support-editor form {
+  max-width: 100%;
+}
+
+.support-editor [role="alert"] {
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+  border-radius: var(--radius-sm, 8px);
+  padding: 12px 16px;
+  color: #FDA4AF;
+  font-size: var(--text-sm, 0.875rem);
+  margin-block: 12px;
+}
+
+/* ── Accessibility Facts (Cards, Explore, Workspace) ── */
+.accessibility-facts {
+  font-size: var(--text-xs, 0.75rem);
+  line-height: 1.6;
+  margin-block: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-sm, 8px);
+  padding: 10px 14px;
+}
+
+.accessibility-facts summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--text-xs, 0.75rem);
+  color: var(--color-accent-gold, #FBBF24);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 28px;
+  user-select: none;
+}
+
+.accessibility-facts summary:hover {
+  color: var(--color-accent-hover, #F59E0B);
+}
+
+.accessibility-facts[open] summary {
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.05));
+  padding-bottom: 6px;
+}
+
+.accessibility-facts p {
+  color: var(--color-text-secondary, #A0AEC0);
+  font-size: var(--text-2xs, 0.6875rem);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.accessibility-facts dl {
+  display: grid;
+  gap: 6px;
+}
+
+.accessibility-facts dl > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.accessibility-facts dt {
+  font-weight: 500;
+  color: var(--color-text-primary, #F8FAFC);
+}
+
+.accessibility-facts dd {
+  margin-inline-start: 0;
+  text-align: end;
+  color: var(--color-text-secondary, #CBD5E1);
+}
+
+.accessibility-facts a {
+  color: var(--color-accent-gold, #FBBF24);
+  text-decoration: underline;
+}
+
+.accessibility-facts a:hover {
+  color: var(--color-accent-hover, #F59E0B);
+}
+
+.accessibility-facts small {
+  display: block;
+  font-size: var(--text-2xs, 0.6875rem);
+  color: var(--color-text-muted, #64748B);
+}
+
+/* ── Accessibility Notes (Trip Itinerary / Calendar) ── */
+.accessibility-notes {
+  padding: 16px 20px;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-left: 3px solid var(--color-accent-gold, #FBBF24);
+  border-radius: var(--radius-md, 12px);
+  margin-block: 16px;
+  line-height: 1.7;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(18, 20, 24, 0.85) 100%);
+  color: var(--color-text-secondary, #CBD5E1);
+  box-shadow: var(--shadow-sm, 0 2px 8px rgba(0, 0, 0, 0.4));
+}
+
+.accessibility-notes h3 {
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-gold, #FBBF24);
+  margin-bottom: 8px;
+}
+
+.accessibility-notes ul {
+  margin: 0;
+  padding-inline-start: 18px;
+}
+
+.accessibility-notes li {
+  margin-block: 4px;
+  font-size: var(--text-sm, 0.875rem);
+}
+
+/* Traveller selection tabs for multi-party travel support */
+.support-traveller-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 14px 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+}
+
+.support-traveller-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+  color: var(--color-text-secondary, #A0AEC0);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast, 140ms ease);
+}
+
+.support-traveller-tab:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--color-border-hover, rgba(255, 255, 255, 0.2));
+  color: var(--color-text-primary, #F8FAFC);
+}
+
+.support-traveller-tab.is-active {
+  background: linear-gradient(135deg, rgba(214, 155, 32, 0.22), rgba(214, 155, 32, 0.08));
+  border-color: var(--color-accent-gold, #FBBF24);
+  color: var(--color-accent-gold, #FBBF24);
+  box-shadow: 0 2px 10px rgba(214, 155, 32, 0.18);
+}
+
+.support-needs-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--color-accent-gold, #FBBF24);
+  color: #1b1406;
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1;
+}
+
+.support-legend-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.support-legend-badge {
+  font-size: 10px;
+  opacity: 0.8;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.support-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+}
+
+.support-next-traveller-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  background: rgba(214, 155, 32, 0.12);
+  border: 1px solid rgba(214, 155, 32, 0.3);
+  color: var(--color-accent-gold, #FBBF24);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast, 140ms ease);
+}
+
+.support-next-traveller-btn:hover {
+  background: rgba(214, 155, 32, 0.2);
+  border-color: var(--color-accent-gold, #FBBF24);
+  transform: translateY(-1px);
+}

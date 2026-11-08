@@ -1,0 +1,801 @@
+/* ==========================================================================
+   MASAR AI - Cultural Game Window & Right Section Theming
+   ========================================================================== */
+
+/* ── Global Game Container Adjustments inside Modal ── */
+.mp-game,
+.mas-game,
+.br-game {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: #0B0E15 !important;
+  font-family: inherit !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.br-game,
+.mas-game {
+  display: grid !important;
+  grid-template-rows: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Force stages to fill the available height exactly without overflowing the modal */
+.br-stage {
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: 100% !important;
+  overflow: hidden !important;
+  position: relative !important;
+  align-self: stretch !important;
+}
+
+.br-stage > canvas {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+.mas-world {
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: 100% !important;
+  overflow: hidden !important;
+  position: relative !important;
+  align-self: stretch !important;
+}
+
+.mas-canvas {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Golden Roll Responsive Overlay */
+.br-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 3 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow-y: auto !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(0deg, rgba(17, 29, 33, 0.94), rgba(23, 36, 34, 0.85)) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.br-overlay-inner {
+  max-width: 380px !important;
+  width: 100% !important;
+  margin: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding: 8px 0 !important;
+  box-sizing: border-box !important;
+}
+
+.br-orb {
+  width: 50px !important;
+  height: 50px !important;
+  margin: 6px auto !important;
+}
+
+.br-overlay h2 {
+  font-size: 24px !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em !important;
+  margin: 8px 0 6px !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+}
+
+.br-overlay p {
+  font-size: 11px !important;
+  line-height: 1.55 !important;
+  color: #94A3B8 !important;
+  margin: 0 0 14px !important;
+  max-width: 320px !important;
+}
+
+.br-overlay .br-primary {
+  padding: 11px 24px !important;
+  font-size: 13px !important;
+  margin-bottom: 6px !important;
+  cursor: pointer !important;
+}
+
+.br-overlay .br-text-button {
+  font-size: 11px !important;
+  color: #F59E0B !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  margin-top: 4px !important;
+  padding: 4px 8px !important;
+}
+
+/* Stage Bottom HUD Elements pinned cleanly above stage bottom */
+.br-stage-foot {
+  bottom: 14px !important;
+  left: 14px !important;
+  right: 14px !important;
+}
+
+.mas-world-foot {
+  bottom: 12px !important;
+  left: 16px !important;
+  right: 16px !important;
+}
+
+/* Scrollable and contained Right Sidebars */
+.mp-sidebar,
+.mas-mission,
+.br-panel {
+  height: 100% !important;
+  max-height: 100% !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(245, 158, 11, 0.45) rgba(255, 255, 255, 0.03) !important;
+  box-sizing: border-box !important;
+  padding: 18px 18px 24px !important;
+}
+
+.mp-sidebar::-webkit-scrollbar,
+.mas-mission::-webkit-scrollbar,
+.br-panel::-webkit-scrollbar,
+.br-overlay::-webkit-scrollbar,
+.mp-game::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+.mp-sidebar::-webkit-scrollbar-track,
+.mas-mission::-webkit-scrollbar-track,
+.br-panel::-webkit-scrollbar-track,
+.br-overlay::-webkit-scrollbar-track,
+.mp-game::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+.mp-sidebar::-webkit-scrollbar-thumb,
+.mas-mission::-webkit-scrollbar-thumb,
+.br-panel::-webkit-scrollbar-thumb,
+.br-overlay::-webkit-scrollbar-thumb,
+.mp-game::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.35) !important;
+  border-radius: 4px !important;
+}
+
+.mp-sidebar::-webkit-scrollbar-thumb:hover,
+.mas-mission::-webkit-scrollbar-thumb:hover,
+.br-panel::-webkit-scrollbar-thumb:hover,
+.br-overlay::-webkit-scrollbar-thumb:hover,
+.mp-game::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.65) !important;
+}
+
+.mp-game {
+  padding: 16px 24px 0 !important;
+  overflow-y: auto !important;
+}
+
+.mp-layout {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  margin: 0 -24px !important;
+}
+
+.mp-collection-head h2 {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.mp-kicker {
+  color: #F59E0B !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+}
+
+.mp-collection-count b {
+  color: #F59E0B !important;
+  font-weight: 800 !important;
+}
+
+.mp-collection-count span {
+  color: #94A3B8 !important;
+}
+
+/* Postcards list */
+.mp-postcard {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease !important;
+}
+
+.mp-postcard:hover {
+  border-color: rgba(245, 158, 11, 0.4) !important;
+  transform: translateY(-2px) !important;
+}
+
+.mp-postcard[aria-pressed="true"] {
+  border-color: #F59E0B !important;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.25) !important;
+}
+
+.mp-postcard-copy b {
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+}
+
+.mp-postcard-copy small {
+  color: #94A3B8 !important;
+}
+
+.mp-postcard[aria-pressed="true"] .mp-postcard-copy b {
+  color: #FBBF24 !important;
+}
+
+/* Studio & Board */
+.mp-studio {
+  background: radial-gradient(ellipse at 50% 50%, rgba(245, 158, 11, 0.05) 0%, transparent 70%), #090B10 !important;
+  padding: 20px 24px !important;
+}
+
+.mp-board-mat {
+  background: #06070B !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(245, 158, 11, 0.08) !important;
+  border-radius: 12px !important;
+}
+
+/* Difficulty controls */
+.mp-studio > .mp-settings {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+}
+
+.mp-difficulties button {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 8px !important;
+  color: #94A3B8 !important;
+  transition: all 0.2s ease !important;
+}
+
+.mp-difficulties button:hover {
+  border-color: rgba(245, 158, 11, 0.3) !important;
+  color: #CBD5E1 !important;
+}
+
+.mp-difficulties button[aria-pressed="true"] {
+  background: rgba(245, 158, 11, 0.16) !important;
+  border-color: #F59E0B !important;
+  color: #FBBF24 !important;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.2) !important;
+}
+
+/* ==========================================================================
+   THEME OF THE RIGHT SECTION (MASAR AI DARK & RADIANT GOLD)
+   ========================================================================== */
+
+/* 1. Landmark Puzzle Right Section (.mp-sidebar) */
+.mp-sidebar {
+  border-inline-start: 1px solid rgba(245, 158, 11, 0.25) !important;
+  background: linear-gradient(180deg, #11141D 0%, #080A0E 100%) !important;
+  padding: 24px 22px !important;
+  box-shadow: inset 1px 0 0 rgba(245, 158, 11, 0.06) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.mp-location {
+  color: #F59E0B !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.mp-location svg {
+  color: #F59E0B !important;
+  stroke: #F59E0B !important;
+}
+
+.mp-sidebar > h3 {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  font-size: 26px !important;
+  line-height: 1.2 !important;
+  margin: 10px 0 8px !important;
+}
+
+.mp-description {
+  color: #94A3B8 !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+/* Progress Section in Right Panel */
+.mp-progress {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  margin: 20px 0 16px !important;
+  padding-bottom: 18px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.mp-ring svg circle:first-child {
+  stroke: rgba(255, 255, 255, 0.08) !important;
+}
+
+.mp-ring .mp-ring-fill {
+  stroke: #F59E0B !important;
+  filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.45)) !important;
+}
+
+.mp-ring > b {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  font-size: 20px !important;
+}
+
+.mp-ring > b span {
+  color: #F59E0B !important;
+  font-size: 11px !important;
+}
+
+.mp-progress > div:last-child > b {
+  color: #FFFFFF !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  display: block !important;
+}
+
+.mp-progress small {
+  color: #94A3B8 !important;
+  font-size: 11px !important;
+  display: block !important;
+  margin-top: 4px !important;
+}
+
+/* Guidance box */
+.mp-guidance {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px !important;
+  padding: 12px 14px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+}
+
+.mp-guidance > span {
+  color: #F59E0B !important;
+}
+
+.mp-guidance b {
+  color: #FFFFFF !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.mp-guidance p {
+  color: #94A3B8 !important;
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+  margin: 4px 0 0 !important;
+}
+
+/* Hint Button */
+.mp-hint {
+  background: rgba(245, 158, 11, 0.08) !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  padding: 10px 14px !important;
+  border-radius: 10px !important;
+  color: #FBBF24 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  margin-top: 16px !important;
+  transition: all 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  cursor: pointer !important;
+}
+
+.mp-hint:hover:not(:disabled) {
+  background: rgba(245, 158, 11, 0.18) !important;
+  border-color: #F59E0B !important;
+  color: #FFFFFF !important;
+}
+
+/* Reward Box */
+.mp-reward {
+  margin-top: 16px !important;
+  padding: 14px 16px !important;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(13, 16, 23, 0.8) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+.mp-reward > span {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%) !important;
+  color: #0A0B0E !important;
+  border: none !important;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.35) !important;
+  flex-shrink: 0 !important;
+}
+
+.mp-reward b {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+}
+
+.mp-reward small {
+  color: #FBBF24 !important;
+  font-size: 11px !important;
+  display: block !important;
+  margin-top: 3px !important;
+}
+
+/* Journey Dots */
+.mp-journey-dots {
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding-top: 16px !important;
+  margin-top: auto !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+.mp-journey-dots > span {
+  width: 26px !important;
+  height: 26px !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 50% !important;
+  color: #64748B !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.mp-journey-dots .mp-dot-done {
+  border: none !important;
+  background: linear-gradient(135deg, #F59E0B, #D97706) !important;
+  color: #0A0B0E !important;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.35) !important;
+}
+
+.mp-journey-dots > small {
+  color: #94A3B8 !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  margin-top: 4px !important;
+}
+
+/* Destination Completed Card */
+.mp-destination {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(10, 11, 14, 0.7) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.35) !important;
+  border-radius: 14px !important;
+  padding: 16px !important;
+  margin: 0 0 20px !important;
+}
+
+.mp-destination .mp-kicker {
+  color: #F59E0B !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+}
+
+.mp-destination h4 {
+  color: #FFFFFF !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  margin: 8px 0 !important;
+}
+
+.mp-destination p {
+  color: #CBD5E1 !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  margin: 0 0 14px !important;
+}
+
+/* Gold Primary CTA Buttons across all games */
+.mp-game .mp-gold,
+.mas-primary,
+.br-primary {
+  background: linear-gradient(115deg, #f8c74d, #e99c17) !important;
+  color: #211704 !important;
+  font-weight: 750 !important;
+  border: 1px solid #e9b64d !important;
+  border-radius: 10px !important;
+  box-shadow: 0 3px 18px rgba(233, 156, 23, 0.2) !important;
+  padding: 12px 18px !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.mp-game .mp-gold:hover,
+.mas-primary:hover,
+.br-primary:hover {
+  background: linear-gradient(115deg, #ffda79, #f2ac2e) !important;
+  transform: translateY(-1px);
+}
+
+.mp-game .mp-gold:hover,
+.mas-primary:hover,
+.br-primary:hover {
+  filter: brightness(1.1) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45) !important;
+}
+
+/* 2. Tourist Arcade Right Section (.mas-mission) */
+.mas-mission {
+  border-inline-start: 1px solid rgba(245, 158, 11, 0.25) !important;
+  background: linear-gradient(180deg, #11141D 0%, #080A0E 100%) !important;
+  padding: 24px 22px !important;
+  box-shadow: inset 1px 0 0 rgba(245, 158, 11, 0.06) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.mas-mission-label {
+  color: #F59E0B !important;
+  font-weight: 700 !important;
+  font-size: 11px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+}
+
+.mas-mission-label > span:last-child {
+  color: #F59E0B !important;
+  font-weight: 800 !important;
+}
+
+.mas-mission h2 {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  font-size: 28px !important;
+}
+
+.mas-mission h2 span {
+  color: #F59E0B !important;
+}
+
+.mas-mission-title > p {
+  color: #94A3B8 !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+}
+
+.mas-checkpoints li {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.mas-checkpoints .mas-current .mas-stamp {
+  border-color: #F59E0B !important;
+  color: #F59E0B !important;
+  background: rgba(245, 158, 11, 0.15) !important;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.25) !important;
+}
+
+.mas-checkpoints .mas-current b {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+}
+
+.mas-checkpoints .mas-current small {
+  color: #FBBF24 !important;
+  font-weight: 600 !important;
+}
+
+.mas-checkpoints .mas-current i {
+  color: #F59E0B !important;
+}
+
+.mas-checkpoints .mas-done .mas-stamp {
+  border-color: #10B981 !important;
+  color: #34D399 !important;
+  background: rgba(16, 185, 129, 0.15) !important;
+}
+
+.mas-reward {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(13, 16, 23, 0.8) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.28) !important;
+  border-radius: 12px !important;
+  padding: 14px 16px !important;
+}
+
+.mas-reward > span {
+  color: #F59E0B !important;
+  font-weight: 700 !important;
+  font-size: 10px !important;
+  letter-spacing: 0.08em !important;
+}
+
+.mas-reward > strong {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  font-size: 20px !important;
+}
+
+.mas-reward > strong b {
+  color: #F59E0B !important;
+}
+
+.mas-reward > p {
+  color: #94A3B8 !important;
+  font-size: 11px !important;
+}
+
+/* 3. Golden Roll Right Section (.br-panel) */
+.br-panel {
+  border-inline-start: 1px solid rgba(245, 158, 11, 0.25) !important;
+  background: linear-gradient(180deg, #11141D 0%, #080A0E 100%) !important;
+  padding: 24px 22px !important;
+  box-shadow: inset 1px 0 0 rgba(245, 158, 11, 0.06) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.br-kicker {
+  color: #F59E0B !important;
+  font-weight: 700 !important;
+  font-size: 11px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+}
+
+.br-panel-top h2 {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  font-size: 22px !important;
+  line-height: 1.15 !important;
+  margin: 8px 0 6px !important;
+}
+
+.br-courses {
+  margin-top: 10px !important;
+  gap: 6px !important;
+}
+
+.br-courses button {
+  padding: 7px 5px !important;
+}
+
+.br-courses button span {
+  font-size: 14px !important;
+  margin-bottom: 2px !important;
+}
+
+.br-courses button b {
+  font-size: 9px !important;
+}
+
+.br-current {
+  padding: 8px 0 6px !important;
+}
+
+.br-stats {
+  padding: 8px 0 !important;
+  gap: 6px !important;
+}
+
+.br-stats b {
+  font-size: 17px !important;
+}
+
+.br-route {
+  margin: 4px 0 12px !important;
+}
+
+.br-route li {
+  padding: 0 0 10px !important;
+  gap: 8px !important;
+}
+
+.br-gate-symbol {
+  width: 25px !important;
+  height: 25px !important;
+  font-size: 13px !important;
+}
+
+.br-panel-top h2 em {
+  color: #F59E0B !important;
+  font-style: normal !important;
+}
+
+.br-panel-top p {
+  color: #94A3B8 !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+}
+
+.br-courses button {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #94A3B8 !important;
+  border-radius: 8px !important;
+}
+
+.br-courses button.br-selected {
+  border-color: #F59E0B !important;
+  background: rgba(245, 158, 11, 0.15) !important;
+  color: #FBBF24 !important;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.2) !important;
+}
+
+.br-stats {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.br-stats > div > span {
+  color: #94A3B8 !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+}
+
+.br-stats b {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+}
+
+.br-stats > div:first-child b {
+  color: #F59E0B !important;
+}
+
+.br-route li {
+  color: #94A3B8 !important;
+}
+
+.br-route .br-active {
+  color: #FFFFFF !important;
+}
+
+.br-route .br-active .br-gate-symbol {
+  border-color: #F59E0B !important;
+  color: #F59E0B !important;
+  background: rgba(245, 158, 11, 0.15) !important;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.25) !important;
+}

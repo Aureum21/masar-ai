@@ -1,0 +1,35 @@
+/* Adapted from optimization; scoped to chat so other shells retain their layout. */
+.chat-results-button{display:none}
+.chat-workspace>.journey-mobile-nav{display:none}
+@media(max-width:1024px) and (min-width:769px){
+  .chat-workspace>.sidebar{width:76px;flex-shrink:0;padding:16px 8px}
+  .chat-workspace>.sidebar :is(.sidebar-nav-item span,.sidebar-logo span,.sidebar-new-chat-btn span,.sidebar-profile-info,.sidebar-legal-links,.sidebar-recent-conversations){display:none}
+  .chat-workspace>.sidebar .sidebar-recent-conversations{display:none!important}
+  .chat-workspace>.sidebar .sidebar-header{flex-direction:column;gap:12px;padding-inline:0}
+  .chat-workspace>.sidebar :is(.sidebar-nav-item,.sidebar-new-chat-btn,.sidebar-profile){justify-content:center;padding-inline:0}
+  .chat-workspace>.sidebar .sidebar-logo img{width:40px!important;height:40px!important;object-fit:contain}
+  .chat-workspace .chat-column{width:50%;min-width:300px}
+  .chat-workspace .discovery-canvas{padding:16px;min-width:0}
+}
+@media(max-width:768px){
+  .chat-workspace{height:100dvh;flex-direction:column;padding-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
+  .chat-workspace>.sidebar{display:none}
+  .chat-workspace>.chat-workspace-main{width:100%;height:auto;min-height:0;min-width:0}
+  .chat-workspace .split-workspace{flex:1;min-height:0;overflow:hidden}
+  .chat-workspace .chat-column{width:100%;min-width:0;border-inline-end:0;flex:1}
+  .chat-workspace .chat-thread{padding:18px 16px 90px}
+  .chat-workspace .chat-input-bar-container{position:relative;bottom:auto;left:auto;right:auto;width:100%;padding:12px 16px;flex-shrink:0}
+  .chat-workspace .chat-input-box{max-width:none}
+  .chat-workspace .chat-textarea{font-size:16px}
+  .chat-workspace .top-filter-bar{overflow-x:auto;padding-inline:12px;gap:10px}
+  .chat-workspace .top-filter-pills{flex-shrink:0}
+  .chat-workspace .chat-results-button{display:flex;position:absolute;right:16px;bottom:160px;align-items:center;gap:8px;min-height:44px;border:1px solid var(--color-border);border-radius:24px;padding:10px 16px;background:var(--color-accent-gold);color:#17120a;z-index:20}
+  .chat-results-dialog{inset:auto 0 0;width:100%;max-width:none;height:75dvh;max-height:90dvh;margin:0;border:1px solid var(--color-border);border-radius:20px 20px 0 0;padding:0 16px calc(16px + env(safe-area-inset-bottom,0px));background:var(--color-surface);color:var(--color-text-primary);overscroll-behavior:contain}
+  .chat-results-dialog::backdrop{background:rgba(0, 0, 0, 0.45) !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important}
+  .chat-results-dialog>header{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:16px 0;background:var(--color-surface)}
+  .chat-results-dialog h2{font-size:17px}
+  .chat-results-dialog>header button{min-width:44px;min-height:44px;display:grid;place-items:center;background:transparent;color:inherit;border:1px solid var(--color-border);border-radius:50%}
+  .chat-results-dialog .discovery-canvas{display:flex;width:100%;height:auto;max-height:none;padding:12px 0;overflow:visible;border:0}
+  .chat-results-dialog :is(.discovery-grid-2col,.discovery-grid-3col){grid-template-columns:1fr}
+  .chat-workspace .journey-mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0}
+}

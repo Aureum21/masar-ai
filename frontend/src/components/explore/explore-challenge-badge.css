@@ -1,0 +1,56 @@
+.explore-challenge-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: calc(100% - 78px);
+  padding: 6px 12px 6px 6px;
+  border: 1px solid #e9c78070;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #302719ed, #14171aeb);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 3px 14px #0003, inset 0 1px 0 #fff1;
+  color: #f2dfb5;
+}
+
+.explore-challenge-badge-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e7c58255;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #e5c78a24, #d0a85d0a);
+  color: #e9ca8c;
+}
+
+.explore-challenge-badge-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.explore-challenge-badge-copy small {
+  color: #d4bb8b;
+  font-size: 7px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.explore-challenge-badge-copy strong {
+  overflow: hidden;
+  color: #f4e5c7;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: .025em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

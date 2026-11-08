@@ -1,0 +1,59 @@
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid rgba(212, 178, 113, .28);
+  border-radius: 14px;
+  background: rgba(212, 178, 113, .06);
+  color: var(--color-text-primary);
+  text-align: start;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s, border-color .2s;
+}
+.trigger:hover { background: rgba(212, 178, 113, .12); border-color: rgba(212, 178, 113, .5); }
+.triggerIcon, .modalIcon { display: grid; place-items: center; flex-shrink: 0; color: #d4b271; background: rgba(212, 178, 113, .1); border: 1px solid rgba(212, 178, 113, .2); }
+.triggerIcon { width: 36px; height: 36px; border-radius: 10px; }
+.triggerCopy { flex: 1; min-width: 0; }
+.triggerCopy small { display: block; margin-top: 4px; color: var(--color-text-secondary); font-size: 12px; font-weight: 400; line-height: 1.5; }
+.trigger > svg { flex-shrink: 0; color: #d4b271; }
+.trigger:focus-visible, .closeButton:focus-visible { outline: 2px solid #d4b271; outline-offset: 4px; }
+
+.dialog {
+  box-sizing: border-box;
+  width: min(1120px, calc(100vw - 48px));
+  max-width: none;
+  max-height: min(900px, calc(100dvh - 48px));
+  padding: 0;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid rgba(212, 178, 113, .35);
+  border-radius: 24px;
+  background: var(--color-surface, #121418);
+  color: var(--color-text-primary);
+  box-shadow: 0 24px 90px rgba(0, 0, 0, .65);
+}
+.dialog[open] { display: flex; flex-direction: column; }
+.dialog::backdrop { background: rgba(0, 0, 0, .72); }
+.modalHeader { display: flex; align-items: flex-start; gap: 16px; flex-shrink: 0; padding: 24px 28px; border-bottom: 1px solid var(--color-border); background: linear-gradient(115deg, rgba(212, 178, 113, .1), transparent); }
+.modalIcon { width: 48px; height: 48px; border-radius: 14px; }
+.headingCopy { flex: 1; min-width: 0; }
+.eyebrow { color: #d4b271; font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.headingCopy h2 { margin: 6px 0; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.25; letter-spacing: -.03em; overflow-wrap: anywhere; }
+.headingCopy p { margin: 0; color: var(--color-text-secondary); font-size: 13px; line-height: 1.6; }
+.closeButton { display: grid; place-items: center; flex-shrink: 0; width: 40px; height: 40px; border: 1px solid var(--color-border); border-radius: 50%; background: var(--color-surface-elevated); color: var(--color-text-secondary); cursor: pointer; }
+.closeButton:hover { color: var(--color-text-primary); border-color: #d4b271; }
+.content { min-height: 0; min-width: 0; padding: 24px 28px; overflow: auto; overscroll-behavior: contain; overflow-wrap: anywhere; container-type: inline-size; }
+
+@media (max-width: 640px) {
+  .dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); border-radius: 18px; }
+  .modalHeader { padding: 18px 16px; gap: 12px; }
+  .modalIcon { display: none; }
+  .content { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) { .trigger { transition: none; } }

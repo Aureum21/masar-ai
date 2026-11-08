@@ -1,0 +1,69 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Optional npm cache directory
+.npm
+#environment variable files
+.env
+.env.*.local
+!.env.example
+#virtual environment
+venv
+.myenv
+# database files
+*.db
+*.sqlite
+#python cache files
+__pycache__/
+*.pyc
+*.pyo
+sandbox/
+
+# Server secrets and private user evidence
+deploy/production.env
+deploy/compose.env
+data/passport-evidence/
+
+# Local vision runtime and downloaded weights
+.visionenv/
+.cache/
+
+# Private receipt images are never source assets.
+data/receipt-private/
+uploads/receipts/
+
+# Operator-issued QR tokens must remain private.
+private-qr/
+
+# Local course project artifacts
+EGN2203_METR_LA/
+
+.venv/
+.env*
+!.env.example
+!*.env.example
+.next/
+AGENT_HANDOVER.md
+*.pdf
+

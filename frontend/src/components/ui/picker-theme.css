@@ -1,0 +1,394 @@
+/* ============================================================
+   MASAR AI — LUXURY PICKER & DROPDOWN THEME
+   Mindtrip-Grade Dark Luxury Custom Components
+   ============================================================ */
+
+/* ── Custom Select Component ── */
+.masar-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.masar-select-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 14px;
+  min-height: 44px;
+  border-radius: 10px;
+  background: var(--color-bg, #0A0B0E);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+  color: var(--color-text-primary, #F8FAFC);
+  font-family: inherit;
+  font-size: 13.5px;
+  text-align: start;
+  cursor: pointer;
+  transition: border-color var(--transition-fast, 140ms ease), box-shadow var(--transition-fast, 140ms ease);
+}
+
+.masar-select-wrapper:hover .masar-select-trigger {
+  border-color: var(--color-border-hover, rgba(245, 158, 11, 0.3));
+}
+
+.masar-select-wrapper.is-open .masar-select-trigger,
+.masar-select-trigger:focus-visible {
+  border-color: var(--color-accent-gold, #FBBF24);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+  outline: none;
+}
+
+.masar-select-wrapper.has-error .masar-select-trigger {
+  border-color: #e48770;
+}
+
+.masar-select-value {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.masar-select-chevron {
+  color: var(--color-accent-gold, #FBBF24);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast, 140ms ease);
+}
+
+.masar-select-chevron.rotate {
+  transform: rotate(180deg);
+}
+
+.masar-select-popover {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-radius: 12px;
+  background: radial-gradient(ellipse at 85% 0%, rgba(214, 155, 32, 0.09), transparent 70%), var(--color-surface-elevated, #1A1C22);
+  border: 1px solid var(--color-border-active, rgba(245, 158, 11, 0.4));
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65), 0 0 1px rgba(245, 158, 11, 0.3);
+  backdrop-filter: blur(16px);
+  padding: 6px;
+  overflow: hidden;
+  animation: pickerFadeIn 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.masar-select-options {
+  max-height: 240px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(245, 158, 11, 0.3) transparent;
+}
+
+.masar-select-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  color: var(--color-text-secondary, #A0AEC0);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast, 140ms ease);
+}
+
+.masar-select-option:hover {
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--color-text-primary, #F8FAFC);
+}
+
+.masar-select-option.is-selected {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.06));
+  color: var(--color-accent-gold, #FBBF24);
+  font-weight: 600;
+}
+
+.masar-select-check {
+  color: var(--color-accent-gold, #FBBF24);
+  flex-shrink: 0;
+}
+
+/* ── Compact Variant for Topbars & Controls ── */
+.masar-select-wrapper.is-compact {
+  width: auto;
+  min-width: 100px;
+}
+
+.masar-select-wrapper.is-compact .masar-select-trigger {
+  min-height: 32px;
+  padding: 5px 10px;
+  font-size: 12px;
+  gap: 6px;
+  border-radius: 8px;
+}
+
+.masar-select-wrapper.is-compact .masar-select-chevron {
+  width: 13px;
+  height: 13px;
+}
+
+.masar-select-wrapper.is-compact .masar-select-popover {
+  min-width: 140px;
+  width: max-content;
+  max-width: 280px;
+  inset-inline-end: 0;
+  inset-inline-start: auto;
+}
+
+/* ── Custom DatePicker Component ── */
+.masar-datepicker-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.masar-datepicker-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 14px;
+  min-height: 44px;
+  border-radius: 10px;
+  background: var(--color-bg, #0A0B0E);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+  color: var(--color-text-primary, #F8FAFC);
+  font-family: inherit;
+  font-size: 13.5px;
+  text-align: start;
+  cursor: pointer;
+  transition: border-color var(--transition-fast, 140ms ease), box-shadow var(--transition-fast, 140ms ease);
+}
+
+.masar-datepicker-wrapper:hover .masar-datepicker-trigger {
+  border-color: var(--color-border-hover, rgba(245, 158, 11, 0.3));
+}
+
+.masar-datepicker-wrapper.is-open .masar-datepicker-trigger,
+.masar-datepicker-trigger:focus-visible {
+  border-color: var(--color-accent-gold, #FBBF24);
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+  outline: none;
+}
+
+.masar-datepicker-wrapper.has-error .masar-datepicker-trigger {
+  border-color: #e48770;
+}
+
+.masar-datepicker-value {
+  flex: 1;
+}
+
+.masar-datepicker-value.is-placeholder {
+  color: var(--color-text-muted, #64748B);
+}
+
+.masar-datepicker-icon {
+  color: var(--color-accent-gold, #FBBF24);
+  flex-shrink: 0;
+}
+
+.masar-datepicker-popover {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 290px;
+  max-width: calc(100vw - 32px);
+  z-index: 1000;
+  border-radius: 14px;
+  background: radial-gradient(ellipse at 85% 0%, rgba(214, 155, 32, 0.12), transparent 70%), var(--color-surface-elevated, #1A1C22);
+  border: 1px solid var(--color-border-active, rgba(245, 158, 11, 0.45));
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.7), 0 0 2px rgba(245, 158, 11, 0.4);
+  backdrop-filter: blur(16px);
+  padding: 16px;
+  animation: pickerFadeIn 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.masar-datepicker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+}
+
+.masar-datepicker-title {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.masar-datepicker-title strong {
+  font-size: 14px;
+  color: var(--color-text-primary, #F8FAFC);
+  letter-spacing: -0.01em;
+}
+
+.masar-datepicker-title span {
+  font-size: 12px;
+  color: var(--color-accent-gold, #FBBF24);
+  font-weight: 600;
+}
+
+.masar-datepicker-nav-btn {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+  color: var(--color-text-secondary, #A0AEC0);
+  cursor: pointer;
+  transition: all var(--transition-fast, 140ms ease);
+}
+
+.masar-datepicker-nav-btn:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: var(--color-accent-gold, #FBBF24);
+  color: var(--color-accent-gold, #FBBF24);
+}
+
+.masar-datepicker-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.masar-datepicker-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.masar-datepicker-weekday {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-accent-gold, #FBBF24);
+  opacity: 0.85;
+  padding: 4px 0;
+}
+
+.masar-datepicker-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+}
+
+.masar-datepicker-day {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-primary, #F8FAFC);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--transition-fast, 140ms ease);
+}
+
+.masar-datepicker-day:hover:not(.is-disabled):not(.outside-month) {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #fff;
+}
+
+.masar-datepicker-day.is-selected {
+  background: linear-gradient(135deg, #F59E0B, #D97706);
+  color: #0A0B0E !important;
+  font-weight: 750;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.5);
+  border-color: #F59E0B;
+}
+
+.masar-datepicker-day.is-today:not(.is-selected) {
+  border-color: var(--color-accent-gold, #FBBF24);
+  color: var(--color-accent-gold, #FBBF24);
+  font-weight: 650;
+}
+
+.masar-datepicker-day.outside-month {
+  color: var(--color-text-dim, #475569);
+  opacity: 0.35;
+  cursor: default;
+}
+
+.masar-datepicker-day.is-disabled {
+  color: var(--color-text-dim, #475569);
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.masar-datepicker-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-border, rgba(255, 255, 255, 0.08));
+}
+
+.masar-datepicker-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast, 140ms ease);
+}
+
+.masar-datepicker-btn.subtle {
+  background: transparent;
+  border: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
+  color: var(--color-text-secondary, #A0AEC0);
+}
+
+.masar-datepicker-btn.subtle:hover {
+  border-color: rgba(244, 63, 94, 0.4);
+  color: #f87171;
+  background: rgba(244, 63, 94, 0.08);
+}
+
+.masar-datepicker-btn.gold {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: var(--color-accent-gold, #FBBF24);
+}
+
+.masar-datepicker-btn.gold:hover {
+  background: rgba(245, 158, 11, 0.25);
+  border-color: var(--color-accent-gold, #FBBF24);
+  transform: translateY(-1px);
+}
+
+@keyframes pickerFadeIn {
+  from { opacity: 0; transform: translateY(-4px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .masar-select-popover,
+  .masar-datepicker-popover {
+    animation: none;
+  }
+  .masar-select-chevron {
+    transition: none;
+  }
+}

@@ -1,0 +1,68 @@
+.accessibility-source-tags {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
+  pointer-events: none;
+}
+
+.accessibility-source-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 28px;
+  max-width: 100%;
+  padding: 3px 8px 3px 5px;
+  border: 1px solid #ffffff38;
+  border-radius: 999px;
+  background: #101418df;
+  backdrop-filter: blur(8px);
+  color: #f1f5f9;
+  pointer-events: auto;
+  font-size: 9px;
+  line-height: 1.3;
+  text-decoration: none;
+  transition: border-color .15s, background .15s;
+}
+
+.discovery-card-image .accessibility-source-tag img {
+  flex-shrink: 0;
+  width: 18px !important;
+  height: 18px !important;
+  object-fit: contain !important;
+  padding: 1px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.accessibility-source-tag span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.accessibility-source-tag--wordmark {
+  padding: 3px 8px;
+  background: #fff;
+}
+
+.discovery-card-image .accessibility-source-tag--wordmark img {
+  width: 104px !important;
+  padding: 0;
+  border-radius: 0;
+}
+
+.accessibility-source-tag:hover {
+  border-color: var(--color-accent-gold);
+  background: var(--color-accent-soft);
+}
+
+.accessibility-source-tag:focus-visible {
+  outline: 2px solid var(--color-accent-gold);
+  outline-offset: 3px;
+}

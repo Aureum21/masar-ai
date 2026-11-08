@@ -1,0 +1,11 @@
+ARG BASE_IMAGE=masar-backend:efa-release
+FROM ${BASE_IMAGE}
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends libgl1 libglib2.0-0 && rm -rf /var/lib/apt/lists/*
+COPY requirements.vision.txt /app/requirements.vision.txt
+RUN pip install --no-cache-dir torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu && \
+    pip install --no-cache-dir -r requirements.vision.txt && pip check
+RUN mkdir -p /var/lib/masar/vision && chown -R masar:masar /var/lib/masar/vision
+ENV PASSPORT_VISION_CACHE=/var/lib/masar/vision
+USER 10001:10001
+CMD ["python", "-m", "tools.evidence_worker"]

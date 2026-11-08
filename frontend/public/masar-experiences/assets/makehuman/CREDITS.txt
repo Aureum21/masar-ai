@@ -1,0 +1,25 @@
+MAKEHUMAN CHARACTER ASSETS — CC0
+
+The active character uses MakeHuman Community / MPFB core assets:
+- hm08 base mesh and young adult male macro targets
+- game_engine skeleton and vertex weights
+- fitted high-poly eye mesh and brown eye texture
+- young light-skinned male diffuse texture
+
+Source repositories:
+https://github.com/makehumancommunity/mpfb2
+https://github.com/makehumancommunity/makehuman
+Skin source:
+https://download.tuxfamily.org/makehuman/assets/1.1/base/skins/textures/young_lightskinned_male_diffuse.png
+
+MakeHuman asset license:
+https://static.makehumancommunity.org/about/license.html
+https://static.makehumancommunity.org/mpfb/faq/is_it_really_free.html
+Full CC0 asset license: LICENSE.txt in this folder.
+
+Local modifications: adult male target blend, coordinate conversion, fitted eyes,
+UV conversion, smooth normals, covered-skin culling, GLB export, resized WebP textures, retargeting,
+surface beard/brows, kandura, ghutra and agal. These are an interpretation of
+the supplied clothing reference; no exact photographic likeness is claimed.
+No MakeHuman application/add-on code is included in the runtime.
+Three.js and its loader remain MIT licensed; see vendor/LICENSE.three.txt.

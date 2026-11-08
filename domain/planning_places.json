@@ -1,0 +1,134 @@
+[
+  {
+    "id": "armani-ristorante",
+    "name": "Armani / Ristorante Dubai",
+    "place_id": "armani-ristorante",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "ossiano-underwater",
+    "name": "Ossiano Underwater Restaurant",
+    "place_id": "ossiano-underwater",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "arabian-tea-house",
+    "name": "Arabian Tea House Cafe",
+    "place_id": "arabian-tea-house",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "1484-by-puro",
+    "name": "1484 by Puro Jebel Jais",
+    "place_id": "1484-by-puro",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "hakkasan-abu-dhabi",
+    "name": "Hakkasan Abu Dhabi",
+    "place_id": "hakkasan-abu-dhabi",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "burj-khalifa-sky",
+    "name": "Burj Khalifa At The Top SKY",
+    "place_id": "burj-khalifa",
+    "product_id": "burj-khalifa-sky",
+    "challenge_keys": [
+      "heritage-detective"
+    ]
+  },
+  {
+    "id": "louvre-abu-dhabi",
+    "name": "Louvre Abu Dhabi",
+    "place_id": "louvre-abu-dhabi",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "museum-of-the-future",
+    "name": "Museum of the Future",
+    "place_id": "museum-of-the-future",
+    "product_id": null,
+    "challenge_keys": [
+      "heritage-detective"
+    ]
+  },
+  {
+    "id": "sheikh-zayed-mosque",
+    "name": "Sheikh Zayed Grand Mosque",
+    "place_id": "sheikh-zayed-grand-mosque",
+    "product_id": null,
+    "challenge_keys": [
+      "heritage-detective"
+    ]
+  },
+  {
+    "id": "bab-al-shams",
+    "name": "Bab Al Shams Desert Resort",
+    "place_id": "bab-al-shams",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "qasr-al-sarab",
+    "name": "Qasr Al Sarab Desert Resort by Anantara",
+    "place_id": "qasr-al-sarab",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "atlantis-the-royal",
+    "name": "Atlantis The Royal",
+    "place_id": "atlantis-the-royal",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "la-perle-dragone",
+    "name": "La Perle by Dragone",
+    "place_id": "la-perle-dragone",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "dubai-opera-gala",
+    "name": "Dubai Opera Gala Performances",
+    "place_id": "dubai-opera-gala",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "saadiyat-district",
+    "name": "Saadiyat Island Cultural District",
+    "place_id": "saadiyat-district",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "downtown-dubai-loc",
+    "name": "Downtown Dubai",
+    "place_id": "downtown-dubai-loc",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "guide-abu-dhabi-cultural",
+    "name": "The Sovereign Abu Dhabi Cultural Escapade",
+    "place_id": "guide-abu-dhabi-cultural",
+    "product_id": null,
+    "challenge_keys": []
+  },
+  {
+    "id": "guide-dubai-skyline",
+    "name": "Dubai Skyline & Private Yacht Odyssey",
+    "place_id": "guide-dubai-skyline",
+    "product_id": null,
+    "challenge_keys": []
+  }
+]

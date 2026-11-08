@@ -1,0 +1,4 @@
+# Local Time Travel scene recognition; CPU torch installed separately.
+# Reuses passport.vision_models; PaddleOCR is not required for landmark matching.
+transformers==4.57.6
+sentencepiece==0.2.2

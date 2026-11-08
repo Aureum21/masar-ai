@@ -1,0 +1,18 @@
+{
+    email {$TLS_EMAIL}
+    admin off
+}
+{$API_DOMAIN} {
+    request_body {
+        max_size 20MB
+    }
+    header {
+        Strict-Transport-Security "max-age=31536000"
+        X-Content-Type-Options nosniff
+        Referrer-Policy no-referrer
+        -Server
+    }
+    reverse_proxy api:8000 {
+        flush_interval -1
+    }
+}

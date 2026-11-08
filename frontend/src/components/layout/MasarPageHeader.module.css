@@ -1,0 +1,256 @@
+/* ============================================================
+   MASAR AI UNIFIED LUXURY PAGE HEADER
+   Obsidian dark luxury styling matching the Passport layout
+   ============================================================ */
+
+.headerWrapper {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.topbar {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #64748B;
+  text-decoration: none;
+}
+
+.breadcrumb strong {
+  color: #F59E0B;
+  font-weight: 800;
+}
+
+.headerRightArea {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.headerLinks {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.textLink {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #F59E0B;
+  text-decoration: none;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.textLink:hover {
+  color: #FBBF24;
+  transform: translateY(-1px);
+}
+
+.topRightActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.intro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.introLeft {
+  min-width: 0;
+  flex: 1;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-family, 'Plus Jakarta Sans', sans-serif);
+  font-size: var(--masar-page-title-size);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+.subtitle {
+  color: #94A3B8;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 8px 0 0;
+  font-weight: 400;
+  max-width: 680px;
+}
+
+.issue {
+  text-align: end;
+  color: #64748B;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.tabsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.tabGroup {
+  display: flex;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 4px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+}
+
+.tabActive {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 800;
+  background: linear-gradient(115deg, #f8c74d, #e99c17);
+  color: #211704;
+  border: 1px solid #e9b64d;
+  box-shadow: 0 2px 10px rgba(233, 156, 23, 0.2);
+  border: none;
+  cursor: default;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.tabInactive {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  background: transparent;
+  color: #94A3B8;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.tabInactive:hover {
+  color: #F8FAFC;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.actionsRight {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Compact mode for Explore and dense dashboards */
+.compact {
+  margin-bottom: 6px;
+}
+
+.compact .topbar {
+  margin-bottom: 6px;
+}
+
+.compact .intro {
+  margin-bottom: 6px;
+  gap: 12px;
+}
+
+.compact .title {
+  font-size: var(--masar-page-title-size);
+  line-height: 1.1;
+}
+
+.compact .subtitle {
+  font-size: 12px;
+  margin: 3px 0 0;
+  line-height: 1.35;
+}
+
+.compact .issue {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  line-height: 1.35;
+}
+
+.compact .tabsRow {
+  margin-bottom: 6px;
+}
+
+.compact .tabActive,
+.compact .tabInactive {
+  padding: 5px 14px;
+  font-size: 11px;
+}
+
+.topbarOnly {
+  margin-bottom: 0;
+}
+
+.topbarOnly .topbar {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    margin-bottom: 18px;
+  }
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .issue {
+    text-align: start;
+  }
+  .tabsRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .tabGroup {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .actionsRight {
+    justify-content: flex-start;
+  }
+}

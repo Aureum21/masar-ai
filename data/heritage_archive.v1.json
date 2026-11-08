@@ -1,0 +1,544 @@
+{
+  "al_hisn": {
+    "landmark_id": "al_hisn",
+    "landmark_name": "Sharjah Fort (Al Hisn)",
+    "arabic_name": "حصن الشارقة",
+    "emirate": "Sharjah",
+    "city": "Heart of Sharjah, UAE",
+    "year_founded": "1823",
+    "founder": "Sheikh Sultan bin Saqr Al Qasimi",
+    "thumbnail_url": "/time-travel/era-present.jpg",
+    "badge_color": "#d97706",
+    "features_detected": [
+      "Burj Al-Kabis circular defensive tower",
+      "Traditional sea coral stone & gypsum masonry",
+      "Bab Al-Sabah entrance & salvaged 1823 teak gates",
+      "Crenellated defense parapets"
+    ],
+    "history_summary": "Founded in 1823 as the sovereign headquarters of the Al Qasimi ruling family. Survived a near-fatal 1969 demolition when Sheikh Dr. Sultan bin Muhammad Al Qasimi raced back from Cairo to halt bulldozers, preserving Burj Al-Kabis as a beacon of cultural identity.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The Restored Living Museum",
+        "image_url": "/time-travel/era-present.jpg",
+        "subtitle": "Heart of Sharjah Cultural Anchor",
+        "description": "Meticulously reconstructed around the original surviving Al-Kabis tower using authentic sea-coral stones, holding the 1823 treaties and salvaged royal teak doors.",
+        "what_changed": "The modern pedestrian cultural district of Heart of Sharjah surrounds the peaceful coral fortress.",
+        "key_features": [
+          "Preserved 1823 Bab Al-Sabah doors",
+          "Incorporated original Burj Al-Kabis tower",
+          "Heart of Sharjah pedestrian plaza"
+        ]
+      },
+      {
+        "id": "1969",
+        "year": "1969",
+        "era_title": "The Lone Tower Crisis",
+        "image_url": "/time-travel/era-1969.jpg",
+        "subtitle": "Demolition & The Defiant Burj Al-Kabis",
+        "description": "Bulldozers began tearing down the fort for modernization. Sheikh Sultan raced back from Cairo, physically standing in front of the machinery to save Burj Al-Kabis, which stood alone in the square for 27 years.",
+        "what_changed": "Outer residential palace walls collapsed into dust; only the solitary round tower survived defiance.",
+        "key_features": [
+          "Burj Al-Kabis solitary tower",
+          "Demolition rubble & salvaged teak doors",
+          "Sheikh Sultan historical rescue"
+        ]
+      },
+      {
+        "id": "1823",
+        "year": "1823",
+        "era_title": "The Sovereign Sea Citadel",
+        "image_url": "/time-travel/era-1823.jpg",
+        "subtitle": "Maritime Crossroads & Pearling Fleet",
+        "description": "Prior to 20th-century land reclamation, turquoise Arabian Gulf waters reached the foot of the fort. Pearling dhows anchored directly outside the Sea Gate (Bab Al-Bahr).",
+        "what_changed": "Where today's asphalt roads and plazas sit was an open tidal shoreline with pearling dhow fleets.",
+        "key_features": [
+          "Bab Al-Bahr (Sea Gate) touching the surf",
+          "Flotillas of pearling dhows anchored at the wall",
+          "Brass cannons guarding coastal trade"
+        ]
+      }
+    ]
+  },
+  "qasr_al_hosn": {
+    "landmark_id": "qasr_al_hosn",
+    "landmark_name": "Qasr Al Hosn",
+    "arabic_name": "قصر الحصن",
+    "emirate": "Abu Dhabi",
+    "city": "Downtown Abu Dhabi, UAE",
+    "year_founded": "1761",
+    "founder": "Sheikh Dhiyab bin Isa Al Nahyan",
+    "thumbnail_url": "/time-travel/qasr-al-hosn-present.jpg",
+    "badge_color": "#2563eb",
+    "features_detected": [
+      "Original 1761 coral-stone watchtower",
+      "Outer White Palace enclosure with crenellated walls",
+      "Historic council majlis & royal courtyard",
+      "Mangrove pole & palm-frond roofing"
+    ],
+    "history_summary": "The oldest and most iconic standing stone building in Abu Dhabi. It originated around 1761 as a solitary coral watchtower protecting the island's only freshwater well, transforming under Sheikh Shakhbut bin Dhiyab in 1795 into the ancestral seat of the Al Nahyan ruling family.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "Restored National Cultural Beacon",
+        "image_url": "/time-travel/qasr-al-hosn-present.jpg",
+        "subtitle": "Birthplace of Modern Abu Dhabi",
+        "description": "A premier national monument encased in sparkling white limestone and restored coral plaster, surrounded by landscaped public plazas and the Cultural Foundation.",
+        "what_changed": "The historic palace stands preserved at the center of Abu Dhabi's hyper-modern downtown skyline.",
+        "key_features": [
+          "Luminescent white palace exterior",
+          "Preserved 18th-century inner watchtower",
+          "Al Hosn cultural park & museum galleries"
+        ]
+      },
+      {
+        "id": "1960",
+        "year": "1960",
+        "era_title": "The Solitary Desert Fortress",
+        "image_url": "/time-travel/qasr-al-hosn-past.jpg",
+        "subtitle": "Pre-Oil Trucial Capital",
+        "description": "Qasr Al Hosn stood surrounded by vast sand dunes, coastal sabkha flats, and palm-thatch barasti settlements with camel tracks leading to the Arabian Gulf shore.",
+        "what_changed": "Towering glass skyscrapers were once endless desert dunes and traditional barasti family compounds.",
+        "key_features": [
+          "Solitary white fort surrounded by dunes",
+          "Bedouin camel caravans and barasti palm huts",
+          "Original fresh water well compound"
+        ]
+      }
+    ]
+  },
+  "al_fahidi": {
+    "landmark_id": "al_fahidi",
+    "landmark_name": "Al Fahidi Fort (Dubai Museum)",
+    "arabic_name": "حصن الفهيدي",
+    "emirate": "Dubai",
+    "city": "Bur Dubai, UAE",
+    "year_founded": "1787",
+    "founder": "Sheikh Hazza bin Zaal Al Falasi",
+    "thumbnail_url": "/time-travel/al-fahidi-present.jpg",
+    "badge_color": "#dc2626",
+    "features_detected": [
+      "Square coral stone defense tower",
+      "Bur Dubai creek defensive ramparts",
+      "Historical cast bronze cannons",
+      "Traditional gypsum mortar and chandal wood ceilings"
+    ],
+    "history_summary": "Built in 1787 to guard Bur Dubai from landward raids, Al Fahidi Fort is the oldest existing building in Dubai. It served as a palace, garrison, and prison before Sheikh Rashid bin Saeed Al Maktoum inaugurated it as the Dubai Museum in 1971.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The Dubai Heritage Museum",
+        "image_url": "/time-travel/al-fahidi-present.jpg",
+        "subtitle": "Guardian of Dubai's Historic Creek",
+        "description": "A cherished heritage sanctuary on the south bank of Dubai Creek, anchoring the Al Fahidi Historical Neighborhood with traditional windtowers.",
+        "what_changed": "Modern pedestrian avenues, museum galleries, and preserved Barjeel windtowers flank the fort.",
+        "key_features": [
+          "Historic courtyard with brass naval cannons",
+          "Traditional square coral watchtower",
+          "Al Fahidi historic windtower quarter"
+        ]
+      },
+      {
+        "id": "1950",
+        "year": "1950",
+        "era_title": "The Dhow Harbor Bastion",
+        "image_url": "/time-travel/al-fahidi-past.jpg",
+        "subtitle": "Heart of the Trucial Coast Pearling Port",
+        "description": "Wooden pearling dhows beached directly upon the muddy creek sandbanks beside the fort walls, with merchants negotiating pearl harvests under palm awnings.",
+        "what_changed": "Creek waters and unpaved tidal mudbanks bordered the fort walls where wooden dhows were repaired.",
+        "key_features": [
+          "Hand-built wooden pearling dhow fleet",
+          "Unpaved creek sandbanks and mudflats",
+          "Scaffolding maintenance on fort tower"
+        ]
+      }
+    ]
+  },
+  "dhayah_fort": {
+    "landmark_id": "dhayah_fort",
+    "landmark_name": "Dhayah Fort",
+    "arabic_name": "قلعة ضاية",
+    "emirate": "Ras Al Khaimah",
+    "city": "Northern Ras Al Khaimah, UAE",
+    "year_founded": "1819",
+    "founder": "Al Qasimi resistance forces",
+    "thumbnail_url": "/time-travel/dhayah-fort-present.jpg",
+    "badge_color": "#b45309",
+    "features_detected": [
+      "High conical mountain crag placement",
+      "Twin mudbrick defensive watchtowers",
+      "Steep defensive stone stairways",
+      "Strategic panoramic view of Gulf and oasis"
+    ],
+    "history_summary": "The only remaining hilltop fort in the United Arab Emirates. Perched 70 meters high on a limestone pinnacle, it was the site of the historic 1819 Battle of Dhayah where local Emirati fighters held out against British expeditionary forces.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The Mountain Citadel",
+        "image_url": "/time-travel/dhayah-fort-present.jpg",
+        "subtitle": "UNESCO Tentative Heritage Landmark",
+        "description": "Restored golden mudbrick twin towers atop the steep cone hill, overlooking thousands of lush green date palms framed by the majestic Hajar Mountains.",
+        "what_changed": "Scenic stone walking stairs and observation lookouts guide visitors to the preserved summit.",
+        "key_features": [
+          "Twin mudbrick battle towers",
+          "360-degree panoramic view of date palm groves",
+          "Dramatic limestone mountain backdrop"
+        ]
+      },
+      {
+        "id": "1819",
+        "year": "1819",
+        "era_title": "The Battle of Dhayah",
+        "image_url": "/time-travel/dhayah-fort-past.jpg",
+        "subtitle": "Heroic Last Stand of the Gulf Coast",
+        "description": "British naval artillery bombarded the mountain stronghold from the bay while local Qasimi warriors mounted a legendary defense from the rocky ramparts.",
+        "what_changed": "Naval war galleons bombarded the coast, filling the mountain valley with gunpowder smoke.",
+        "key_features": [
+          "Smoke-filled siege artillery positions",
+          "Local defenders manning crenellated battlements",
+          "Historic British expeditionary warships in the bay"
+        ]
+      }
+    ]
+  },
+  "fujairah_fort": {
+    "landmark_id": "fujairah_fort",
+    "landmark_name": "Fujairah Fort",
+    "arabic_name": "قلعة الفجيرة",
+    "emirate": "Fujairah",
+    "city": "Fujairah City, UAE",
+    "year_founded": "1550",
+    "founder": "Sharqiyin Sheikhs",
+    "thumbnail_url": "/time-travel/fujairah-fort-present.jpg",
+    "badge_color": "#059669",
+    "features_detected": [
+      "Three circular defensive towers & one square bastion",
+      "Natural rocky knoll foundation (20m elevated)",
+      "Local rock, mudbrick, and mangrove plaster construction",
+      "Commanding view over the Gulf of Oman coastline"
+    ],
+    "history_summary": "One of the oldest and largest fortifications in the UAE, dating back to 1550. Perched on a 20-meter high rock hill, it defended the East Coast against European colonial fleets and survived heavy Royal Navy naval bombardment in 1925.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The East Coast Stronghold",
+        "image_url": "/time-travel/fujairah-fort-present.jpg",
+        "subtitle": "Heart of Fujairah Heritage Village",
+        "description": "Fully restored with ancient mud, gravel, and gypsum techniques, anchoring the Fujairah Heritage Village with historical date gardens and reconstructed mountain houses.",
+        "what_changed": "Surrounding ruins have been meticulously preserved and framed by lush heritage palm groves.",
+        "key_features": [
+          "Four towering defense bastions",
+          "Traditional mudbrick village houses",
+          "Panoramic view toward Gulf of Oman"
+        ]
+      },
+      {
+        "id": "1925",
+        "year": "1925",
+        "era_title": "The 1925 Naval Bombardment",
+        "image_url": "/time-travel/fujairah-fort-past.jpg",
+        "subtitle": "Crumbling Ruins on the East Coast Hill",
+        "description": "Following naval shelling in November 1925, the fort stood in romantic ruin on the hillside, its defiant central round tower enduring decades of mountain winds.",
+        "what_changed": "The damaged walls stood raw and fractured following British naval artillery strikes.",
+        "key_features": [
+          "Post-bombardment rubble and fractured walls",
+          "Lone round tower standing guard",
+          "Traditional fishing dhows anchored off Fujairah bay"
+        ]
+      }
+    ]
+  },
+  "al_jahili": {
+    "landmark_id": "al_jahili",
+    "landmark_name": "Al Jahili Fort",
+    "arabic_name": "قلعة الجاهلي",
+    "emirate": "Abu Dhabi",
+    "city": "Al Ain Oasis, UAE",
+    "year_founded": "1891",
+    "founder": "Sheikh Zayed bin Khalifa Al Nahyan (Zayed the First)",
+    "thumbnail_url": "/time-travel/al-jahili-present.jpg",
+    "badge_color": "#16a34a",
+    "features_detected": [
+      "Iconic four-tiered circular watchtower",
+      "High crenellated mudbrick courtyard walls",
+      "Aflaj irrigation and oasis palm perimeter",
+      "Traditional wooden gate inscribed with poetic verses"
+    ],
+    "history_summary": "Erected in 1891 by Sheikh Zayed the First to protect Al Ain's precious date palm oases and secure peace along regional mountain borders. It is celebrated for its distinctive concentric tiered round tower.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The Garden City Oasis Citadel",
+        "image_url": "/time-travel/al-jahili-present.jpg",
+        "subtitle": "UNESCO World Heritage Site of Al Ain",
+        "description": "A magnificent cultural center surrounded by lush green lawns and bougainvillea, home to the permanent photography exhibition of British explorer Sir Wilfred Thesiger.",
+        "what_changed": "Lush manicured grass lawns, exhibition galleries, and restored mudbrick battlements welcome global visitors.",
+        "key_features": [
+          "Iconic tiered circular tower",
+          "Al Ain oasis date palm groves",
+          "Sheikh Zayed the First inscription plaque"
+        ]
+      },
+      {
+        "id": "1948",
+        "year": "1948",
+        "era_title": "The Desert Patrol Outpost",
+        "image_url": "/time-travel/al-jahili-past.jpg",
+        "subtitle": "Arabian Sands & Bedouin Caravans",
+        "description": "Documented by Wilfred Thesiger, the fort stood as an oasis sanctuary where Bedouin camel caravans gathered around campfire coals beside the tiered mud tower.",
+        "what_changed": "Open desert sands and resting camel caravans gathered directly before the mudbrick gates.",
+        "key_features": [
+          "Bedouin camel caravans resting at the walls",
+          "Raw desert sands meeting the oasis edge",
+          "Traditional coffee roasting beside the round tower"
+        ]
+      }
+    ]
+  },
+  "al_badiyah": {
+    "landmark_id": "al_badiyah",
+    "landmark_name": "Al Badiyah Mosque",
+    "arabic_name": "مسجد البدية",
+    "emirate": "Fujairah",
+    "city": "Al Badiyah, Fujairah, UAE",
+    "year_founded": "1446",
+    "founder": "Early coastal inhabitants",
+    "thumbnail_url": "/time-travel/al-badiyah-present.jpg",
+    "badge_color": "#0d9488",
+    "features_detected": [
+      "Four unequal helical spiral domes",
+      "Stone and mud plaster mountain architecture",
+      "Central internal pillar supporting roof arches",
+      "Ancient hillside watchtowers overlooking the mosque"
+    ],
+    "history_summary": "The oldest documented functioning mosque in the United Arab Emirates, carbon-dated to 1446 AD. Featuring a unique architectural plan with four helical domes supported by a single central pillar, it has hosted prayers for over 580 years.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The 15th-Century Sacred Sanctuary",
+        "image_url": "/time-travel/al-badiyah-present.jpg",
+        "subtitle": "UAE's Oldest Continuously Active Mosque",
+        "description": "Preserved with natural mud plaster and volcanic stone, attracting worshipers and visitors beneath the Hajar mountain slopes.",
+        "what_changed": "A heritage perimeter walkway and preservation lighting safeguard the ancient sanctuary.",
+        "key_features": [
+          "Four distinctive layered helical domes",
+          "Single central load-bearing pillar",
+          "Twin Portuguese-era hill watchtowers"
+        ]
+      },
+      {
+        "id": "1935",
+        "year": "1935",
+        "era_title": "The Timeless Mountain Hamlet",
+        "image_url": "/time-travel/al-badiyah-past.jpg",
+        "subtitle": "Community Life in the Trucial Mountains",
+        "description": "Mountain families and travelers with pack donkeys walked unpaved stony tracks to gather for Friday communal prayers beneath the domes.",
+        "what_changed": "Villagers in traditional attire traveled along unpaved mountain pathways with pack donkeys.",
+        "key_features": [
+          "Local mountain villagers on rocky footpaths",
+          "Pack donkeys carrying grain and water skins",
+          "Unadorned mud plaster exterior"
+        ]
+      }
+    ]
+  },
+  "jazirat_al_hamra": {
+    "landmark_id": "jazirat_al_hamra",
+    "landmark_name": "Jazirat Al Hamra (Ghost Village)",
+    "arabic_name": "جزيرة الحمراء",
+    "emirate": "Ras Al Khaimah",
+    "city": "Southern Ras Al Khaimah, UAE",
+    "year_founded": "1600",
+    "founder": "Zaab pearling tribe",
+    "thumbnail_url": "/time-travel/jazirat-al-hamra-present.jpg",
+    "badge_color": "#ea580c",
+    "features_detected": [
+      "Coral-stone & sea-shell masonry houses",
+      "Traditional Barjeel windtowers & open liwans",
+      "Round defensive watchtowers and fort complex",
+      "Intact pre-oil maritime alleyways (Sikkah)"
+    ],
+    "history_summary": "The last intact traditional pearling and fishing village in the Arabian Gulf. Abandoned in 1968 as residents migrated to Abu Dhabi during the oil boom, its coral-stone houses and windtowers remain frozen in time.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The Open-Air Heritage Relic",
+        "image_url": "/time-travel/jazirat-al-hamra-present.jpg",
+        "subtitle": "Preserved Coastal Ghost Village",
+        "description": "An evocative open-air historical site host to the Ras Al Khaimah Art Festival, offering an unvarnished window into pre-oil Emirati town planning.",
+        "what_changed": "Preserved alleys and stabilized coral houses host international arts and heritage exhibitions.",
+        "key_features": [
+          "Standing Barjeel windtowers",
+          "Coral stone and sea shell brickwork",
+          "Intact village lanes and market squares"
+        ]
+      },
+      {
+        "id": "1955",
+        "year": "1955",
+        "era_title": "The Thriving Pearling Haven",
+        "image_url": "/time-travel/jazirat-al-hamra-past.jpg",
+        "subtitle": "Home of the Zaab Pearlers",
+        "description": "Hundreds of pearling dhows anchored along the tidal shore; divers repaired nets and merchants weighed pearls in open courtyard liwans.",
+        "what_changed": "A vibrant maritime population lived within the coral walls before the 1968 modernization migration.",
+        "key_features": [
+          "Pearl diving families and active fishing nets",
+          "Traditional wooden boats anchored on the tidal beach",
+          "Bustling village souq and communal life"
+        ]
+      }
+    ]
+  },
+  "bait_al_naboodah": {
+    "landmark_id": "bait_al_naboodah",
+    "landmark_name": "Bait Al Naboodah",
+    "arabic_name": "بيت النابودة",
+    "emirate": "Sharjah",
+    "city": "Heart of Sharjah, UAE",
+    "year_founded": "1845",
+    "founder": "Obaid bin Isa bin Ali Al Shamsi (Al Naboodah)",
+    "thumbnail_url": "/time-travel/bait-al-naboodah-present.jpg",
+    "badge_color": "#d97706",
+    "features_detected": [
+      "Ornate carved teak columns from India",
+      "Sea coral and beach-rock walls",
+      "Intricate gypsum floral friezes and screens",
+      "Double-story shaded courtyard layout"
+    ],
+    "history_summary": "The lavish 19th-century coastal residence of one of the Arabian Gulf's wealthiest pearl merchants, Obaid Al Naboodah. Built around 1845, it represents the apex of Gulf merchant residential architecture.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The Pearl Merchant Museum",
+        "image_url": "/time-travel/bait-al-naboodah-present.jpg",
+        "subtitle": "Masterpiece of Heart of Sharjah",
+        "description": "Restored to regal splendor, showcasing original Indian teak carvings, pearl trading scales, coin chests, and serene central courtyards.",
+        "what_changed": "Restored courtyard corridors and climate-controlled galleries welcome visitors in Heart of Sharjah.",
+        "key_features": [
+          "Carved royal teak columns",
+          "Gypsum fretwork windows",
+          "Airy inner family courtyard"
+        ]
+      },
+      {
+        "id": "1890",
+        "year": "1890",
+        "era_title": "The Golden Age of Pearl Trading",
+        "image_url": "/time-travel/bait-al-naboodah-past.jpg",
+        "subtitle": "Nawakhidha & Merchants Gathering",
+        "description": "Sea captains (Nawakhidha) and pearl merchants met in the cool liwan to negotiate pearl harvests shipped to Mumbai and Paris.",
+        "what_changed": "The house bustled with sea captains and jewel merchants bargaining over lustrous natural pearls.",
+        "key_features": [
+          "Pearl grading sieves and brass balance scales",
+          "Foreign merchants from Bombay and Basra",
+          "Hand-drawn water well in central courtyard"
+        ]
+      }
+    ]
+  },
+  "ajman_fort": {
+    "landmark_id": "ajman_fort",
+    "landmark_name": "Ajman Fort (Ajman Museum)",
+    "arabic_name": "حصن عجمان",
+    "emirate": "Ajman",
+    "city": "Ajman City, UAE",
+    "year_founded": "1775",
+    "founder": "Sheikh Rashid bin Humaid Al Nuaimi",
+    "thumbnail_url": "/time-travel/ajman-fort-present.jpg",
+    "badge_color": "#7c3aed",
+    "features_detected": [
+      "Square watchtower and coastal defense bastion",
+      "Windtower (Barjeel) incorporated into palace quarters",
+      "Traditional carved wooden cannons guarding entrance",
+      "Coral and gypsum defensive wall"
+    ],
+    "history_summary": "Built in the late 18th century as the stronghold and residence of the Al Nuaimi ruling family, guarding the entrance to Ajman Creek. In 1981, Sheikh Humaid bin Rashid Al Nuaimi converted it into the Ajman Museum.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The Ajman Heritage Museum",
+        "image_url": "/time-travel/ajman-fort-present.jpg",
+        "subtitle": "Treasury of Emirati Maritime History",
+        "description": "Restored fortress showcasing archaeological artifacts, traditional medicine, manuscript treaties, and pearling heritage.",
+        "what_changed": "Landscaped public square and modern museum exhibits border the historic crenellated bastion.",
+        "key_features": [
+          "Traditional Barjeel windtower",
+          "Ruler's palace reception majlis",
+          "Ajman Creek historical exhibits"
+        ]
+      },
+      {
+        "id": "1910",
+        "year": "1910",
+        "era_title": "The Creek Defender",
+        "image_url": "/time-travel/ajman-fort-past.jpg",
+        "subtitle": "Ruler's Fortress on the Creek Mouth",
+        "description": "The fort guarded the natural harbor where Ajman's famed wooden boat-builders crafted large seafaring dhows along the tidal inlet.",
+        "what_changed": "Ajman's traditional dhow shipyards and sandy creek shoreline bordered the palace walls.",
+        "key_features": [
+          "Artisan dhow shipbuilders working with adzes",
+          "Guarding cannons aimed at creek entrance",
+          "Traditional sand courtyard majlis"
+        ]
+      }
+    ]
+  },
+  "uaq_fort": {
+    "landmark_id": "uaq_fort",
+    "landmark_name": "Umm Al Quwain Fort",
+    "arabic_name": "حصن أم القيوين",
+    "emirate": "Umm Al Quwain",
+    "city": "Old Town, Umm Al Quwain, UAE",
+    "year_founded": "1768",
+    "founder": "Sheikh Rashid bin Majid Al Mualla",
+    "thumbnail_url": "/time-travel/uaq-fort-present.jpg",
+    "badge_color": "#0284c7",
+    "features_detected": [
+      "Twin rounded watchtowers: Al Levara & Al Khour",
+      "Direct vista over the mangrove lagoon and creek",
+      "Stout coral masonry with loopholes for muskets",
+      "Heavy teak gate with defensive iron spikes"
+    ],
+    "history_summary": "Founded in 1768 by Sheikh Rashid bin Majid Al Mualla when the capital moved from Sinniyah Island. It guarded the entrance to the old peninsula town and now houses the UAQ National Museum.",
+    "timeline": [
+      {
+        "id": "2026",
+        "year": "2026",
+        "era_title": "The Lagoon Guardian Museum",
+        "image_url": "/time-travel/uaq-fort-present.jpg",
+        "subtitle": "National Museum of Umm Al Quwain",
+        "description": "A tranquil coastal stone fortress overlooking the mangrove creek, displaying Ed-Dur archaeological treasures and antique weaponry.",
+        "what_changed": "Old town paved roads and museum gardens preserve the twin rounded defensive towers.",
+        "key_features": [
+          "Al Levara & Al Khour round towers",
+          "Ed-Dur archaeological artifacts gallery",
+          "Antique spiked defensive gates"
+        ]
+      },
+      {
+        "id": "1895",
+        "year": "1895",
+        "era_title": "The Mangrove Citadel",
+        "image_url": "/time-travel/uaq-fort-past.jpg",
+        "subtitle": "Seat of the Al Mualla Sheiks",
+        "description": "Positioned strategically across the sandy neck of the peninsula, guarding the fishing fleets navigating between the barrier islands and mangroves.",
+        "what_changed": "Tidal waters and fishing dhows anchored directly beneath the fort's seaward bastions.",
+        "key_features": [
+          "Fishermen hauling nets in mangrove shallows",
+          "Bedouin horse patrols on peninsula sand spit",
+          "Unpaved coral stone ramparts"
+        ]
+      }
+    ]
+  }
+}

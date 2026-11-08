@@ -1,0 +1,38 @@
+# Optional lightweight worker overlay. No vision runtime or public port.
+services:
+  api:
+    environment:
+      RECEIPT_DIR: /var/lib/masar/receipts
+    volumes: [receipts:/var/lib/masar/receipts]
+  receipt-worker:
+    image: masar-backend:${MASAR_IMAGE_TAG:-local}
+    env_file: ${MASAR_ENV_FILE:-./production.env}
+    environment:
+      MASAR_ENV: production
+      RECEIPT_DIR: /var/lib/masar/receipts
+      RECEIPT_HEARTBEAT_FILE: /tmp/masar-receipt-heartbeat
+    command: [python, -m, tools.receipt_worker]
+    depends_on:
+      api: {condition: service_healthy}
+    init: true
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ['/tmp:size=64m,mode=1777']
+    volumes: [receipts:/var/lib/masar/receipts]
+    networks: [backend]
+    mem_limit: 512m
+    cpus: 0.5
+    stop_grace_period: 45s
+    healthcheck:
+      test: [CMD, python, -c, "import os,time; assert time.time()-os.path.getmtime('/tmp/masar-receipt-heartbeat')<100"]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: '3'}
+volumes:
+  receipts:

@@ -1,0 +1,917 @@
+{
+  "capturedOn": "2026-10-23",
+  "root": "C:\\Users\\efake\\Desktop\\threeJs_animation",
+  "purpose": "reference inventory; no assets copied into MASAR yet",
+  "fileCount": 124,
+  "totalBytes": 10240589,
+  "coverage": [
+    "components",
+    "vendor",
+    "assets/makehuman",
+    "assets/avatar",
+    "arcade",
+    "ball-roll",
+    "puzzle",
+    "bowling",
+    "heritage",
+    "sunset",
+    "root code/demo/docs files"
+  ],
+  "licenceFiles": [
+    "assets/avatar/LICENSE.txt",
+    "assets/makehuman/LICENSE.txt",
+    "components/ball-roll/SOURCES.md",
+    "components/boxing/assets/makehuman/LICENSE.txt",
+    "components/landmark-puzzle/ASSETS.md",
+    "components/tourist-arcade/DATA_LICENSE.md",
+    "vendor/LICENSE.three.txt"
+  ],
+  "missingStaticReferences": [],
+  "files": [
+    {
+      "path": "AVATAR_REBUILD.md",
+      "bytes": 3058,
+      "sha256": "fc84b4c587132230fd1e007486899bea2263ae15e6c66e67e7b52996e4ba03fe",
+      "relativeReferences": []
+    },
+    {
+      "path": "INTEGRATION.md",
+      "bytes": 11726,
+      "sha256": "6ffe2b3a7c44cc6d31b59e423b89395cd57aa4bb79cffc71f736cb338ca0dc0c",
+      "relativeReferences": []
+    },
+    {
+      "path": "MASAR_APP_FIT_PLAN.md",
+      "bytes": 12272,
+      "sha256": "907e9de90d6bc857a9cefb208fa51d147cd7bfbcc7e24e17111678e01089c8ee",
+      "relativeReferences": []
+    },
+    {
+      "path": "README.md",
+      "bytes": 6882,
+      "sha256": "9ce60046690d6eb92b8a947f348552f8eafd90d820b41971174bb8de310ea375",
+      "relativeReferences": []
+    },
+    {
+      "path": "animation.js",
+      "bytes": 177,
+      "sha256": "7540c08e5846aa5104733cd96049161a84442946d9ff09887503afb8ed64d4aa",
+      "relativeReferences": [
+        "./components/boxing/animation.js"
+      ]
+    },
+    {
+      "path": "app.js",
+      "bytes": 5638,
+      "sha256": "27579af9bfb0a8392971184d298a1377cf03c065a99d81c8ddfe4c376c9c77bb",
+      "relativeReferences": [
+        "./components/boxing/index.js"
+      ]
+    },
+    {
+      "path": "arcade/app.js",
+      "bytes": 859,
+      "sha256": "d3d3b65a67bdb5969de9ce1702c9dfa6c98db65a975ae8111703ed3574c665c4",
+      "relativeReferences": [
+        "../components/tourist-arcade/index.js"
+      ]
+    },
+    {
+      "path": "arcade/assets/map-preview.svg",
+      "bytes": 17144,
+      "sha256": "738d84ba791993b099c21cac3275022f2e5741029f284bba2230fb8b0c24b978",
+      "relativeReferences": []
+    },
+    {
+      "path": "arcade/index.html",
+      "bytes": 1422,
+      "sha256": "de2bc1ee8fba515db7f54734cacdab7d546c5810dfd4882c3a880d73e608fac6",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/avatar/CREDITS.txt",
+      "bytes": 860,
+      "sha256": "21d4106c3f4ce4e9ab88792ff57970b974f9c69af615daacc982b5b30e58d4bc",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/avatar/LICENSE.txt",
+      "bytes": 364,
+      "sha256": "7cf4da43a6ae6d32f7f7d063fe129a19468af6f4fe7c53b937f83959709fcb50",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/avatar/head-scan.glb",
+      "bytes": 404976,
+      "sha256": "402b8a8ac9f03232e6d64b5962929703a069daf99d3c49ac8eb0e48bedc9c576",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/avatar/skin-color.jpg",
+      "bytes": 148269,
+      "sha256": "e976d73b31407f8d0967412bf468019ed26a5d5a32cf5811aabff7e816458a65",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/avatar/skin-normal.jpg",
+      "bytes": 146793,
+      "sha256": "36925e51ad9b324b94e8faf4692da1b4132809f2762bb8d5bd549ffd215d4ca6",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/makehuman/CREDITS.txt",
+      "bytes": 1232,
+      "sha256": "5f69f2c3f8398bb3dc2676b215122b4352ff6750b343a4c0a3bc5e21b95d61f7",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/makehuman/LICENSE.txt",
+      "bytes": 6962,
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/makehuman/brown-eye.png",
+      "bytes": 610817,
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/makehuman/brown-eye.webp",
+      "bytes": 16544,
+      "sha256": "9f296ce86b4c7cde70b71d071184cb7cd1322a3c307804c5ecdee50fb778ef0d",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/makehuman/human.glb",
+      "bytes": 744368,
+      "sha256": "304c19dc3ad4cfdb6d552fc0982c1845734383ac6aa71714919f0460696c53a9",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/makehuman/rig.json",
+      "bytes": 13567,
+      "sha256": "3e8ca3a34afcc4a2c4c99b0570e48d8987889afe5434b01721c765d60dc45cce",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/makehuman/skin.png",
+      "bytes": 3693828,
+      "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+      "relativeReferences": []
+    },
+    {
+      "path": "assets/makehuman/skin.webp",
+      "bytes": 142156,
+      "sha256": "660812832b752135f880e2e97599ef0cc8a4f88feaae03c2232f113fd727922e",
+      "relativeReferences": []
+    },
+    {
+      "path": "avatar-body.js",
+      "bytes": 158,
+      "sha256": "d76a8ee5824f5db3a3b8be6835f3ab84064e869c9105e2e1b9adb5729cfd94d0",
+      "relativeReferences": [
+        "./components/boxing/avatar-body.js"
+      ]
+    },
+    {
+      "path": "avatar-study.html",
+      "bytes": 3171,
+      "sha256": "879bf26ca43e625d647bd84e5b0678a9182678c06c8f024d4fa799f73af5c921",
+      "relativeReferences": []
+    },
+    {
+      "path": "avatar-topology.js",
+      "bytes": 3122,
+      "sha256": "235faf657539a3e08d570e7ee36ccef1b977f1818d96c87ba6ef4f6dbbbd9be6",
+      "relativeReferences": [
+        "./vendor/three.module.js"
+      ]
+    },
+    {
+      "path": "avatar.js",
+      "bytes": 12684,
+      "sha256": "c141a375f2cc3296a43cefb49cb106f7d46728f0a9fb64904df9ffc5237a6991",
+      "relativeReferences": [
+        "./avatar-topology.js",
+        "./vendor/GLTFLoader.js",
+        "./vendor/three.module.js"
+      ]
+    },
+    {
+      "path": "ball-roll/app.js",
+      "bytes": 716,
+      "sha256": "b1b44116f9bff8a9312b77bef49a470806d5b23c556957873795bff7e0a211c0",
+      "relativeReferences": [
+        "../components/ball-roll/index.js"
+      ]
+    },
+    {
+      "path": "ball-roll/index.html",
+      "bytes": 1513,
+      "sha256": "09946905abca21aec7b7f711fe9ce2f4c8aa573a9eb4a7bf3205fa5bd53fbae8",
+      "relativeReferences": []
+    },
+    {
+      "path": "bowling/app.js",
+      "bytes": 4712,
+      "sha256": "fe981299f255032c320cf062812fb607d24c37395f310f7dacd77474c4b14177",
+      "relativeReferences": [
+        "../components/bowling/index.js"
+      ]
+    },
+    {
+      "path": "bowling/bowling.css",
+      "bytes": 17624,
+      "sha256": "260aa73bc9b607006c7c43380eb44878eeae72dca013fa7d422bcc31575ee63f",
+      "relativeReferences": []
+    },
+    {
+      "path": "bowling/index.html",
+      "bytes": 3910,
+      "sha256": "30d6d64ee3f02141170693cd91df87c17e5ee29902d19213bbbfd04784278537",
+      "relativeReferences": []
+    },
+    {
+      "path": "boxing.html",
+      "bytes": 7601,
+      "sha256": "3028919559a4b91ac723a6bea39ca64916954a6774a750a2df7f8ec49ca853e2",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/ball-roll/README.md",
+      "bytes": 5304,
+      "sha256": "80ac723d5ba4cdaee50fa0f9f6c8be38fd796cc8a5ac44956a6b6e74160e7baf",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/ball-roll/SOURCES.md",
+      "bytes": 1930,
+      "sha256": "e04024f3340848b90ee70c7d4c5f7a42ae7a719d7ef483ada689dd1330cf3f8b",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/ball-roll/assets/al-fahidi.json",
+      "bytes": 15200,
+      "sha256": "c92c17d583d66fbe33f4417877df9d0c24067c0841919426d4d7cc43b599fff7",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/ball-roll/ball-roll.css",
+      "bytes": 16461,
+      "sha256": "69662bf47902dd3f22bfc1d5f89205323ac4d511597f158e980f29c461626ffd",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/ball-roll/chase-motion.js",
+      "bytes": 1141,
+      "sha256": "6306a01fd7b1cea8d2660007794e145203f09a80a22f7ff6e7fbdf2bd46848d0",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/ball-roll/content.js",
+      "bytes": 3718,
+      "sha256": "bfdc958b96f1ebce19dbac81e6398c51040bbc4343b181ddf5a798a762cfabd9",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/ball-roll/cover.svg",
+      "bytes": 2520,
+      "sha256": "cf62115b6700ebb8979d839803923823dae43d29e7c8782fd3cf91b8ab101492",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/ball-roll/engine.js",
+      "bytes": 8840,
+      "sha256": "816cc92ef426193db465edc2c3e12ea0aadb463a6d2a76818230bc8ebe478b56",
+      "relativeReferences": [
+        "./content.js"
+      ]
+    },
+    {
+      "path": "components/ball-roll/index.js",
+      "bytes": 18817,
+      "sha256": "58e9a77de82996031f6800b2918ea5c893227c01d3a0f7f77986fc04ae4d4789",
+      "relativeReferences": [
+        "./assets/al-fahidi.json",
+        "./ball-roll.css",
+        "./engine.js",
+        "./view.js"
+      ]
+    },
+    {
+      "path": "components/ball-roll/view.js",
+      "bytes": 16855,
+      "sha256": "978cfc48fe29ea48809dfe3c09dc4cc53713e3975e8a5e39f1d395d73102a065",
+      "relativeReferences": [
+        "../../vendor/three.module.js",
+        "./chase-motion.js",
+        "./engine.js"
+      ]
+    },
+    {
+      "path": "components/bowling/README.md",
+      "bytes": 2941,
+      "sha256": "4457a1e731d1cefbad366d3658764865e9d9b3913d2fe8f72201df4ccbfe5072",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/bowling/cover.svg",
+      "bytes": 1988,
+      "sha256": "d5332b88c846ce471f231f8057475642dc581f0198371234ff6b2f8ba0a8dd51",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/bowling/index.js",
+      "bytes": 19860,
+      "sha256": "87435a29ab26703bc6853794446f6376367410bfbfcb2f8a738969853e25c41a",
+      "relativeReferences": [
+        "../../vendor/three.module.js",
+        "../boxing/avatar-body.js",
+        "../boxing/makehuman-avatar.js",
+        "./motion.js",
+        "./phone-motion.js"
+      ]
+    },
+    {
+      "path": "components/bowling/motion.js",
+      "bytes": 2789,
+      "sha256": "c67d4a5667699213f1939ad24f77af69bc02e858ffeab7aa2a09671dcb52ab02",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/bowling/phone-motion.js",
+      "bytes": 571,
+      "sha256": "97b4c6ee8a05863df12c18cd67a07049ba3cf3ae876a57c2fd2989bc54c78b5d",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/boxing/animation.js",
+      "bytes": 45675,
+      "sha256": "577e756cf9ada87ca2a4d824514c2cd066e5b610e6de4322c62e4e6dc16ed53a",
+      "relativeReferences": [
+        "../../vendor/three.module.js",
+        "./avatar-body.js",
+        "./journey-timing.js",
+        "./makehuman-avatar.js",
+        "./punch-motion.js"
+      ]
+    },
+    {
+      "path": "components/boxing/assets/makehuman/CREDITS.txt",
+      "bytes": 1232,
+      "sha256": "5f69f2c3f8398bb3dc2676b215122b4352ff6750b343a4c0a3bc5e21b95d61f7",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/boxing/assets/makehuman/LICENSE.txt",
+      "bytes": 6962,
+      "sha256": "f6089cba01cb570a24712b41ab8a586ccd3cc5ef53dc266ca50b95c288956d2c",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/boxing/assets/makehuman/brown-eye.webp",
+      "bytes": 16544,
+      "sha256": "9f296ce86b4c7cde70b71d071184cb7cd1322a3c307804c5ecdee50fb778ef0d",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/boxing/assets/makehuman/human.glb",
+      "bytes": 744368,
+      "sha256": "304c19dc3ad4cfdb6d552fc0982c1845734383ac6aa71714919f0460696c53a9",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/boxing/assets/makehuman/rig.json",
+      "bytes": 13567,
+      "sha256": "3e8ca3a34afcc4a2c4c99b0570e48d8987889afe5434b01721c765d60dc45cce",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/boxing/assets/makehuman/skin.webp",
+      "bytes": 142156,
+      "sha256": "660812832b752135f880e2e97599ef0cc8a4f88feaae03c2232f113fd727922e",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/boxing/avatar-body.js",
+      "bytes": 4860,
+      "sha256": "16b3e086acdca8a81320aa1ded2fca30c95c223e2580161f21c71d8bdc2f82cd",
+      "relativeReferences": [
+        "../../vendor/three.module.js"
+      ]
+    },
+    {
+      "path": "components/boxing/index.js",
+      "bytes": 594,
+      "sha256": "6600fa273af385c28f841583d9fbdf0a8297a5562559baa832ea4d377a245510",
+      "relativeReferences": [
+        "./animation.js"
+      ]
+    },
+    {
+      "path": "components/boxing/journey-timing.js",
+      "bytes": 780,
+      "sha256": "af75c6364858fd99b212e95cc76f9440de8e36cf8773abfeef5a20b13f08a7c6",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/boxing/makehuman-avatar.js",
+      "bytes": 17584,
+      "sha256": "d87167f1b20d7bc0db54f1722687cf12cc480e106af91ef446142e498cdfc961",
+      "relativeReferences": [
+        "../../vendor/GLTFLoader.js",
+        "../../vendor/three.module.js",
+        "./assets/makehuman/human.glb",
+        "./assets/makehuman/rig.json"
+      ]
+    },
+    {
+      "path": "components/boxing/punch-motion.js",
+      "bytes": 2227,
+      "sha256": "c01b002f8293d0bda7f5c85bed75853b969b75d84ae8865b02dc58d64517f77d",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/heritage/README.md",
+      "bytes": 4202,
+      "sha256": "315ba2143d2c99e00769162534286ec24366fb8930260234a55cec7e96e287ed",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/heritage/cover.svg",
+      "bytes": 1968,
+      "sha256": "0c4a40c02a8f1fc9e3c99e584bfc7f9bd1bbead8fd5cdf98322fa349ed8fdb66",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/heritage/future-museum.js",
+      "bytes": 9338,
+      "sha256": "b3e5645cf2b9b521d9d796391fafc315ac73c3a0c3d09007de77ba5814223cdf",
+      "relativeReferences": [
+        "../../vendor/three.module.js"
+      ]
+    },
+    {
+      "path": "components/heritage/index.js",
+      "bytes": 14774,
+      "sha256": "792c509e6d631a51ae287df1fa8dffbe8a2b98d2a3404cc2a7944b63f873ade0",
+      "relativeReferences": [
+        "../../vendor/three.module.js",
+        "../boxing/avatar-body.js",
+        "../boxing/makehuman-avatar.js",
+        "./journey.js",
+        "./landmarks.js"
+      ]
+    },
+    {
+      "path": "components/heritage/journey.js",
+      "bytes": 3115,
+      "sha256": "98c91f466453ae879ab3104c1272689ceec9da30d3ddf3477c323d3381496295",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/heritage/landmarks.js",
+      "bytes": 3495,
+      "sha256": "c8209f61a0b85916158f7e91aeec3cd8360d8e1471ecb93d4ace784b3d7a4bf0",
+      "relativeReferences": [
+        "../../vendor/three.module.js",
+        "./future-museum.js"
+      ]
+    },
+    {
+      "path": "components/index.js",
+      "bytes": 1199,
+      "sha256": "4c66285266b92cb8843a2499dd0464087948eb6b584a1e49e8d60be03f5ee418",
+      "relativeReferences": [
+        "./ball-roll/index.js",
+        "./boxing/index.js",
+        "./landmark-puzzle/index.js",
+        "./tourist-arcade/index.js"
+      ]
+    },
+    {
+      "path": "components/landmark-puzzle/ASSETS.md",
+      "bytes": 2801,
+      "sha256": "1ad807e6d6e000c320f8e22966d36e07e1ddd0d8c2d223ad9805aee46a841a07",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/assets/al-noor.jpg",
+      "bytes": 212152,
+      "sha256": "766585a9282b372d87403a96a9a25a9d0996d90b53297f2780d2c06fe2e5826b",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/assets/burj-al-arab.jpg",
+      "bytes": 176654,
+      "sha256": "b05b976e62164b8e17704cb79d264216c5ea506c086f1edb47aceeaa873154fb",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/assets/burj-khalifa.jpg",
+      "bytes": 290716,
+      "sha256": "602333853abd8cd5d066b9a3e40b7b4321023bb94866ee6d67727e4a72f67de0",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/assets/credits.json",
+      "bytes": 2622,
+      "sha256": "61e2ec09c9055ff0b0c472cd00ede2bbb81decff6a898721de39714681529389",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/assets/grand-mosque.jpg",
+      "bytes": 117622,
+      "sha256": "cf20389b9cb47d9ab8985b266cb4560429d32a21e83d4593804b2725da16de21",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/assets/jebel-jais.jpg",
+      "bytes": 495995,
+      "sha256": "412a97d1405d14070e86df264afaa1e31b32216ce51969e686d3e60a65e59524",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/credits.js",
+      "bytes": 1325,
+      "sha256": "8c71eac63b37d158e046f38be11c1ea32f0c869c8c94b88b006ee4f9475720d0",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/engine.js",
+      "bytes": 2530,
+      "sha256": "001eed80c223b23c34971ff3951ae04537db59a616165c2d049b68c566c65387",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/index.js",
+      "bytes": 22367,
+      "sha256": "67f8eb96c63551a890c40e10ac68e1fe0efdf850e96bd38a01ebb61c6d93b9c6",
+      "relativeReferences": [
+        "./credits.js",
+        "./engine.js",
+        "./landmarks.js",
+        "./pieces.js",
+        "./puzzle.css"
+      ]
+    },
+    {
+      "path": "components/landmark-puzzle/landmarks.js",
+      "bytes": 2498,
+      "sha256": "3638890fa5389e3e9d8c8a0c6af97abb813f30568b8359546262852eca70eba4",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/pieces.js",
+      "bytes": 1570,
+      "sha256": "ae19ee537a04d514649cb127622d1434a7912e4a5d255cfc2d2bbceb6a800889",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/landmark-puzzle/puzzle.css",
+      "bytes": 19399,
+      "sha256": "157d722e1327281e158c53f9109d58e95e0808ffdd4e5974727d02e4fa7f1a9c",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/sunset/README.md",
+      "bytes": 2830,
+      "sha256": "81f223297bb189fbb0b93048bf8b7e20a17dadf288bddd87f176959e0f4e8474",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/sunset/cover.svg",
+      "bytes": 1778,
+      "sha256": "a268fd7d3e5d33e1ee6f122a8a27de100372093c0b645b4d6cc56aba115368ab",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/sunset/index.js",
+      "bytes": 7105,
+      "sha256": "989229515abed7abd91a1d12beeb871dd7c315c34543f270c9693282fe8391c5",
+      "relativeReferences": [
+        "../../vendor/three.module.js",
+        "../boxing/makehuman-avatar.js",
+        "./journey.js",
+        "./visitor.js",
+        "./waterfront.js"
+      ]
+    },
+    {
+      "path": "components/sunset/journey.js",
+      "bytes": 1088,
+      "sha256": "9438002d980de459d09825948ee47054bc2ad437b22b51c1b7d890a65407eb24",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/sunset/visitor.js",
+      "bytes": 4885,
+      "sha256": "ef84e9d779b49c498f169f43fe0cae00ba5507802f579c89f7879f1fe6b8d019",
+      "relativeReferences": [
+        "../../vendor/three.module.js",
+        "../boxing/avatar-body.js",
+        "../boxing/makehuman-avatar.js"
+      ]
+    },
+    {
+      "path": "components/sunset/waterfront.js",
+      "bytes": 8264,
+      "sha256": "c06d4b0a0eda72197ed3faf8151020a34b5255ff21b9886b29456fb75b23b3b6",
+      "relativeReferences": [
+        "../../vendor/three.module.js"
+      ]
+    },
+    {
+      "path": "components/tourist-arcade/DATA_LICENSE.md",
+      "bytes": 1661,
+      "sha256": "b3131d3e6b4973ad0bc53830c0347ddb9860bba899d99395fabb8b3819b3ea64",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/tourist-arcade/arcade.css",
+      "bytes": 13277,
+      "sha256": "ea390794581e3b4f024f66974175e22ce9c09eaa8b11e4d4afec7f98eb56fbbe",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/tourist-arcade/assets/al-fahidi.json",
+      "bytes": 15200,
+      "sha256": "c92c17d583d66fbe33f4417877df9d0c24067c0841919426d4d7cc43b599fff7",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/tourist-arcade/engine.js",
+      "bytes": 8169,
+      "sha256": "229f962fbbe09c78a54096c477a027342d61ae7993f0ad14cd18a43577b6aa22",
+      "relativeReferences": []
+    },
+    {
+      "path": "components/tourist-arcade/index.js",
+      "bytes": 16806,
+      "sha256": "520c085d17b68f9926268058c1a9647214aeac722aada277908b77a2824fb242",
+      "relativeReferences": [
+        "./arcade.css",
+        "./assets/al-fahidi.json",
+        "./engine.js",
+        "./view.js"
+      ]
+    },
+    {
+      "path": "components/tourist-arcade/view.js",
+      "bytes": 12568,
+      "sha256": "4da6693938a65c1f83c6a32a1c61c60cfc3690c0e05cf918031a7204f310f3f1",
+      "relativeReferences": [
+        "../../vendor/three.module.js"
+      ]
+    },
+    {
+      "path": "experiences.css",
+      "bytes": 8701,
+      "sha256": "4bdd6df0f0823d99b5c7a8cb1637886eaa3c601136929a734edfb747406d000a",
+      "relativeReferences": []
+    },
+    {
+      "path": "heritage/app.js",
+      "bytes": 6176,
+      "sha256": "3e50275a98abc5d89d62140ba4d582980bb46c52939f3bca031facecb14d2aeb",
+      "relativeReferences": [
+        "../components/heritage/index.js"
+      ]
+    },
+    {
+      "path": "heritage/heritage.css",
+      "bytes": 5298,
+      "sha256": "768830ad1e73630c1440cd5ca15c92c8718cc2df03c1e73a917aaa31cc242ee4",
+      "relativeReferences": [
+        "../bowling/bowling.css"
+      ]
+    },
+    {
+      "path": "heritage/index.html",
+      "bytes": 4487,
+      "sha256": "5e79c6e2f2bb83dfbde05feba4587c9cc3151e57823bb5768029ed527b0f9da3",
+      "relativeReferences": []
+    },
+    {
+      "path": "human-portrait.js",
+      "bytes": 7359,
+      "sha256": "944a562e32351594e94e96287cad856c454392db2f93127dfea9638a2f4d62b0",
+      "relativeReferences": [
+        "./vendor/three.module.js"
+      ]
+    },
+    {
+      "path": "index.html",
+      "bytes": 24955,
+      "sha256": "37bc189ece4f74daf0579ed9890247fde1067a098c99b2dd4d9da388b0078754",
+      "relativeReferences": []
+    },
+    {
+      "path": "journey-timing.js",
+      "bytes": 765,
+      "sha256": "943a3be266f40109f645113e0cc5b5b14835a0c0a54f0f91fe73f04aec6045a9",
+      "relativeReferences": []
+    },
+    {
+      "path": "logo-animation-study.html",
+      "bytes": 6439,
+      "sha256": "5c788d822cee5ddadb07c375f30cabaf7e00dc5be108a5e140903251a0168d75",
+      "relativeReferences": []
+    },
+    {
+      "path": "logo-study.html",
+      "bytes": 3949,
+      "sha256": "682d3d5bdc7254ff71742a38b682b24f66562fc6b34d30fedaf41d3f1d6d07a5",
+      "relativeReferences": []
+    },
+    {
+      "path": "makehuman-avatar.js",
+      "bytes": 181,
+      "sha256": "b9752ed60bdcf9f62837ab532a897d48db5ae39f617aef1609ee3e5840d927c9",
+      "relativeReferences": [
+        "./components/boxing/makehuman-avatar.js"
+      ]
+    },
+    {
+      "path": "punch-motion.js",
+      "bytes": 2187,
+      "sha256": "45f67110cdffb694b8c027a532bfad23ea4fc21f62414ce8c342b625ee187cc1",
+      "relativeReferences": []
+    },
+    {
+      "path": "puzzle/README.md",
+      "bytes": 4671,
+      "sha256": "3b5811fa2b30624e2ff70f03457c3be0aae8619580e97598d639e6c8d95f1260",
+      "relativeReferences": []
+    },
+    {
+      "path": "puzzle/app.js",
+      "bytes": 743,
+      "sha256": "d5d84726c91faeb5656f7a27b4d7b617126259baaf34d3704729f9aca024dd69",
+      "relativeReferences": [
+        "../components/landmark-puzzle/index.js"
+      ]
+    },
+    {
+      "path": "puzzle/index.html",
+      "bytes": 1499,
+      "sha256": "0b92a2669f305b8367d042fbc8e39bbbb3c21591ea374f188cad88f66f71fc32",
+      "relativeReferences": []
+    },
+    {
+      "path": "serve.mjs",
+      "bytes": 1995,
+      "sha256": "86542345ba0936affa714a6a5a9d78f2956d98a3029206fd902872a09a1302fa",
+      "relativeReferences": [
+        "."
+      ]
+    },
+    {
+      "path": "styles.css",
+      "bytes": 10437,
+      "sha256": "3cc1811e82f168dffacd8d19f32c1dd8e131f8ada7cdc397c825ad2094ce8fff",
+      "relativeReferences": []
+    },
+    {
+      "path": "sunset/app.js",
+      "bytes": 4326,
+      "sha256": "3c4ddd8f4275d4de1369bef97aba8746184af3e770f9c1b0767509e2adedcdd2",
+      "relativeReferences": [
+        "../components/sunset/index.js"
+      ]
+    },
+    {
+      "path": "sunset/index.html",
+      "bytes": 4339,
+      "sha256": "7c329aed116e5dbc94324abd9c413852a093abe03f9e35e3ae93898ad3d45356",
+      "relativeReferences": []
+    },
+    {
+      "path": "sunset/sunset.css",
+      "bytes": 4928,
+      "sha256": "8feedc9eede8dfa04c8e23be3283372b7f1439b6338abbd5619ef641d862b509",
+      "relativeReferences": [
+        "../bowling/bowling.css"
+      ]
+    },
+    {
+      "path": "theme.css",
+      "bytes": 10245,
+      "sha256": "f631f8493e547694b5692bf347b78956cc99fd9aca7bd4889bee58f354b4a0b3",
+      "relativeReferences": []
+    },
+    {
+      "path": "vendor/BufferGeometryUtils.js",
+      "bytes": 31780,
+      "sha256": "3de832095679e56578beddf70f3e90846a47ec8a886fa8eb21c973cdaef88922",
+      "relativeReferences": [
+        "./three.module.js"
+      ]
+    },
+    {
+      "path": "vendor/GLTFLoader.js",
+      "bytes": 110278,
+      "sha256": "458b025b12213713958b07012b48aa5e84aebb562c92cfe53ea82d41bda2fd42",
+      "relativeReferences": [
+        "./BufferGeometryUtils.js",
+        "./three.module.js"
+      ]
+    },
+    {
+      "path": "vendor/LICENSE.three.txt",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "relativeReferences": []
+    },
+    {
+      "path": "vendor/three.module.js",
+      "bytes": 1314681,
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "relativeReferences": []
+    },
+    {
+      "path": "verify-arcade.mjs",
+      "bytes": 2758,
+      "sha256": "4184318ccd02ddb6ea1545c23a1bb022667f873fbba3089ef3bbf95265edcb64",
+      "relativeReferences": [
+        "./components/tourist-arcade/assets/al-fahidi.json",
+        "./components/tourist-arcade/engine.js"
+      ]
+    },
+    {
+      "path": "verify-avatar.mjs",
+      "bytes": 7398,
+      "sha256": "0686ffa4d80d2048c03dc4972b2da96abccbf8a9772fc2f06d9cc536c5a87a36",
+      "relativeReferences": [
+        "./assets/makehuman/human.glb",
+        "./assets/makehuman/rig.json",
+        "./avatar-body.js",
+        "./makehuman-avatar.js",
+        "./punch-motion.js",
+        "./vendor/three.module.js"
+      ]
+    },
+    {
+      "path": "verify-ball-roll.mjs",
+      "bytes": 6758,
+      "sha256": "2ab1d180f3fae10a3b303585d9892586c27b715e73168d0d260cb24bf4abd6f9",
+      "relativeReferences": [
+        "./components/ball-roll/assets/al-fahidi.json",
+        "./components/ball-roll/chase-motion.js",
+        "./components/ball-roll/engine.js"
+      ]
+    },
+    {
+      "path": "verify-bowling.mjs",
+      "bytes": 1834,
+      "sha256": "9628d10146f814cdb7f805481de27bc123b8039f3d73f1757e28fbac6d88e252",
+      "relativeReferences": [
+        "./components/bowling/motion.js",
+        "./components/bowling/phone-motion.js"
+      ]
+    },
+    {
+      "path": "verify-heritage.mjs",
+      "bytes": 1194,
+      "sha256": "82fb1be88004bedc6fa2fa01715d78c0a41e7f3428c936acf2d8a45638867699",
+      "relativeReferences": [
+        "./components/heritage/journey.js"
+      ]
+    },
+    {
+      "path": "verify-museum.mjs",
+      "bytes": 1481,
+      "sha256": "d696b8f5ad33857b4cfea39c3e41f945bb96ab9e005c42473d062d718045d61b",
+      "relativeReferences": [
+        "./components/heritage/future-museum.js"
+      ]
+    },
+    {
+      "path": "verify-performance.mjs",
+      "bytes": 2606,
+      "sha256": "0cecb0e90d42c16453999f9f91e6341880c55633fd2c6f51f6e1889d3055de32",
+      "relativeReferences": [
+        "./journey-timing.js"
+      ]
+    },
+    {
+      "path": "verify-puzzle.mjs",
+      "bytes": 3465,
+      "sha256": "b298f7a1d25cb32d6c5f6d3a3e005cd5e22ccaeaaec42f55a9226815f11f067c",
+      "relativeReferences": [
+        "./components/landmark-puzzle/assets/credits.json",
+        "./components/landmark-puzzle/engine.js",
+        "./components/landmark-puzzle/landmarks.js"
+      ]
+    },
+    {
+      "path": "verify-sunset.mjs",
+      "bytes": 1013,
+      "sha256": "57c02be4d4d1d3f25774ba1c066c909bf5fe32680f7f1069fbdddfc59b65e1fd",
+      "relativeReferences": [
+        "./components/sunset/journey.js"
+      ]
+    }
+  ]
+}

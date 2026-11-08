@@ -1,0 +1,14 @@
+Adapted avatar face: "Infinite", 3D Head Scan by Lee Perry-Smith / Infinite Realities.
+Original work: www.triplegangers.com / http://www.ir-ltd.net/
+Source: https://github.com/mrdoob/three.js/tree/r170/examples/models/gltf/LeePerrySmith
+License: Creative Commons Attribution 3.0 Unported
+https://creativecommons.org/licenses/by/3.0/
+
+Modifications in this project: bust trimmed; coordinates and scale adapted;
+skin material tinted; normal mapping configured; eyes, brows, fitted beard,
+ghutra and agal added. The source scan depicts its own person. It is not a
+3D reconstruction or exact likeness of the supplied reference photograph.
+
+Garment mesh, clothing rig, headwear, beard and animation integration authored
+for this local Masar demonstration. Three.js and its GLTFLoader / geometry
+utilities are used under the MIT license in vendor/LICENSE.three.txt.

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masar AI — Backend Test Interface</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0C0C0E;
+      --surface: #141417;
+      --surface-2: #1C1C21;
+      --border: rgba(255,255,255,0.08);
+      --text: #F4F4F6;
+      --text-muted: #9E9EA7;
+      --text-dim: #62626D;
+      --accent: #0D9488;
+      --accent-hover: #14B8A6;
+      --accent-soft: rgba(13,148,136,0.15);
+      --gold: #F59E0B;
+      --rose: #F43F5E;
+      --emerald: #10B981;
+      --radius: 10px;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      flex-shrink: 0;
+    }
+    .header-brand { display: flex; align-items: center; gap: 10px; }
+    .header-logo {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--accent), #047857);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+    }
+    .header-title { font-size: 15px; font-weight: 700; letter-spacing: -0.02em; }
+    .header-badge {
+      font-size: 11px; font-weight: 600; padding: 3px 8px;
+      border-radius: 20px; background: var(--accent-soft);
+      color: var(--accent-hover); border: 1px solid rgba(13,148,136,0.3);
+    }
+    .header-right { display: flex; align-items: center; gap: 10px; }
+    .status-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 8px var(--emerald);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .status-dot.offline { background: var(--rose); box-shadow: 0 0 8px var(--rose); animation: none; }
+    .status-label { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+
+    /* ── Layout ── */
+    .workspace {
+      display: grid;
+      grid-template-columns: 320px 1fr 380px;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    /* ── Left Panel: Tools & Settings ── */
+    .tools-panel {
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .panel-header {
+      padding: 14px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .panel-body { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 16px; }
+
+    .field-group { display: flex; flex-direction: column; gap: 6px; }
+    .field-label { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .field-input {
+      width: 100%;
+      padding: 8px 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .field-input:focus { border-color: var(--accent); }
+    .field-select {
+      width: 100%;
+      padding: 8px 10px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 13px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 4px 0;
+    }
+
+    .quick-test-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+    .quick-btn {
+      padding: 7px 8px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: left;
+      line-height: 1.4;
+    }
+    .quick-btn:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--text); }
+
+    .scraper-test { display: flex; flex-direction: column; gap: 8px; }
+    .scraper-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+    .test-scrape-btn {
+      width: 100%;
+      padding: 8px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--accent-hover);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .test-scrape-btn:hover { background: var(--accent-soft); border-color: var(--accent); }
+
+    /* ── Center Panel: Chat ── */
+    .chat-panel {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-right: 1px solid var(--border);
+    }
+    .chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .chat-messages::-webkit-scrollbar { width: 4px; }
+    .chat-messages::-webkit-scrollbar-track { background: transparent; }
+    .chat-messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+    .msg { display: flex; gap: 10px; animation: fadeIn 0.2s ease; }
+    .msg-user { flex-direction: row-reverse; }
+    .msg-avatar {
+      width: 28px; height: 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; flex-shrink: 0;
+    }
+    .avatar-ai { background: linear-gradient(135deg, var(--accent), #047857); color: white; }
+    .avatar-user { background: var(--surface-2); color: var(--text); }
+    .msg-bubble {
+      max-width: 78%;
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .bubble-ai { background: var(--surface); border: 1px solid var(--border); border-bottom-left-radius: 4px; }
+    .bubble-user { background: var(--surface-2); border: 1px solid rgba(255,255,255,0.1); border-bottom-right-radius: 4px; color: #fff; }
+
+    .status-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 5px 12px; border-radius: 20px;
+      background: var(--accent-soft); border: 1px solid rgba(13,148,136,0.3);
+      font-size: 12px; color: var(--accent-hover); font-weight: 500;
+      animation: fadeIn 0.2s ease;
+    }
+    .status-pill-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent-hover);
+      animation: pulse 1.2s ease-in-out infinite;
+    }
+
+    .chat-input-area {
+      padding: 16px;
+      border-top: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .input-row { display: flex; gap: 8px; }
+    .chat-textarea {
+      flex: 1;
+      padding: 10px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 13px;
+      resize: none;
+      outline: none;
+      max-height: 120px;
+      transition: border-color 0.15s;
+    }
+    .chat-textarea:focus { border-color: var(--accent); }
+    .send-btn {
+      width: 40px; height: 40px;
+      background: var(--text); color: #000;
+      border: none; border-radius: 10px;
+      cursor: pointer; font-size: 16px;
+      transition: all 0.15s; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      align-self: flex-end;
+    }
+    .send-btn:hover { background: #e0e0e0; transform: scale(1.05); }
+    .send-btn:disabled { background: var(--surface-2); color: var(--text-dim); cursor: not-allowed; transform: none; }
+    .input-meta { display: flex; justify-content: space-between; margin-top: 6px; font-size: 11px; color: var(--text-dim); }
+
+    /* ── Right Panel: Raw Stream ── */
+    .stream-panel { display: flex; flex-direction: column; overflow: hidden; }
+    .stream-tabs { display: flex; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+    .stream-tab {
+      padding: 10px 16px;
+      font-size: 12px; font-weight: 600;
+      color: var(--text-dim);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .stream-tab.active { color: var(--accent-hover); border-bottom-color: var(--accent); }
+    .stream-body {
+      flex: 1; overflow-y: auto;
+      padding: 14px;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      line-height: 1.7;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .stream-body::-webkit-scrollbar { width: 4px; }
+    .stream-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+    .log-line { padding: 3px 6px; border-radius: 4px; word-break: break-all; }
+    .log-status { color: var(--accent-hover); }
+    .log-worker { color: var(--gold); }
+    .log-final { color: var(--emerald); }
+    .log-error { color: var(--rose); background: rgba(244,63,94,0.08); }
+    .log-scrape { color: #A78BFA; }
+    .log-rag { color: #38BDF8; }
+    .log-meta { color: var(--text-dim); font-style: italic; }
+
+    .clear-btn {
+      margin: 10px 14px;
+      padding: 6px 12px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      flex-shrink: 0;
+    }
+    .clear-btn:hover { border-color: var(--rose); color: var(--rose); }
+
+    /* ── Animations ── */
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .empty-state {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 12px; text-align: center; padding: 32px;
+      color: var(--text-dim);
+    }
+    .empty-icon { font-size: 40px; opacity: 0.4; }
+    .empty-title { font-size: 15px; font-weight: 600; color: var(--text-muted); }
+    .empty-desc { font-size: 12px; line-height: 1.6; max-width: 240px; }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<div class="header">
+  <div class="header-brand">
+    <div class="header-logo">🧭</div>
+    <span class="header-title">Masar AI</span>
+    <span class="header-badge">Backend Dev Console</span>
+  </div>
+  <div class="header-right">
+    <div class="status-dot" id="statusDot"></div>
+    <span class="status-label" id="statusLabel">Connecting...</span>
+  </div>
+</div>
+
+<!-- ── Workspace ── -->
+<div class="workspace">
+
+  <!-- Left: Tools & Config -->
+  <div class="tools-panel">
+    <div class="panel-header">Config & Tests</div>
+    <div class="panel-body">
+
+      <div class="field-group">
+        <label class="field-label">Backend URL</label>
+        <input class="field-input" id="backendUrl" value="http://localhost:8000" />
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">User ID</label>
+        <input class="field-input" id="userId" value="test-user-001" />
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Thread ID</label>
+        <input class="field-input" id="threadId" value="test-thread-001" />
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="field-group">
+        <label class="field-label">Quick Chat Tests</label>
+        <div class="quick-test-grid">
+          <button class="quick-btn" onclick="quickSend('Find me a hotel near Burj Khalifa for Aug 21-22, 2026')">🏨 Hotel Search</button>
+          <button class="quick-btn" onclick="quickSend('What events are happening in Dubai this week?')">🎭 Live Events</button>
+          <button class="quick-btn" onclick="quickSend('How do I get from Dubai Marina to Dubai Frame by metro?')">🚇 Transit Route</button>
+          <button class="quick-btn" onclick="quickSend('What are the UAE visa rules for UK tourists?')">🛂 Visa Rules</button>
+          <button class="quick-btn" onclick="quickSend('Plan a 2-day trip to Abu Dhabi visiting Louvre and Sheikh Zayed Mosque')">🗓️ Itinerary</button>
+          <button class="quick-btn" onclick="quickSend('What are the current hotel deals in Dubai?')">💰 Hotel Deals</button>
+          <button class="quick-btn" onclick="quickSend('Is it safe to fly drones in Dubai? What are the rules?')">🚁 Drone Rules</button>
+          <button class="quick-btn" onclick="quickSend('What is the weather like in Abu Dhabi right now?')">🌤️ Weather</button>
+        </div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="field-group">
+        <label class="field-label">Portal Scraper Tests</label>
+        <div class="scraper-test">
+          <div class="scraper-row">
+            <select class="field-select" id="scraperPortal">
+              <option value="visitdubai">Visit Dubai</option>
+              <option value="visitabudhabi">Visit Abu Dhabi</option>
+              <option value="uae_gov">UAE Gov (u.ae)</option>
+            </select>
+            <select class="field-select" id="scraperSection">
+              <option value="events">Events</option>
+              <option value="deals">Deals</option>
+              <option value="attractions">Attractions</option>
+              <option value="hotels">Hotels</option>
+              <option value="news">News</option>
+              <option value="visas">Visas</option>
+            </select>
+          </div>
+          <button class="test-scrape-btn" onclick="testScraper()">⚡ Test Live Scrape</button>
+        </div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="field-group">
+        <label class="field-label">RAG Search Test</label>
+        <input class="field-input" id="ragQuery" placeholder="e.g. Sheikh Zayed Mosque hours" />
+        <button class="test-scrape-btn" onclick="testRAG()">🔍 Query Knowledge Base</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Center: Chat -->
+  <div class="chat-panel">
+    <div class="chat-messages" id="chatMessages">
+      <div class="empty-state">
+        <div class="empty-icon">🧭</div>
+        <div class="empty-title">Masar AI Backend Console</div>
+        <div class="empty-desc">Send a message or use the quick tests on the left to test your backend. Watch the live SSE stream on the right.</div>
+      </div>
+    </div>
+
+    <div class="chat-input-area">
+      <div class="input-row">
+        <textarea class="chat-textarea" id="chatInput" rows="2"
+          placeholder="Type a test message... (Enter to send, Shift+Enter for newline)"></textarea>
+        <button class="send-btn" id="sendBtn" onclick="sendMessage()">↑</button>
+      </div>
+      <div class="input-meta">
+        <span id="streamStatus">Ready</span>
+        <span>Enter ↵ to send</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Raw Stream Log -->
+  <div class="stream-panel">
+    <div class="stream-tabs">
+      <div class="stream-tab active" onclick="switchTab('stream')">SSE Stream</div>
+      <div class="stream-tab" onclick="switchTab('raw')">Raw JSON</div>
+      <div class="stream-tab" onclick="switchTab('tools')">Tool Calls</div>
+    </div>
+    <div class="stream-body" id="streamLog"></div>
+    <button class="clear-btn" onclick="clearLog()">Clear Log</button>
+  </div>
+
+</div>
+
+<script>
+  // ── State ──────────────────────────────────────────────────────────────────
+  let isStreaming = false;
+  let activeTab = 'stream';
+  let rawEvents = [];
+  let toolCalls = [];
+
+  // ── Health Check ──────────────────────────────────────────────────────────
+  async function checkHealth() {
+    const url = document.getElementById('backendUrl').value;
+    try {
+      const res = await fetch(`${url}/docs`, { method: 'GET', signal: AbortSignal.timeout(3000) });
+      setStatus(res.ok || res.status === 200 || res.status === 404, url);
+    } catch {
+      setStatus(false, url);
+    }
+  }
+
+  function setStatus(online, url) {
+    const dot = document.getElementById('statusDot');
+    const label = document.getElementById('statusLabel');
+    dot.className = 'status-dot' + (online ? '' : ' offline');
+    label.textContent = online ? `Online — ${new URL(url).host}` : 'Backend Offline';
+  }
+
+  // ── Chat ──────────────────────────────────────────────────────────────────
+  async function sendMessage() {
+    const input = document.getElementById('chatInput');
+    const msg = input.value.trim();
+    if (!msg || isStreaming) return;
+
+    input.value = '';
+    addUserBubble(msg);
+    clearEmptyState();
+    await streamChat(msg);
+  }
+
+  function quickSend(msg) {
+    document.getElementById('chatInput').value = msg;
+    sendMessage();
+  }
+
+  async function streamChat(message) {
+    const url = document.getElementById('backendUrl').value;
+    const userId = document.getElementById('userId').value;
+    const threadId = document.getElementById('threadId').value;
+
+    setStreaming(true);
+    let statusPill = null;
+    let aiBubble = null;
+
+    try {
+      const res = await fetch(`${url}/api/v1/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message, user_id: userId, thread_id: threadId })
+      });
+
+      if (!res.ok) {
+        addLog(`HTTP ${res.status}: ${res.statusText}`, 'error');
+        setStreaming(false);
+        return;
+      }
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n\n');
+        buffer = lines.pop();
+
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          const raw = line.slice(6).trim();
+          if (!raw) continue;
+
+          try {
+            const event = JSON.parse(raw);
+            rawEvents.push(event);
+            handleEvent(event);
+
+            // Status update
+            if (event.status_update) {
+              addLog(event.status_update, 'status');
+              if (statusPill) statusPill.remove();
+              statusPill = addStatusPill(event.status_update);
+            }
+
+            // Worker result
+            if (event.worker_result) {
+              const [type, content] = event.worker_result;
+              addLog(`[WORKER: ${type}] ${content.substring(0, 120)}...`, 'worker');
+              toolCalls.push({ type, content, time: new Date().toLocaleTimeString() });
+            }
+
+            // Final response
+            if (event.final) {
+              if (statusPill) { statusPill.remove(); statusPill = null; }
+              if (event.response) {
+                addAIBubble(event.response);
+              }
+              addLog(`[DONE] itinerary_complete=${event.itinerary_complete}`, 'final');
+            }
+
+            // Errors
+            if (event.error) {
+              addLog(`[ERROR] ${event.error}`, 'error');
+              if (statusPill) { statusPill.remove(); statusPill = null; }
+            }
+
+          } catch (e) {
+            addLog(`[PARSE ERR] ${raw.substring(0, 80)}`, 'error');
+          }
+        }
+      }
+    } catch (err) {
+      addLog(`[CONNECTION ERR] ${err.message}`, 'error');
+    } finally {
+      setStreaming(false);
+      if (statusPill) statusPill.remove();
+    }
+  }
+
+  // ── Scraper & RAG Tests ──────────────────────────────────────────────────
+  async function testScraper() {
+    const portal = document.getElementById('scraperPortal').value;
+    const section = document.getElementById('scraperSection').value;
+    const queryMap = {
+      'visitdubai:events':      'What events are happening in Dubai this week? Check the Visit Dubai portal.',
+      'visitdubai:deals':       'What hotel and attraction deals are available in Dubai right now?',
+      'visitdubai:attractions': 'What are the top attractions and things to do in Dubai?',
+      'visitdubai:hotels':      'What hotel deals are currently available in Dubai from the official tourism site?',
+      'visitdubai:news':        'What is new and trending in Dubai right now?',
+      'visitabudhabi:events':   'What events are happening in Abu Dhabi this week?',
+      'visitabudhabi:deals':    'What deals and promotions are available in Abu Dhabi right now?',
+      'visitabudhabi:attractions': 'What are the top things to do and see in Abu Dhabi?',
+      'visitabudhabi:hotels':   'What hotels and accommodation are recommended in Abu Dhabi?',
+      'uae_gov:visas':          'What are the UAE visa requirements and entry rules for tourists?',
+      'uae_gov:news':           'What are the latest UAE government tourism updates and travel advisories?',
+    };
+    const key = `${portal}:${section}`;
+    const query = queryMap[key] || `What is the latest ${section} information from the ${portal} official portal?`;
+    addLog(`[SCRAPER TEST] Sending: ${query}`, 'scrape');
+    quickSend(query);
+  }
+
+  async function testRAG() {
+    const query = document.getElementById('ragQuery').value.trim();
+    if (!query) return;
+    addLog(`[RAG TEST] Sending: ${query}`, 'rag');
+    quickSend(query);
+  }
+
+  // ── UI Helpers ────────────────────────────────────────────────────────────
+  function clearEmptyState() {
+    const el = document.querySelector('.empty-state');
+    if (el) el.remove();
+  }
+
+  function addUserBubble(msg) {
+    const container = document.getElementById('chatMessages');
+    const div = document.createElement('div');
+    div.className = 'msg msg-user';
+    div.innerHTML = `
+      <div class="msg-avatar avatar-user">U</div>
+      <div class="msg-bubble bubble-user">${escapeHtml(msg)}</div>`;
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight;
+  }
+
+  function addAIBubble(content) {
+    const container = document.getElementById('chatMessages');
+    const div = document.createElement('div');
+    div.className = 'msg';
+    div.innerHTML = `
+      <div class="msg-avatar avatar-ai">M</div>
+      <div class="msg-bubble bubble-ai">${escapeHtml(content)}</div>`;
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight;
+  }
+
+  function addStatusPill(text) {
+    const container = document.getElementById('chatMessages');
+    const div = document.createElement('div');
+    div.className = 'status-pill';
+    div.innerHTML = `<div class="status-pill-dot"></div><span>${escapeHtml(text)}</span>`;
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight;
+    return div;
+  }
+
+  function addLog(text, type = 'meta') {
+    if (activeTab !== 'stream' && type !== 'error') return;
+    const log = document.getElementById('streamLog');
+    const div = document.createElement('div');
+    div.className = `log-line log-${type}`;
+    const time = new Date().toLocaleTimeString('en-GB', { hour12: false });
+    div.textContent = `[${time}] ${text}`;
+    log.appendChild(div);
+    log.scrollTop = log.scrollHeight;
+  }
+
+  function handleEvent(event) {
+    // No-op placeholder for additional processing
+  }
+
+  function setStreaming(val) {
+    isStreaming = val;
+    const btn = document.getElementById('sendBtn');
+    const status = document.getElementById('streamStatus');
+    btn.disabled = val;
+    status.textContent = val ? '⬤ Streaming...' : 'Ready';
+    status.style.color = val ? 'var(--accent-hover)' : 'var(--text-dim)';
+  }
+
+  function switchTab(tab) {
+    activeTab = tab;
+    document.querySelectorAll('.stream-tab').forEach((el, i) => {
+      el.classList.toggle('active', ['stream','raw','tools'][i] === tab);
+    });
+    const log = document.getElementById('streamLog');
+    log.innerHTML = '';
+    if (tab === 'raw') {
+      rawEvents.forEach(ev => {
+        const div = document.createElement('div');
+        div.className = 'log-line log-meta';
+        div.textContent = JSON.stringify(ev, null, 2);
+        log.appendChild(div);
+      });
+    } else if (tab === 'tools') {
+      if (toolCalls.length === 0) {
+        log.innerHTML = '<div class="log-line log-meta">No tool calls recorded yet.</div>';
+      } else {
+        toolCalls.forEach(tc => {
+          const div = document.createElement('div');
+          div.className = 'log-line log-worker';
+          div.textContent = `[${tc.time}] ${tc.type}\n${tc.content.substring(0, 300)}`;
+          log.appendChild(div);
+        });
+      }
+    }
+  }
+
+  function clearLog() {
+    document.getElementById('streamLog').innerHTML = '';
+    rawEvents = [];
+    toolCalls = [];
+  }
+
+  function escapeHtml(text) {
+    return text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/\n/g, '<br/>');
+  }
+
+  // ── Keyboard ──────────────────────────────────────────────────────────────
+  document.getElementById('chatInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
+
+  document.getElementById('backendUrl').addEventListener('change', checkHealth);
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+  checkHealth();
+  setInterval(checkHealth, 15000);
+</script>
+</body>
+</html>

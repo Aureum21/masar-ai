@@ -1,0 +1,57 @@
+@import '@fontsource/noto-sans-arabic/arabic-400.css';
+@import '@fontsource/noto-sans-arabic/arabic-500.css';
+@import '@fontsource/noto-sans-arabic/arabic-600.css';
+@import '@fontsource/noto-sans-arabic/arabic-700.css';
+@import '@fontsource/noto-sans-devanagari/devanagari-400.css';
+@import '@fontsource/noto-sans-devanagari/devanagari-500.css';
+@import '@fontsource/noto-sans-devanagari/devanagari-600.css';
+@import '@fontsource/noto-sans-devanagari/devanagari-700.css';
+
+html[lang='ar']{--font-family:'Noto Sans Arabic','Segoe UI',Tahoma,sans-serif}
+html[lang='hi']{--font-family:'Noto Sans Devanagari','Nirmala UI',sans-serif}
+html:is([lang='ar'],[lang='hi']) body{font-family:var(--font-family);line-height:1.7}
+html:is([lang='ar'],[lang='hi']) :is(button,input,select,textarea){font-family:inherit}
+html:is([lang='ar'],[lang='hi']) :is(h1,h2,h3,h4,label,button){letter-spacing:normal;line-height:1.6}
+html[lang='ar'] :is(p,span,a){letter-spacing:normal}
+html[lang='hi'] :is(.sidebar-nav-item,.journey-mobile-nav a){line-height:1.6}
+.language-switcher{display:inline-flex;align-items:center;gap:6px;flex-shrink:0;position:relative;color:var(--color-text-secondary,#aaa)}
+.language-switcher select{font-family:system-ui,sans-serif;min-height:38px;max-width:130px;border:1px solid var(--color-border,#333);border-radius:10px;padding:6px 9px;background:var(--color-surface,#17191e);color:var(--color-text-primary,#fff);font-size:12px;cursor:pointer}
+.language-switcher select:focus-visible{outline:2px solid var(--color-accent-gold,#fbbf24);outline-offset:3px}
+.language-switcher select:disabled{cursor:wait;opacity:.65}
+.language-error{position:absolute;inset-inline-end:0;inset-block-start:100%;min-width:220px;padding:10px;background:var(--color-surface,#17191e);border:1px solid var(--color-border,#333);border-radius:8px;z-index:1100;font-size:12px}
+.page-language-switcher{position:absolute;inset-inline-end:20px;inset-block-start:18px;z-index:30}
+.sidebar-footer>.language-switcher{display:flex;justify-content:center;margin-block-end:14px}
+.app-container:has(main .language-switcher,.content-stage .language-switcher)>.sidebar>.sidebar-footer>.language-switcher{display:none}
+.sidebar.collapsed .language-switcher>svg{display:none}
+.sidebar.collapsed .language-switcher select{max-width:64px;padding-inline:2px;font-size:10px}
+.top-filter-bar>.language-switcher{order:3}
+html[dir='rtl'] .sidebar{border-right:0;border-left:1px solid var(--color-border)}
+html[dir='rtl'] .chat-column{border-right:0;border-left:1px solid var(--color-border)}
+html[dir='rtl'] :is(.chat-results-button,.mobile-context-fab){right:auto;left:16px}
+html[dir='rtl'] :is(.sidebar-header button,.sidebar .lucide-log-out,.journey-btn .lucide-arrow-right,.journey-text-link .lucide-arrow-right){transform:scaleX(-1)}
+html[dir='rtl'] :is(.notification-dropdown,.notification-panel){right:auto;left:0}
+html[dir='rtl'] .sidebar-nav-item{text-align:start}
+html[dir='rtl'] .sidebar-nav-item>svg{flex-shrink:0}
+:is(input[type='email'],input[type='password'],input[type='url'],input[type='tel'],input[autocomplete='one-time-code']){direction:ltr;text-align:start;unicode-bidi:plaintext}
+html[dir='rtl'] a[href='/']>.lucide-arrow-left{transform:scaleX(-1)}
+:is(.leaflet-container,.camera-frame,.model-host,video,canvas){direction:ltr}
+.message-content{unicode-bidi:plaintext}
+@media(max-width:768px){
+  .language-switcher{gap:4px}
+  .language-switcher select{max-width:100px;min-height:38px;padding:5px;font-size:11px}
+  .journey-top-actions{gap:8px}
+  .journey-top-actions>.language-switcher>svg{display:none}
+  .journey-topbar{flex-wrap:wrap;padding-block:10px}
+  .chat-workspace .top-filter-bar{overflow:visible;gap:8px}
+  .chat-workspace .top-filter-pills{flex:1;min-width:0;flex-shrink:1;overflow-x:auto}
+  .chat-workspace .top-create-trip-btn{flex-shrink:0;padding-inline:10px}
+  .chat-workspace .top-filter-bar>.language-switcher{position:static;padding:0}
+  .chat-workspace .top-filter-bar>.language-switcher>svg{display:none}
+  .journey-local{display:none}
+  .top-filter-bar>.language-switcher{position:sticky;inset-inline-end:0;background:var(--color-bg);padding-inline-start:8px}
+  .page-language-switcher{inset-block-start:12px;inset-inline-end:12px}
+}
+@media(min-width:769px) and (max-width:1024px){
+ .chat-workspace .sidebar .language-switcher>svg{display:none}
+ .chat-workspace .sidebar .language-switcher select{max-width:60px;font-size:10px;padding-inline:1px}
+}
