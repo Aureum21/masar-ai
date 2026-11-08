@@ -67,3 +67,5 @@ EGN2203_METR_LA/
 AGENT_HANDOVER.md
 *.pdf
 
+
+docs/implementation/*.md

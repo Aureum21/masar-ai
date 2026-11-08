@@ -1,7 +1,0 @@
-# Planning presentation and trip review — 26 October 2026
-
-- Shared MasarMark displays the actual logo immediately, overlays the looping logo only during successful playback, and preserves the static logo for failed/buffering media and reduced motion. Used inside the orbital loader, live research banner, concierge avatar, and completed planning state. No Sparkles substitute on the planning page.
-- Planning research reuses the chat ContextPanel and its actual server-returned snapshots. New worker sections materialize with a short light sweep; result cards reveal in a bounded stagger. Section keys remain stable across polls. Status text transitions on real progress changes. No simulated findings, percentages, or extra agent requests.
-- Legacy planning runs that stored worker names without research snapshots cannot reconstruct research cards: their saved-trip link remains available. New runs show cards when structured findings arrive.
-- Trip timeline and route text now format structured locations (including {lat,lng}) as safe readable text; named addresses take precedence. Coordinates remain unchanged in the itinerary for persistence and maps. Trip destination uses the same formatter.
-- Verification: location formatting and React-render regression fixtures, existing planning/workspace tests, focused ESLint, and production build. No live planning run, user trip edits, or provider calls are needed for these checks.
